@@ -1,0 +1,6 @@
+datasources:bc71425a8c475d6094f6fe33be084799cc797cf8
+commandlineoptions:9f8598a690c7367accf83ead504756ddd374acc9
+suitesfrom:no-suites-from-option
+file:8beac59eee6be5c78ba3756a5c39dfb4797dc9b8
+--suite Suites.AgentShouldBeVinable
+--suite Suites.AgentShouldBeVinable2

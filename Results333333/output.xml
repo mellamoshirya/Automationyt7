@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20201013 23:01:57.671" generator="Rebot 3.2.1 (Python 2.7.17 on win32)">
+<suite id="s1" name="Suites">
+<suite source="C:\Users\Shriraj.Joshi\PycharmProjects\Automationyt\Testcases\AgentShouldBeVinable.robot" id="s1-s1" name="AgentShouldBeVinable">
+<test id="s1-s1-t1" name="TestingInputBox">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20201013 23:01:25.815" level="INFO">Opening browser 'chrome' to base url 'https://www.candidate.zillow.net/agent-finder/real-estate-agent-reviews/'.</msg>
+<status status="PASS" endtime="20201013 23:01:32.876" starttime="20201013 23:01:25.815"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>10sec</arg>
+</arguments>
+<status status="PASS" endtime="20201013 23:01:32.885" starttime="20201013 23:01:32.877"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20201013 23:01:57.213" level="FAIL">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=86.0.4240.75)
+</msg>
+<status status="FAIL" endtime="20201013 23:01:57.213" starttime="20201013 23:01:45.012"></status>
+</kw>
+<msg timestamp="20201013 23:01:57.213" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+  (Session info: chrome=86.0.4240.75)
+</msg>
+<msg timestamp="20201013 23:01:57.224" level="FAIL">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=86.0.4240.75)
+</msg>
+<status status="FAIL" endtime="20201013 23:01:57.224" starttime="20201013 23:01:32.888"></status>
+</kw>
+<status status="FAIL" endtime="20201013 23:01:57.226" critical="yes" starttime="20201013 23:01:25.807">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=86.0.4240.75)
+</status>
+</test>
+<status status="FAIL" endtime="20201013 23:01:57.227" starttime="20201013 23:01:23.318"></status>
+</suite>
+<suite source="C:\Users\Shriraj.Joshi\PycharmProjects\Automationyt\Testcases\AgentShouldBeVinable2.robot" id="s1-s2" name="AgentShouldBeVinable2">
+<test id="s1-s2-t1" name="TestingInputBox111">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20201013 23:01:25.815" level="INFO">Opening browser 'headlesschrome' to base url 'https://www.candidate.zillow.net/agent-finder/real-estate-agent-reviews/'.</msg>
+<status status="PASS" endtime="20201013 23:01:49.138" starttime="20201013 23:01:25.815"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>10sec</arg>
+</arguments>
+<status status="PASS" endtime="20201013 23:01:49.144" starttime="20201013 23:01:49.139"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20201013 23:01:51.324" starttime="20201013 23:01:49.145"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>"Done Finish complete 2nd cases successfully"</arg>
+</arguments>
+<status status="PASS" endtime="20201013 23:01:51.327" starttime="20201013 23:01:51.325"></status>
+</kw>
+<status status="PASS" endtime="20201013 23:01:51.327" critical="yes" starttime="20201013 23:01:25.815"></status>
+</test>
+<status status="PASS" endtime="20201013 23:01:51.333" starttime="20201013 23:01:23.318"></status>
+</suite>
+<doc>[https://pabot.org/?ref=log|Pabot] result from 2 executions.</doc>
+<status status="FAIL" endtime="20201013 23:01:57.237" starttime="20201013 23:01:23.204"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="1">Critical Tests</stat>
+<stat fail="1" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Suites" pass="1">Suites</stat>
+<stat fail="1" id="s1-s1" name="AgentShouldBeVinable" pass="0">Suites.AgentShouldBeVinable</stat>
+<stat fail="0" id="s1-s2" name="AgentShouldBeVinable2" pass="1">Suites.AgentShouldBeVinable2</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20201013 23:01:57.213" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+  (Session info: chrome=86.0.4240.75)
+</msg>
+</errors>
+</robot>

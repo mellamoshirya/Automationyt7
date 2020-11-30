@@ -1,0 +1,18 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.AgentShouldBeVinable                                                   
+==============================================================================
+TestingInputBox                                                       | FAIL |
+WebDriverException: Message: chrome not reachable
+  (Session info: chrome=86.0.4240.75)
+------------------------------------------------------------------------------
+Suites.AgentShouldBeVinable                                           | FAIL |
+1 critical test, 0 passed, 1 failed
+1 test total, 0 passed, 1 failed
+==============================================================================
+Suites                                                                | FAIL |
+1 critical test, 0 passed, 1 failed
+1 test total, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\Shriraj.Joshi\PycharmProjects\Automationyt\Results333333\pabot_results\0\output.xml

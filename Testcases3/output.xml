@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20201130 19:30:30.092" generator="Robot 3.2.1 (Python 2.7.17 on win32)">
+<suite source="C:\Users\Shriraj.Joshi\PycharmProjects\Automationyt\Testcases3\pr1.robot" id="s1" name="Pr1">
+<test id="s1-t1" name="tc1">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>tc1 ran till end</arg>
+</arguments>
+<status status="PASS" endtime="20201130 19:30:31.797" starttime="20201130 19:30:31.796"></status>
+</kw>
+<status status="PASS" endtime="20201130 19:30:31.798" critical="yes" starttime="20201130 19:30:31.793"></status>
+</test>
+<test id="s1-t2" name="tc2">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>tc2 ran till end</arg>
+</arguments>
+<status status="PASS" endtime="20201130 19:30:31.809" starttime="20201130 19:30:31.808"></status>
+</kw>
+<status status="PASS" endtime="20201130 19:30:31.810" critical="yes" starttime="20201130 19:30:31.803"></status>
+</test>
+<test id="s1-t3" name="tc3">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>tc3 ran till end</arg>
+</arguments>
+<status status="PASS" endtime="20201130 19:30:31.816" starttime="20201130 19:30:31.815"></status>
+</kw>
+<status status="PASS" endtime="20201130 19:30:31.816" critical="yes" starttime="20201130 19:30:31.813"></status>
+</test>
+<test id="s1-t4" name="tc6Modified">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>tc6 ran till end</arg>
+</arguments>
+<status status="PASS" endtime="20201130 19:30:31.823" starttime="20201130 19:30:31.822"></status>
+</kw>
+<status status="PASS" endtime="20201130 19:30:31.824" critical="yes" starttime="20201130 19:30:31.820"></status>
+</test>
+<test id="s1-t5" name="tc8">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>tc8 ran till end</arg>
+</arguments>
+<status status="PASS" endtime="20201130 19:30:31.829" starttime="20201130 19:30:31.829"></status>
+</kw>
+<status status="PASS" endtime="20201130 19:30:31.830" critical="yes" starttime="20201130 19:30:31.827"></status>
+</test>
+<test id="s1-t6" name="tc9">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>tc9 ran till end</arg>
+</arguments>
+<status status="PASS" endtime="20201130 19:30:31.838" starttime="20201130 19:30:31.838"></status>
+</kw>
+<status status="PASS" endtime="20201130 19:30:31.839" critical="yes" starttime="20201130 19:30:31.832"></status>
+</test>
+<test id="s1-t7" name="tc14">
+<kw name="OpenMyBrowser" library="ProfileKeywords">
+<arguments>
+<arg>${env}</arg>
+<arg>${browser}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${env}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20201130 19:30:31.846" level="INFO">Opening browser 'chrome' to base url 'https://www.qa.zillow.net'.</msg>
+<status status="PASS" endtime="20201130 19:30:50.157" starttime="20201130 19:30:31.846"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20201130 19:30:52.393" starttime="20201130 19:30:50.157"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3sec</arg>
+</arguments>
+<msg timestamp="20201130 19:30:55.402" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20201130 19:30:55.403" starttime="20201130 19:30:52.394"></status>
+</kw>
+<status status="PASS" endtime="20201130 19:30:55.404" starttime="20201130 19:30:31.844"></status>
+</kw>
+<kw name="Faker_profile" library="ProfileKeywords">
+<kw name="Address" library="FakerLibrary">
+<doc>:example '791 Crist Parks, Sashabury, IL 86039-9874'</doc>
+<assign>
+<var>${F_address}</var>
+</assign>
+<msg timestamp="20201130 19:30:55.414" level="INFO">${F_address} = 0091 Stephanie Greens
+East Debramouth, OR 13946</msg>
+<status status="PASS" endtime="20201130 19:30:55.414" starttime="20201130 19:30:55.407"></status>
+</kw>
+<kw name="Country" library="FakerLibrary">
+<assign>
+<var>${F_country}</var>
+</assign>
+<msg timestamp="20201130 19:30:55.416" level="INFO">${F_country} = Burkina Faso</msg>
+<status status="PASS" endtime="20201130 19:30:55.416" starttime="20201130 19:30:55.414"></status>
+</kw>
+<kw name="Email" library="FakerLibrary">
+<assign>
+<var>${F_email}</var>
+</assign>
+<msg timestamp="20201130 19:30:55.419" level="INFO">${F_email} = maria83@yahoo.com</msg>
+<status status="PASS" endtime="20201130 19:30:55.419" starttime="20201130 19:30:55.416"></status>
+</kw>
+<kw name="First Name" library="FakerLibrary">
+<assign>
+<var>${F_first_name}</var>
+</assign>
+<msg timestamp="20201130 19:30:55.422" level="INFO">${F_first_name} = Crystal</msg>
+<status status="PASS" endtime="20201130 19:30:55.423" starttime="20201130 19:30:55.420"></status>
+</kw>
+<kw name="Last Name" library="FakerLibrary">
+<assign>
+<var>${F_last_name}</var>
+</assign>
+<msg timestamp="20201130 19:30:55.425" level="INFO">${F_last_name} = Mora</msg>
+<status status="PASS" endtime="20201130 19:30:55.425" starttime="20201130 19:30:55.423"></status>
+</kw>
+<kw name="Phone Number" library="FakerLibrary">
+<assign>
+<var>${F_phone_number}</var>
+</assign>
+<msg timestamp="20201130 19:30:55.426" level="INFO">${F_phone_number} = +1-205-101-3718x77696</msg>
+<status status="PASS" endtime="20201130 19:30:55.426" starttime="20201130 19:30:55.425"></status>
+</kw>
+<kw name="Catenate" library="BuiltIn">
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<arguments>
+<arg>${\n}=======================================</arg>
+<arg>${\n}first_name: ${F_first_name}</arg>
+<arg>${\n}last_name: ${F_last_name}</arg>
+<arg>${\n}address: ${F_address}</arg>
+<arg>${\n}country: ${F_country}</arg>
+<arg>${\n}email: ${F_email}</arg>
+<arg>${\n}phone_number: ${F_phone_number}</arg>
+<arg>${\n}=======================================</arg>
+</arguments>
+<assign>
+<var>${F_profile}</var>
+</assign>
+<msg timestamp="20201130 19:30:55.428" level="INFO">${F_profile} = 
+======================================= 
+first_name: Crystal 
+last_name: Mora 
+address: 0091 Stephanie Greens
+East Debramouth, OR 13946 
+country: Burkina Faso 
+email: maria83@yahoo.com 
+phone_...</msg>
+<status status="PASS" endtime="20201130 19:30:55.428" starttime="20201130 19:30:55.426"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${F_profile}</arg>
+</arguments>
+<status status="PASS" endtime="20201130 19:30:55.430" starttime="20201130 19:30:55.429"></status>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${F_email}</arg>
+</arguments>
+<msg timestamp="20201130 19:30:55.431" level="INFO">${F_email} = maria83@yahoo.com</msg>
+<status status="PASS" endtime="20201130 19:30:55.431" starttime="20201130 19:30:55.430"></status>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${F_address}</arg>
+</arguments>
+<msg timestamp="20201130 19:30:55.432" level="INFO">${F_address} = 0091 Stephanie Greens
+East Debramouth, OR 13946</msg>
+<status status="PASS" endtime="20201130 19:30:55.433" starttime="20201130 19:30:55.431"></status>
+</kw>
+<status status="PASS" endtime="20201130 19:30:55.433" starttime="20201130 19:30:55.406"></status>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>2sec</arg>
+</arguments>
+<status status="PASS" endtime="20201130 19:30:55.434" starttime="20201130 19:30:55.434"></status>
+</kw>
+<kw name="Register" library="ProfileKeywords">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>Sign in</arg>
+</arguments>
+<status status="PASS" endtime="20201130 19:30:57.477" starttime="20201130 19:30:55.436"></status>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>2sec</arg>
+</arguments>
+<status status="PASS" endtime="20201130 19:30:57.479" starttime="20201130 19:30:57.477"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${sign_in}</arg>
+</arguments>
+<msg timestamp="20201130 19:30:57.480" level="INFO">Clicking element 'xpath://header/nav[1]/div[2]/ul[4]/li[1]/a[1]'.</msg>
+<status status="PASS" endtime="20201130 19:31:01.617" starttime="20201130 19:30:57.479"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5sec</arg>
+</arguments>
+<msg timestamp="20201130 19:31:06.621" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20201130 19:31:06.621" starttime="20201130 19:31:01.618"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${RegisterTab}</arg>
+</arguments>
+<msg timestamp="20201130 19:31:06.622" level="INFO">Clicking element 'id:register-tab'.</msg>
+<status status="PASS" endtime="20201130 19:31:10.904" starttime="20201130 19:31:06.622"></status>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>0sec</arg>
+</arguments>
+<status status="PASS" endtime="20201130 19:31:10.907" starttime="20201130 19:31:10.905"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${EmailPlaceholder}</arg>
+<arg>${F_email}</arg>
+</arguments>
+<msg timestamp="20201130 19:31:10.909" level="INFO">Typing text 'maria83@yahoo.com' into text field 'id:inputs-newEmail'.</msg>
+<status status="PASS" endtime="20201130 19:31:11.172" starttime="20201130 19:31:10.907"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${PwdPlaceholder}</arg>
+<arg>${pwdpr}</arg>
+</arguments>
+<msg timestamp="20201130 19:31:11.173" level="INFO">Typing text 'zillow01' into text field 'id:password'.</msg>
+<status status="PASS" endtime="20201130 19:31:11.564" starttime="20201130 19:31:11.173"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${PwdPlaceholder}</arg>
+<arg>TAB</arg>
+<arg>TAB</arg>
+<arg>TAB</arg>
+<arg>SPACE</arg>
+</arguments>
+<msg timestamp="20201130 19:31:11.569" level="INFO">Sending key(s) (u'TAB', u'TAB', u'TAB', u'SPACE') to id:password element.</msg>
+<msg timestamp="20201130 19:31:11.893" level="INFO">Pressing special key TAB to element.</msg>
+<msg timestamp="20201130 19:31:11.893" level="INFO">Releasing special key TAB.</msg>
+<msg timestamp="20201130 19:31:11.927" level="INFO">Pressing special key TAB to element.</msg>
+<msg timestamp="20201130 19:31:11.927" level="INFO">Releasing special key TAB.</msg>
+<msg timestamp="20201130 19:31:11.960" level="INFO">Pressing special key TAB to element.</msg>
+<msg timestamp="20201130 19:31:11.960" level="INFO">Releasing special key TAB.</msg>
+<msg timestamp="20201130 19:31:11.991" level="INFO">Pressing special key SPACE to element.</msg>
+<msg timestamp="20201130 19:31:11.991" level="INFO">Releasing special key SPACE.</msg>
+<status status="PASS" endtime="20201130 19:31:12.058" starttime="20201130 19:31:11.565"></status>
+</kw>
+<status status="PASS" endtime="20201130 19:31:12.059" starttime="20201130 19:30:55.436"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>https://www.qa.zillow.net/profile/81179279ScreenName/</arg>
+</arguments>
+<msg timestamp="20201130 19:31:12.060" level="INFO">Opening url 'https://www.qa.zillow.net/profile/81179279ScreenName/'</msg>
+<status status="PASS" endtime="20201130 19:31:21.558" starttime="20201130 19:31:12.060"></status>
+</kw>
+<kw name="WrittingAReview" library="ProfileKeywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${WaReviewBtn}</arg>
+</arguments>
+<msg timestamp="20201130 19:31:21.561" level="INFO">Clicking element 'xpath://a[contains(text(),'Write a review')]'.</msg>
+<status status="PASS" endtime="20201130 19:31:26.066" starttime="20201130 19:31:21.560"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${ReviewMsgBox}</arg>
+<arg>How likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX Groso</arg>
+</arguments>
+<msg timestamp="20201130 19:31:26.067" level="INFO">Typing text 'How likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX Groso' into text field 'xpath://textarea[@id='review_message']'.</msg>
+<status status="PASS" endtime="20201130 19:31:26.517" starttime="20201130 19:31:26.067"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Review_Terms}</arg>
+</arguments>
+<msg timestamp="20201130 19:31:26.518" level="INFO">Clicking element 'xpath://input[@id='review_honesty']'.</msg>
+<status status="PASS" endtime="20201130 19:31:26.608" starttime="20201130 19:31:26.517"></status>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>${Review_ServiceProvided}</arg>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20201130 19:31:26.609" level="INFO">Selecting options from selection list 'Xpath://select[@id='review_service_provided']' by value 3.</msg>
+<status status="PASS" endtime="20201130 19:31:26.885" starttime="20201130 19:31:26.609"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Rev_YoS}</arg>
+<arg>2010</arg>
+</arguments>
+<msg timestamp="20201130 19:31:26.886" level="INFO">Typing text '2010' into text field 'xpath://input[@id='review_year']'.</msg>
+<status status="PASS" endtime="20201130 19:31:27.047" starttime="20201130 19:31:26.886"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Rev_Address}</arg>
+<arg>${F_address}</arg>
+</arguments>
+<msg timestamp="20201130 19:31:27.049" level="INFO">Typing text '0091 Stephanie Greens
+East Debramouth, OR 13946' into text field 'xpath://input[@id='review_street_address']'.</msg>
+<status status="PASS" endtime="20201130 19:31:27.313" starttime="20201130 19:31:27.048"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${stars}</arg>
+</arguments>
+<msg timestamp="20201130 19:31:27.315" level="INFO">Clicking element 'xpath:/html[1]/body[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/ul[1]/li[1]/div[1]/ul[1]/li[5]/span[2]'.</msg>
+<status status="PASS" endtime="20201130 19:31:27.474" starttime="20201130 19:31:27.314"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${sub_review_btn}</arg>
+</arguments>
+<msg timestamp="20201130 19:31:27.475" level="INFO">Clicking element 'xpath://button[@id='agent-review-submit']'.</msg>
+<status status="PASS" endtime="20201130 19:31:27.556" starttime="20201130 19:31:27.474"></status>
+</kw>
+<status status="PASS" endtime="20201130 19:31:27.557" starttime="20201130 19:31:21.559"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>tc14 ran till end</arg>
+</arguments>
+<status status="PASS" endtime="20201130 19:31:27.559" starttime="20201130 19:31:27.558"></status>
+</kw>
+<status status="PASS" endtime="20201130 19:31:27.559" critical="yes" starttime="20201130 19:30:31.843"></status>
+</test>
+<status status="PASS" endtime="20201130 19:31:27.563" starttime="20201130 19:30:30.098"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="7">Critical Tests</stat>
+<stat fail="0" pass="7">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Pr1" pass="7">Pr1</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20201130 19:30:30.753" level="ERROR">Error in file 'C:\Users\Shriraj.Joshi\PycharmProjects\Automationyt\Testcases3\pr1.robot' on line 6: Importing test library 'AutoitLibrary' failed: ImportError: No module named AutoitLibrary
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\Shriraj.Joshi\PycharmProjects\Automationyt\venv\Scripts\robot.exe
+  C:\WINDOWS\SYSTEM32\python27.zip
+  c:\users\shriraj.joshi\pycharmprojects\automationyt\venv\DLLs
+  c:\users\shriraj.joshi\pycharmprojects\automationyt\venv\lib
+  c:\users\shriraj.joshi\pycharmprojects\automationyt\venv\lib\plat-win
+  c:\users\shriraj.joshi\pycharmprojects\automationyt\venv\lib\lib-tk
+  c:\users\shriraj.joshi\pycharmprojects\automationyt\venv\scripts
+  C:\Python27\Lib
+  C:\Python27\DLLs
+  C:\Python27\Lib\lib-tk
+  c:\users\shriraj.joshi\pycharmprojects\automationyt\venv
+  c:\users\shriraj.joshi\pycharmprojects\automationyt\venv\lib\site-packages
+  c:\users\shriraj.joshi\pycharmprojects\automationyt\venv\lib\site-packages\win32
+  c:\users\shriraj.joshi\pycharmprojects\automationyt\venv\lib\site-packages\win32\lib
+  c:\users\shriraj.joshi\pycharmprojects\automationyt\venv\lib\site-packages\Pythonwin</msg>
+</errors>
+</robot>
