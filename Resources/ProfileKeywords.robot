@@ -18,7 +18,7 @@ ${BusinessName}     Westbrook Realty
 ${PATTERN1}      ^<a href="/profile/
 ${EXPECTED1}     <a href="/profile/68467184ScreenName/
 ${lang}
-
+${my_address}       1814 12th Ave S, Seattle, WA 98144
 *** Keywords ***
 OpenMyBrowser
     [Arguments]  ${env}     ${browser}
@@ -165,14 +165,15 @@ Chk_URL_CONTAINS
 
 Register
     wait until page contains    Sign in
-    set selenium speed  2sec
+    set selenium speed  4sec
     click element   ${sign_in}
-    sleep   5sec
+    sleep   4sec
     click element   ${RegisterTab}
     set selenium speed  0sec
     input text  ${EmailPlaceholder}     ${F_email}
     input text  ${PwdPlaceholder}       ${pwdpr}
     press keys  ${PwdPlaceholder}       TAB     TAB     TAB     SPACE
+    sleep   2sec
 
 Sign_in_Agent-131133007
     wait until page contains    Sign in
@@ -217,11 +218,53 @@ Faker_profile
         set suite variable  ${F_address}
 
 WrittingAReview
+
     click element   ${WaReviewBtn}
+    sleep   8sec
+    click element   ${stars}
     input text  ${ReviewMsgBox}     How likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX Groso
     click element   ${Review_Terms}
     select from list by value   ${Review_ServiceProvided}      3
+    input text      ${Rev_Address}      ${my_address}
+    click element   ${war_poc}
+    input text      ${war_poc_name}     AssociateIam
     input text   ${Rev_YoS}      2010
-    input text      ${Rev_Address}      ${F_address}
-    click element   ${stars}
-    click element   ${sub_review_btn}
+    sleep   4sec
+    click element    ${sub_review_btn}
+    sleep   2sec
+    wait until page contains       Review submitted
+
+
+ImpersonatingViaSuperadmin
+    Go to   https://www.qa.zillow.net/Logout.htm
+    wait until page contains    Sign in
+    set selenium speed  4sec
+    click element   ${sign_in}
+    sleep   4sec
+    set selenium speed  0sec
+    input text  ${Signin_email_placeholder}     superadmin@tes.zillow.local
+    input text  ${Signin_pwd_placeholder}       zillow01*
+    press keys  ${Signin_pwd_placeholder}       TAB     SPACE
+    sleep   3sec
+    reload page
+    set selenium speed  2sec
+    go to   https://www.qa.zillow.net/user/Impersonate.htm
+    input text      ${admin_email_placeholder}      ${F_email}
+    click element   ${admin_login_button}
+
+ModifyingExcerpt&PublishingReview
+    click element   ${Consumer_profile}
+    click element   ${View_RW_Btn}
+    click element   ${ModerateThisReview}
+    click element   ${EditReviewExcerpt}
+    sleep   2sec
+    clear element text  ${Edit_text_area_excerpt}
+    input text  ${Edit_text_area_excerpt}       MOdified excerpt test
+    click element   ${Save_Excerpt_btn}
+    click element   ${Moderation_form_submit_button}
+    sleep   5sec
+    go to   https://www.qa.zillow.net/profile/41711620ScreenName/
+    page should contain         How likely are you to recommend REMAX GrosoHow likely
+
+
+

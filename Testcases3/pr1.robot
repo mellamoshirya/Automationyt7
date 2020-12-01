@@ -84,8 +84,8 @@ tc14
     Faker_profile
     set selenium speed  2sec
     Register
-    go to   https://www.qa.zillow.net/profile/81179279ScreenName/
+    go to   https://www.qa.zillow.net/profile/41711620ScreenName/
     WrittingAReview
-
-
+    ImpersonatingViaSuperadmin
+    ModifyingExcerpt&PublishingReview
     log to console  tc14 ran till end

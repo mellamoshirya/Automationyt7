@@ -65,3 +65,20 @@ sub_review_btn="xpath://button[@id='agent-review-submit']"
 "css:div[contenteditable='true']"
 stars="xpath:/html[1]/body[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/ul[1]/li[1]/div[1]/ul[1]/li[5]/span[2]"
 
+war_poc="xpath://label[contains(text(),'An associate of')]"
+war_poc_name="xpath://input[@id='associate-name']"
+
+Signin_email_placeholder="xpath://input[@id='reg-login-email']"
+signin_pwd_placeholder="xpath://input[@id='inputs-password']"
+AdminButton="xpath://span[contains(text(),'Admin')]"
+admin_email_placeholder="xpath://input[@id='emailAddr']"
+admin_login_button="xpath://button[contains(text(),'Login')]"
+
+Consumer_profile="xpath://div[contains(text(),'Personalize your account and update your login pre')]"
+View_RW_Btn="xpath://body/div[@id='__next']/div[1]/div[2]/div[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[2]/div[1]"
+ModerateThisReview="xpath://a[contains(text(),'Moderate this now')]"
+
+EditReviewExcerpt="xpath:/html/body/div[1]/div[5]/main/div[5]/div[3]/div/div/div[1]/div[1]/div[4]/div[1]/a"
+Edit_text_area_excerpt="xpath:/html[1]/body[1]/div[1]/div[5]/main[1]/div[5]/div[3]/div[1]/div[1]/div[1]/div[1]/div[4]/div[3]/textarea[1]"
+Save_Excerpt_btn="xpath:/html[1]/body[1]/div[1]/div[5]/main[1]/div[5]/div[3]/div[1]/div[1]/div[1]/div[1]/div[4]/div[3]/div[1]/a[1]/span[1]"
+Moderation_form_submit_button="xpath://button[@id='moderation-form-submit-button']"
