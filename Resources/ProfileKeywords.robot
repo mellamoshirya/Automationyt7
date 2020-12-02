@@ -222,7 +222,7 @@ WrittingAReview
     click element   ${WaReviewBtn}
     sleep   8sec
     click element   ${stars}
-    input text  ${ReviewMsgBox}     How likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX Groso
+    input text  ${ReviewMsgBox}     test 123 test 234..and GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX Groso
     click element   ${Review_Terms}
     select from list by value   ${Review_ServiceProvided}      3
     input text      ${Rev_Address}      ${my_address}
@@ -252,6 +252,14 @@ ImpersonatingViaSuperadmin
     input text      ${admin_email_placeholder}      ${F_email}
     click element   ${admin_login_button}
 
+ConcatinatingScreenNameURL
+    ${screenName}=  Evaluate  random.choice($Example11)  random
+    log to console  \nvalue: ${screenName}
+    ${ResultantURL}=    Catenate    SEPARATOR=   ${ProPredefinedBreadcrumbs}   ${screenName}
+    log to console  ${ResultantURL}
+    go to   ${ResultantURL}
+    set global variable     ${ResultantURL}
+
 ModifyingExcerpt&PublishingReview
     click element   ${Consumer_profile}
     click element   ${View_RW_Btn}
@@ -263,8 +271,10 @@ ModifyingExcerpt&PublishingReview
     click element   ${Save_Excerpt_btn}
     click element   ${Moderation_form_submit_button}
     sleep   5sec
-    go to   https://www.qa.zillow.net/profile/41711620ScreenName/
-    page should contain         How likely are you to recommend REMAX GrosoHow likely
+    go to   ${ResultantURL}
+    page should contain         test 123 test 234..and GrosoHow likely
+
+
 
 
 

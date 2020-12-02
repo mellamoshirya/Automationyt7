@@ -20,7 +20,9 @@ ${fn_Registration}      this_is_fn_test
 ${ln_Registration}      this_is_ln_test
 ${zip}      98115
 ${ServiceArea}     98116
-
+${ProPredefinedBreadcrumbs}       https://www.qa.zillow.net/profile/
+${y}=       45897812ScreenName/
+@{Example11}    /45897812ScreenName/    /2074710ScreenName/     /83545336ScreenName/    /50699753ScreenName/     130561247ScreenName     44831731ScreenName/     116237893ScreenName/
 *** Test Cases ***
 tc1
 #    OpenMyBrowser   ${env}  ${browser}
@@ -84,8 +86,10 @@ tc14
     Faker_profile
     set selenium speed  2sec
     Register
-    go to   https://www.qa.zillow.net/profile/41711620ScreenName/
+    ConcatinatingScreenNameURL
     WrittingAReview
     ImpersonatingViaSuperadmin
     ModifyingExcerpt&PublishingReview
     log to console  tc14 ran till end
+
+
