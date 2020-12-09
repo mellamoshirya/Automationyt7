@@ -3,7 +3,9 @@ AgentFinder="xpath://span[contains(text(),'Agent finder')]"
 #AgentFinderPage
 RegionBox="name:locationText"
 NameBox="name:name"
-
+fnln="xpath://input[@placeholder='Agent name']"
+SearchMG2="xpath:/html[1]/body[1]/div[1]/div[8]/main[1]/div[1]/form[1]/section[1]/ul[1]/li[1]/fieldset[1]/div[2]/button"
+leaderboards="css:div[data-test-id='ldb-boards-results']"
 #AdvSearch
 AdvDD="xpath://span[contains(text(),'Advanced')]"
 Adv_lan_dd="name:languageMask"
@@ -19,16 +21,21 @@ t3="xpath://a[contains(@class,'ldb-arrow-link')]"
 
 am="xpath://h2[contains(text(),'About me')]"
 
-sign_in="xpath://header/nav[1]/div[2]/ul[4]/li[1]/a[1]"
+sign_in="xpath://header/nav[1]/div[2]/ul[4]/li[1]/a[1]/span[1]"
 RegisterTab="id:register-tab"
 EmailPlaceholder="id:inputs-newEmail"
 PwdPlaceholder="id:password"
+submit_reg="xpath://body/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/form[1]/div[6]/div[1]/input[1]"
 prochkbox="id://input[@id='proCheck']"
+Pro_chkboxx="css:div[class='professional checkbox zsg-form-field zsg-form-field_checkbox']"
 protype="id:proSelect"
 fn_Reg="id:inputs-firstName"
 ln_reg="id:inputs-lastName"
 zip_ref="id:inputs-zipCode"
 ph_no="id:inputs-areaCode"
+ph_no_2="id:inputs-phonePrefix"
+ph_no_3="id:inputs-phoneSuffix"
+Submit_btn_agn="css:div[class='submit-div zsg-lg-1-1']"
 BrokerageName="xpath://input[@id='companyName']"
 BrokerageAddress="xpath://input[@id='companyAddress']"
 city="xpath://input[@id='companyCity']"
@@ -41,7 +48,7 @@ SubmitButton="xpath:/html[1]/body[1]/div[1]/div[3]/main[1]/form[1]/div[2]/ul[1]/
 NEXT_PG="xpath://a[contains(text(),'Next')]"
 sorting="xpath://span[@id='sortBy-label']"
 sorting_opn="xpath://a[contains(text(),'Most recent sales')]"
-lead="partial link:Talia Abrahamsonn"
+lead="partial link:Talia Abrahamson"
 
 badge="xpath://a[contains(text(),'reviews')]"
 
@@ -49,6 +56,7 @@ email_to_enter="id:reg-login-email"
 pwd_to_enter="inputs-password"
 
 dd_profile="xpath://span[contains(text(),'Profile')]"
+ManageYourProfile="partial link:Manage your profile"
 mo="xpath://span[contains(text(),'Agent Hub')]"
 
 Edit_dd="xpath:/html[1]/body[1]/div[2]/div[1]/div[2]/aside[1]/div[1]/div[2]/div[1]/button[1]"
@@ -67,7 +75,7 @@ stars="xpath:/html[1]/body[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[2]/div[1]/f
 
 war_poc="xpath://label[contains(text(),'An associate of')]"
 war_poc_name="xpath://input[@id='associate-name']"
-
+si="xpath://body/div[@id='wrapper']/div[@id='react-auth-lightbox']/div[@id='reg-login-app']/div[1]/div[1]/div[1]/div[2]/div[2]/form[1]/div[4]/div[1]/input[1]"
 Signin_email_placeholder="xpath://input[@id='reg-login-email']"
 signin_pwd_placeholder="xpath://input[@id='inputs-password']"
 AdminButton="xpath://span[contains(text(),'Admin')]"
@@ -75,10 +83,21 @@ admin_email_placeholder="xpath://input[@id='emailAddr']"
 admin_login_button="xpath://button[contains(text(),'Login')]"
 
 Consumer_profile="xpath://div[contains(text(),'Personalize your account and update your login pre')]"
-View_RW_Btn="xpath://body/div[@id='__next']/div[1]/div[2]/div[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[2]/div[1]"
+View_RW_Btn="xpath:/html[1]/body[1]/div[2]/div[1]/div[3]/div[1]/div[1]/div[4]/div[1]/div[2]/div[2]"
 ModerateThisReview="xpath://a[contains(text(),'Moderate this now')]"
 
 EditReviewExcerpt="xpath:/html/body/div[1]/div[5]/main/div[5]/div[3]/div/div/div[1]/div[1]/div[4]/div[1]/a"
 Edit_text_area_excerpt="xpath:/html[1]/body[1]/div[1]/div[5]/main[1]/div[5]/div[3]/div[1]/div[1]/div[1]/div[1]/div[4]/div[3]/textarea[1]"
 Save_Excerpt_btn="xpath:/html[1]/body[1]/div[1]/div[5]/main[1]/div[5]/div[3]/div[1]/div[1]/div[1]/div[1]/div[4]/div[3]/div[1]/a[1]/span[1]"
 Moderation_form_submit_button="xpath://button[@id='moderation-form-submit-button']"
+
+# ServiceAreaValidationLocator1="xpath:/html[1]/body[1]/div[2]/div[1]/div[2]/main[1]/div[7]/section[1]/ul"
+# ServiceAreaValidationLocator2="xpath://body/div[@id='__next']/div[1]/div[2]/main[1]/div[8]/section[1]"
+
+Sign_in_Btn_23="css:div[class='submit-div zsg-lg-1-1']"
+# Add_MoreBtn="css:div[class='Flex-sc-1qcb5a7-0 ServiceAreasInput__TextButtonWrapper-sc-1iwfvhd-3 dxtZHI']"
+# Add_MoreBtn2="//button[contains(text(),'Add more')]"
+
+YourPronoun="xpath://select[@id='edit-profile-pronoun']"
+YourPronounOnPrivateProfile="xpath://div[contains(text(),'They/Them/Theirs')]"
+

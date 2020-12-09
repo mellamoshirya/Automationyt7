@@ -8,28 +8,30 @@ Variables   ..//PageObjects/Pr_locators.py
 Resource  ..//Resources/ProfileKeywords.robot
 #Library     DataDriver      ../TestData/LoginDataPr.xlsx    sheet_name=Sheet1
 Library    FakerLibrary
+Library     AutoItLibrary
 *** Variables ***
 
 ${env}  https://www.qa.zillow.net
-${browser}  chrome
+${browser}  headlesschrome
 ${CityName}  'San Jose CA'
 ${AgentName}   Ines Han
 ${BusinessName}     Westbrook Realty
 ${PATTERN1}      ^<a href="/profile/
 ${EXPECTED1}     <a href="/profile/68467184ScreenName/
 ${lang}
-${my_address}       1814 12th Ave S, Seattle, WA 98144
+${my_address}       2951 Villa Loop Show Low AZ 85901
+
 *** Keywords ***
 OpenMyBrowser
     [Arguments]  ${env}     ${browser}
     open browser     ${env}     ${browser}
+    set window size     1366    625
     maximize browser window
     sleep  3sec
 
 GotoAgentFinder
     log to console  GoingOnAgentFinder
-    sleep   10sec
- #   click element   ${AgentFinder}
+    sleep   5sec
     go to   https://www.qa.zillow.net/agent-finder/real-estate-agent-reviews/
     title should be  Realtor & Real Estate Agent Reviews | Zillow
 
@@ -59,7 +61,7 @@ SearchByLastName
     sleep  3sec
     clear element text      ${NameBox}
     press keys          ${NameBox}      Shumbo      ENTER
-    wait until page contains        Alexey Shumbo
+    wait until page contains        Krista Shumbo
 
 SearchByState
     log to console  SearchingByState
@@ -120,16 +122,20 @@ AddAgent
     click element   ${sign_in}
     sleep   5sec
     click element   ${RegisterTab}
-    set selenium speed  0sec
-    input text  ${EmailPlaceholder}     ${usernamepr}
+    set selenium speed  1sec
+    input text  ${EmailPlaceholder}     ${F_email}
     input text  ${PwdPlaceholder}       ${pwdpr}
-    press keys  ${PwdPlaceholder}       TAB     TAB     SPACE
+    click element   ${Pro_chkboxx}
+    sleep  2sec
     select from list by index   ${protype}      1
-    input text  ${fn_Reg}   ${fn_Registration}
-    input text  ${ln_Reg}   ${ln_Registration}
+    input text  ${fn_Reg}   ${F_first_name}
+    input text  ${ln_Reg}   ${F_last_name}
     input text  ${zip_ref}  ${zip}
-    press keys  ${ph_no}    206     TAB     665     TAB     6667    TAB     SPACE
-    sleep   4sec
+    press keys  ${ph_no}    206
+    press keys  ${ph_no_2}      665
+    press keys  ${ph_no_3}      6667
+    click element   ${Submit_btn_agn}
+    sleep   2sec
     input text  ${BrokerageName}        TestBrokerageName
     input text  ${BrokerageAddress}     7500 Roosevelt Way NE
     press keys  ${city}     Seattle
@@ -143,8 +149,12 @@ SearchByzipAndName
     log to console  SearchingByZIP
     go to   https://www.qa.zillow.net/agent-finder/real-estate-agent-reviews/
     sleep  3sec
-    press keys  ${RegionBox}      ${ServiceArea}    TAB     TAB     this_is_fn_test this_is_ln_test   ENTER
-    wait until page contains    this_is_fn_test this_is_ln_test
+    input text  ${RegionBox}    ${ServiceArea}
+    input text  ${fnln}     ${F_last_name}
+    sleep   2sec
+    click element   ${SearchMG2}
+    sleep   4sec
+    page should contain    ${F_first_name}${SPACE}${F_last_name}
 
 Paginate
     sleep   6sec
@@ -158,6 +168,8 @@ Sorting
     set selenium speed  2sec
     click element   ${sorting}
     click element   ${sorting_opn}
+    ${cur_url_sort}=    get location
+    should contain   ${cur_url_sort}    ?sortBy=sales&show
 
 Chk_URL_CONTAINS
     ${cur_url2}=     get location
@@ -172,29 +184,33 @@ Register
     set selenium speed  0sec
     input text  ${EmailPlaceholder}     ${F_email}
     input text  ${PwdPlaceholder}       ${pwdpr}
-    press keys  ${PwdPlaceholder}       TAB     TAB     TAB     SPACE
+#   press keys  ${PwdPlaceholder}       TAB     TAB     TAB     SPACE
+    click element   ${submit_reg}
     sleep   2sec
 
-Sign_in_Agent-131133007
+Sign_in_Agent-Selected
     wait until page contains    Sign in
     set selenium speed  2sec
     click element   ${sign_in}
     sleep   5sec
-    #click element   ${email_to_enter}
-    input text  ${email_to_enter}     131133007@tes.zillow.local
+    input text  ${email_to_enter}     ${GeneratedLoginstring}
     input text  ${pwd_to_enter}       zillow
-    press keys  ${pwd_to_enter}     TAB     SPACE
+    click element   ${Sign_in_Btn_23}
 
 GoingToProfile
     sleep   3sec
-    set selenium speed  2sec
-    mouse over  ${mo}
-    click element   ${dd_profile}
+    reload page
+    sleep   7sec
+    set selenium speed  1sec
+    wait until page contains        Manage your profile     30sec
+    click element   ${ManageYourProfile}
+
 
 Going to edit profile
     set selenium speed  2sec
     click element  ${Edit_dd}
     click element   ${profileOpn}
+
 
 
 Faker_profile
@@ -216,13 +232,15 @@ Faker_profile
         log to console  ${F_profile}
         set suite variable  ${F_email}
         set suite variable  ${F_address}
+        set suite variable  ${F_first_name}
+        set suite variable  ${F_last_name}
 
 WrittingAReview
 
     click element   ${WaReviewBtn}
     sleep   8sec
     click element   ${stars}
-    input text  ${ReviewMsgBox}     test 123 test 234..and GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX Groso
+    input text  ${ReviewMsgBox}     test 177 test 236..and GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX Groso
     click element   ${Review_Terms}
     select from list by value   ${Review_ServiceProvided}      3
     input text      ${Rev_Address}      ${my_address}
@@ -232,36 +250,42 @@ WrittingAReview
     sleep   4sec
     click element    ${sub_review_btn}
     sleep   2sec
+    Run Keyword And Ignore Error    Click Element    ${sub_review_btn}
+    sleep   2sec
     wait until page contains       Review submitted
 
 
 ImpersonatingViaSuperadmin
+    set selenium speed  3sec
     Go to   https://www.qa.zillow.net/Logout.htm
-    wait until page contains    Sign in
-    set selenium speed  4sec
-    click element   ${sign_in}
+    go to   https://www.qa.zillow.net/user/Impersonate.htm
     sleep   4sec
-    set selenium speed  0sec
     input text  ${Signin_email_placeholder}     superadmin@tes.zillow.local
     input text  ${Signin_pwd_placeholder}       zillow01*
-    press keys  ${Signin_pwd_placeholder}       TAB     SPACE
+    click element   ${si}
+    #press keys  ${Signin_pwd_placeholder}       TAB     SPACE
     sleep   3sec
-    reload page
-    set selenium speed  2sec
-    go to   https://www.qa.zillow.net/user/Impersonate.htm
     input text      ${admin_email_placeholder}      ${F_email}
     click element   ${admin_login_button}
 
 ConcatinatingScreenNameURL
     ${screenName}=  Evaluate  random.choice($Example11)  random
     log to console  \nvalue: ${screenName}
+    set global variable     ${screenName}
     ${ResultantURL}=    Catenate    SEPARATOR=   ${ProPredefinedBreadcrumbs}   ${screenName}
     log to console  ${ResultantURL}
     go to   ${ResultantURL}
     set global variable     ${ResultantURL}
+    # to make login e.g. screenname@tes.zillow.local
+    ${GeneratedLoginstring}=   replace string      ${screenName}    ScreenName/     @tes.zillow.local
+    set global variable     ${GeneratedLoginstring}
+    log to console  ${GeneratedLoginstring}
+
 
 ModifyingExcerpt&PublishingReview
+    sleep   3sec
     click element   ${Consumer_profile}
+    sleep   3sec
     click element   ${View_RW_Btn}
     click element   ${ModerateThisReview}
     click element   ${EditReviewExcerpt}
@@ -272,9 +296,6 @@ ModifyingExcerpt&PublishingReview
     click element   ${Moderation_form_submit_button}
     sleep   5sec
     go to   ${ResultantURL}
-    page should contain         test 123 test 234..and GrosoHow likely
-
-
-
-
+    reload page
+    page should contain         test 177 test 236..and GrosoHow likely
 

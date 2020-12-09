@@ -1,2 +1,2 @@
 cd C:\Users\Shriraj.Joshi\PycharmProjects\Automationyt\
-pabot --processes 2 --outputdir Results333333 Testcases\AgentShouldBeVinable*.robot
+pabot --processes 1 --outputdir Results66 Testcases3\pr1.robot
