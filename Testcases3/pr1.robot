@@ -16,7 +16,7 @@ ${env_tes600}  https://www.tes600.zillow.net
 ${browser}  headlesschrome
 ${CityName}  San Jose CA
 ${usernamepr}   us1@15.com
-${pwdpr}        zillow01
+${pwdpr}        Zillow@123
 ${fn_Registration}      t2his_is_fn_test
 ${ln_Registration}      t2his_is_ln_test
 ${zip}      98115
