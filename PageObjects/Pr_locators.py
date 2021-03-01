@@ -82,8 +82,9 @@ AdminButton="xpath://span[contains(text(),'Admin')]"
 admin_email_placeholder="xpath://input[@id='emailAddr']"
 admin_login_button="xpath://button[contains(text(),'Login')]"
 
-Consumer_profile="xpath://div[contains(text(),'Personalize your account and update your login pre')]"
+Consumer_profile="xpath://span[contains(text(),'Personalize your account and update your login pre')]"
 View_RW_Btn="xpath:/html[1]/body[1]/div[2]/div[1]/div[3]/div[1]/div[1]/div[4]/div[1]/div[2]/div[2]"
+View_RW_Btn_Raw="xpath:/html[1]/body[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[4]/div[1]/div[2]/div[2]/div[1]/a[1]/span[1]"
 ModerateThisReview="xpath://a[contains(text(),'Moderate this now')]"
 
 EditReviewExcerpt="xpath:/html/body/div[1]/div[5]/main/div[5]/div[3]/div/div/div[1]/div[1]/div[4]/div[1]/a"

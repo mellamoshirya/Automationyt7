@@ -286,7 +286,7 @@ ModifyingExcerpt&PublishingReview
     sleep   3sec
     click element   ${Consumer_profile}
     sleep   3sec
-    click element   ${View_RW_Btn}
+    click element   ${View_RW_Btn_Raw}
     click element   ${ModerateThisReview}
     click element   ${EditReviewExcerpt}
     sleep   2sec
