@@ -240,7 +240,7 @@ WrittingAReview
     click element   ${WaReviewBtn}
     sleep   8sec
     click element   ${stars}
-    input text  ${ReviewMsgBox}     test 177 test 236..and GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX Groso
+    input text  ${ReviewMsgBox}     test 11_03 test 236..and GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX Groso
     click element   ${Review_Terms}
     select from list by value   ${Review_ServiceProvided}      3
     input text      ${Rev_Address}      ${my_address}
@@ -297,5 +297,6 @@ ModifyingExcerpt&PublishingReview
     sleep   5sec
     go to   ${ResultantURL}
     reload page
-    page should contain         test 177 test 236..and GrosoHow likely
+    sleep   5sec
+    page should contain         test 11_03 test 236..and GrosoHow likely
 
