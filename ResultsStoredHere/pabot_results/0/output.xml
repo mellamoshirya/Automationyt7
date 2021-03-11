@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20210311 11:20:59.196" generator="Robot 3.2.1 (Python 2.7.17 on win32)">
+<suite source="C:\Users\Shriraj.Joshi\PycharmProjects\Automationyt\Testcases3\pr1.robot" id="s1" name="Pr1">
+<test id="s1-t1" name="tc1">
+<kw name="OpenMyBrowser" library="ProfileKeywords">
+<arguments>
+<arg>${env}</arg>
+<arg>${browser}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${env}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20210311 11:21:13.829" level="INFO">Opening browser 'headlesschrome' to base url 'https://www.qa.zillow.net'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20210311 11:21:19.246" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" endtime="20210311 11:21:19.247" starttime="20210311 11:21:19.246"></status>
+</kw>
+<msg timestamp="20210311 11:21:19.335" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 87
+Current browser version is 89.0.4389.82 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+</msg>
+<status status="FAIL" endtime="20210311 11:21:19.336" starttime="20210311 11:21:13.828"></status>
+</kw>
+<status status="FAIL" endtime="20210311 11:21:19.337" starttime="20210311 11:21:13.825"></status>
+</kw>
+<status status="FAIL" endtime="20210311 11:21:19.338" critical="yes" starttime="20210311 11:21:13.822">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 87
+Current browser version is 89.0.4389.82 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+</status>
+</test>
+<test id="s1-t2" name="tc2">
+<kw name="OpenMyBrowser" library="ProfileKeywords">
+<arguments>
+<arg>${env}</arg>
+<arg>${browser}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${env}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20210311 11:21:19.348" level="INFO">Opening browser 'headlesschrome' to base url 'https://www.qa.zillow.net'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20210311 11:21:22.725" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" endtime="20210311 11:21:22.725" starttime="20210311 11:21:22.724"></status>
+</kw>
+<msg timestamp="20210311 11:21:22.728" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 87
+Current browser version is 89.0.4389.82 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+</msg>
+<status status="FAIL" endtime="20210311 11:21:22.728" starttime="20210311 11:21:19.346"></status>
+</kw>
+<status status="FAIL" endtime="20210311 11:21:22.729" starttime="20210311 11:21:19.344"></status>
+</kw>
+<status status="FAIL" endtime="20210311 11:21:22.729" critical="yes" starttime="20210311 11:21:19.341">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 87
+Current browser version is 89.0.4389.82 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+</status>
+</test>
+<test id="s1-t3" name="tc3">
+<kw name="OpenMyBrowser" library="ProfileKeywords">
+<arguments>
+<arg>${env}</arg>
+<arg>${browser}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${env}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20210311 11:21:22.732" level="INFO">Opening browser 'headlesschrome' to base url 'https://www.qa.zillow.net'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20210311 11:21:26.265" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" endtime="20210311 11:21:26.265" starttime="20210311 11:21:26.265"></status>
+</kw>
+<msg timestamp="20210311 11:21:26.269" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 87
+Current browser version is 89.0.4389.82 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+</msg>
+<status status="FAIL" endtime="20210311 11:21:26.270" starttime="20210311 11:21:22.731"></status>
+</kw>
+<status status="FAIL" endtime="20210311 11:21:26.270" starttime="20210311 11:21:22.731"></status>
+</kw>
+<status status="FAIL" endtime="20210311 11:21:26.271" critical="yes" starttime="20210311 11:21:22.730">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 87
+Current browser version is 89.0.4389.82 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+</status>
+</test>
+<test id="s1-t4" name="tc6Modified">
+<kw name="OpenMyBrowser" library="ProfileKeywords">
+<arguments>
+<arg>${env}</arg>
+<arg>${browser}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${env}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20210311 11:21:26.276" level="INFO">Opening browser 'headlesschrome' to base url 'https://www.qa.zillow.net'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20210311 11:21:29.946" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" endtime="20210311 11:21:29.946" starttime="20210311 11:21:29.945"></status>
+</kw>
+<msg timestamp="20210311 11:21:29.952" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 87
+Current browser version is 89.0.4389.82 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+</msg>
+<status status="FAIL" endtime="20210311 11:21:29.953" starttime="20210311 11:21:26.275"></status>
+</kw>
+<status status="FAIL" endtime="20210311 11:21:29.954" starttime="20210311 11:21:26.273"></status>
+</kw>
+<status status="FAIL" endtime="20210311 11:21:29.954" critical="yes" starttime="20210311 11:21:26.272">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 87
+Current browser version is 89.0.4389.82 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+</status>
+</test>
+<test id="s1-t5" name="tc8">
+<kw name="OpenMyBrowser" library="ProfileKeywords">
+<arguments>
+<arg>${env}</arg>
+<arg>${browser}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${env}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20210311 11:21:29.963" level="INFO">Opening browser 'headlesschrome' to base url 'https://www.qa.zillow.net'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20210311 11:21:33.382" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" endtime="20210311 11:21:33.382" starttime="20210311 11:21:33.380"></status>
+</kw>
+<msg timestamp="20210311 11:21:33.389" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 87
+Current browser version is 89.0.4389.82 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+</msg>
+<status status="FAIL" endtime="20210311 11:21:33.390" starttime="20210311 11:21:29.962"></status>
+</kw>
+<status status="FAIL" endtime="20210311 11:21:33.391" starttime="20210311 11:21:29.960"></status>
+</kw>
+<status status="FAIL" endtime="20210311 11:21:33.392" critical="yes" starttime="20210311 11:21:29.957">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 87
+Current browser version is 89.0.4389.82 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+</status>
+</test>
+<test id="s1-t6" name="tc9">
+<kw name="OpenMyBrowser" library="ProfileKeywords">
+<arguments>
+<arg>${env}</arg>
+<arg>${browser}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${env}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20210311 11:21:33.402" level="INFO">Opening browser 'headlesschrome' to base url 'https://www.qa.zillow.net'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20210311 11:21:36.700" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" endtime="20210311 11:21:36.701" starttime="20210311 11:21:36.699"></status>
+</kw>
+<msg timestamp="20210311 11:21:36.703" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 87
+Current browser version is 89.0.4389.82 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+</msg>
+<status status="FAIL" endtime="20210311 11:21:36.704" starttime="20210311 11:21:33.401"></status>
+</kw>
+<status status="FAIL" endtime="20210311 11:21:36.705" starttime="20210311 11:21:33.398"></status>
+</kw>
+<status status="FAIL" endtime="20210311 11:21:36.705" critical="yes" starttime="20210311 11:21:33.394">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 87
+Current browser version is 89.0.4389.82 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+</status>
+</test>
+<test id="s1-t7" name="tc14">
+<kw name="OpenMyBrowser" library="ProfileKeywords">
+<arguments>
+<arg>${env}</arg>
+<arg>${browser}</arg>
+</arguments>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${env}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20210311 11:21:36.709" level="INFO">Opening browser 'headlesschrome' to base url 'https://www.qa.zillow.net'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20210311 11:21:40.047" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" endtime="20210311 11:21:40.048" starttime="20210311 11:21:40.046"></status>
+</kw>
+<msg timestamp="20210311 11:21:40.054" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 87
+Current browser version is 89.0.4389.82 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+</msg>
+<status status="FAIL" endtime="20210311 11:21:40.054" starttime="20210311 11:21:36.708"></status>
+</kw>
+<status status="FAIL" endtime="20210311 11:21:40.056" starttime="20210311 11:21:36.707"></status>
+</kw>
+<status status="FAIL" endtime="20210311 11:21:40.057" critical="yes" starttime="20210311 11:21:36.707">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 87
+Current browser version is 89.0.4389.82 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+</status>
+</test>
+<status status="FAIL" endtime="20210311 11:21:40.060" starttime="20210311 11:20:59.202"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="7" pass="0">Critical Tests</stat>
+<stat fail="7" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="7" id="s1" name="Pr1" pass="0">Pr1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

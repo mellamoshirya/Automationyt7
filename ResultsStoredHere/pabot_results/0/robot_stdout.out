@@ -1,0 +1,36 @@
+==============================================================================
+Pr1                                                                           
+==============================================================================
+tc1                                                                   | FAIL |
+SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 87
+Current browser version is 89.0.4389.82 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+------------------------------------------------------------------------------
+tc2                                                                   | FAIL |
+SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 87
+Current browser version is 89.0.4389.82 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+------------------------------------------------------------------------------
+tc3                                                                   | FAIL |
+SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 87
+Current browser version is 89.0.4389.82 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+------------------------------------------------------------------------------
+tc6Modified                                                           | FAIL |
+SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 87
+Current browser version is 89.0.4389.82 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+------------------------------------------------------------------------------
+tc8                                                                   | FAIL |
+SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 87
+Current browser version is 89.0.4389.82 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+------------------------------------------------------------------------------
+tc9                                                                   | FAIL |
+SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 87
+Current browser version is 89.0.4389.82 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+------------------------------------------------------------------------------
+tc14                                                                  | FAIL |
+SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 87
+Current browser version is 89.0.4389.82 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+------------------------------------------------------------------------------
+Pr1                                                                   | FAIL |
+7 critical tests, 0 passed, 7 failed
+7 tests total, 0 passed, 7 failed
+==============================================================================
+Output:  C:\Users\Shriraj.Joshi\PycharmProjects\Automationyt\ResultsStoredHere\pabot_results\0\output.xml
