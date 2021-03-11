@@ -61,7 +61,9 @@ SearchByLastName
     sleep  3sec
     clear element text      ${NameBox}
     press keys          ${NameBox}      Shumbo      ENTER
+    sleep  4sec
     wait until page contains        Krista Shumbo
+    wait until page contains        (408) 497-6528
 
 SearchByState
     log to console  SearchingByState
@@ -121,11 +123,11 @@ AddAgent
     set selenium speed  2sec
     click element   ${sign_in}
     sleep   5sec
-    click element   ${RegisterTab}
+    click element   ${RegisterTab2}
     set selenium speed  1sec
     input text  ${EmailPlaceholder}     ${F_email}
     input text  ${PwdPlaceholder}       ${pwdpr}
-    click element   ${Pro_chkboxx}
+    click element   ${Pro_chkboxx2}
     sleep  2sec
     select from list by index   ${protype}      1
     input text  ${fn_Reg}   ${F_first_name}
@@ -134,8 +136,9 @@ AddAgent
     press keys  ${ph_no}    206
     press keys  ${ph_no_2}      665
     press keys  ${ph_no_3}      6667
-    click element   ${Submit_btn_agn}
-    sleep   2sec
+#    click element   ${Submit_btn_agn}
+    press keys  ${zip_ref}       TAB     TAB     TAB     TAB     SPACE
+    sleep   3sec
     input text  ${BrokerageName}        TestBrokerageName
     input text  ${BrokerageAddress}     7500 Roosevelt Way NE
     press keys  ${city}     Seattle
@@ -180,12 +183,12 @@ Register
     set selenium speed  4sec
     click element   ${sign_in}
     sleep   4sec
-    click element   ${RegisterTab}
+    click element   ${RegisterTab2}
     set selenium speed  0sec
     input text  ${EmailPlaceholder}     ${F_email}
     input text  ${PwdPlaceholder}       ${pwdpr}
-#   press keys  ${PwdPlaceholder}       TAB     TAB     TAB     SPACE
-    click element   ${submit_reg}
+    press keys  ${PwdPlaceholder}       TAB     TAB     TAB     SPACE
+#    click element   ${submit_reg2}
     sleep   2sec
 
 Sign_in_Agent-Selected
@@ -195,7 +198,8 @@ Sign_in_Agent-Selected
     sleep   5sec
     input text  ${email_to_enter}     ${GeneratedLoginstring}
     input text  ${pwd_to_enter}       zillow
-    click element   ${Sign_in_Btn_23}
+    press keys  ${pwd_to_enter}     TAB     SPACE
+    #click element   ${Sign_in_Btn_24}
 
 GoingToProfile
     sleep   3sec
@@ -262,7 +266,8 @@ ImpersonatingViaSuperadmin
     sleep   4sec
     input text  ${Signin_email_placeholder}     superadmin@tes.zillow.local
     input text  ${Signin_pwd_placeholder}       zillow01*
-    click element   ${si}
+    press keys  ${Signin_pwd_placeholder}     TAB     SPACE
+    #click element   ${si}
     #press keys  ${Signin_pwd_placeholder}       TAB     SPACE
     sleep   3sec
     input text      ${admin_email_placeholder}      ${F_email}

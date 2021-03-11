@@ -23,11 +23,16 @@ am="xpath://h2[contains(text(),'About me')]"
 
 sign_in="xpath://header/nav[1]/div[2]/ul[4]/li[1]/a[1]/span[1]"
 RegisterTab="id:register-tab"
+RegisterTab2="xpath://a[@id='register-tab']"
 EmailPlaceholder="id:inputs-newEmail"
 PwdPlaceholder="id:password"
 submit_reg="xpath://body/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/form[1]/div[6]/div[1]/input[1]"
+submit_reg2="xpath:/html[1]/body[1]/div[5]/div[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/form[1]/div[8]/input[1]"
+
+
 prochkbox="id://input[@id='proCheck']"
 Pro_chkboxx="css:div[class='professional checkbox zsg-form-field zsg-form-field_checkbox']"
+Pro_chkboxx2="xpath://label[contains(text(),'I am a landlord or industry professional')]"
 protype="id:proSelect"
 fn_Reg="id:inputs-firstName"
 ln_reg="id:inputs-lastName"
@@ -35,7 +40,9 @@ zip_ref="id:inputs-zipCode"
 ph_no="id:inputs-areaCode"
 ph_no_2="id:inputs-phonePrefix"
 ph_no_3="id:inputs-phoneSuffix"
-Submit_btn_agn="css:div[class='submit-div zsg-lg-1-1']"
+
+#Submit_btn_agn="xpath://body/div[5]/div[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/form[1]/div[8]/input[1]"
+
 BrokerageName="xpath://input[@id='companyName']"
 BrokerageAddress="xpath://input[@id='companyAddress']"
 city="xpath://input[@id='companyCity']"
@@ -95,7 +102,8 @@ Moderation_form_submit_button="xpath://button[@id='moderation-form-submit-button
 # ServiceAreaValidationLocator1="xpath:/html[1]/body[1]/div[2]/div[1]/div[2]/main[1]/div[7]/section[1]/ul"
 # ServiceAreaValidationLocator2="xpath://body/div[@id='__next']/div[1]/div[2]/main[1]/div[8]/section[1]"
 
-Sign_in_Btn_23="css:div[class='submit-div zsg-lg-1-1']"
+#Sign_in_Btn_23="css:div[class='submit-div zsg-lg-1-1']"
+Sign_in_Btn_24="css:div[class='StyledButtonGroup-c11n-8-28-1__sc-12tlbte-0 dYvwaS']"
 # Add_MoreBtn="css:div[class='Flex-sc-1qcb5a7-0 ServiceAreasInput__TextButtonWrapper-sc-1iwfvhd-3 dxtZHI']"
 # Add_MoreBtn2="//button[contains(text(),'Add more')]"
 

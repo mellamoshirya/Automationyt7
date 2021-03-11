@@ -62,8 +62,8 @@ tc6Modified-To_verify_pagination_on_agent_finder
     GOTOAGENTFINDER
     SearchByzip
     paginate
-#    Sorting
-#    Paginate
+#   Sorting
+#   Paginate
     close browser
     log to console  tc6 ran till end
 

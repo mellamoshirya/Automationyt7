@@ -1,36 +1,66 @@
 ==============================================================================
-Pr1                                                                           
+TC FinalCopy                                                                  
 ==============================================================================
-tc1                                                                   | FAIL |
-SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 87
-Current browser version is 89.0.4389.82 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+tc1-Verify_Search_by_location,_name_is_working_as_expected            GoingOnAgentFinder
+SearchingByRegionName&AgentName
+SearchingByZIP
+SearchingByLN
+| FAIL |
+Text 'Krista Shumbo' did not appear in 5 seconds.
 ------------------------------------------------------------------------------
-tc2                                                                   | FAIL |
-SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 87
-Current browser version is 89.0.4389.82 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+tc2-Verify_advance_search_on_agent_finder_is_working_as_expected      SearchingByAdvOption
+2
+3
+4
+5
+tc2 ran till end
+| PASS |
 ------------------------------------------------------------------------------
-tc3                                                                   | FAIL |
-SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 87
-Current browser version is 89.0.4389.82 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+tc3-Verify_adding/registering_an_agent_and_if_it_is_searchable_on_... 
+======================================= 
+first_name: Maria 
+last_name: Ruiz 
+address: 797 Noble Harbors
+Lake Daniel, DE 53286 
+country: Czech Republic 
+email: fberry@sweeney-jackson.org 
+phone_number: 671-209-8302 
+=======================================
+| FAIL |
+Element with locator 'css:div[class='professional checkbox zsg-form-field zsg-form-field_checkbox']' not found.
 ------------------------------------------------------------------------------
-tc6Modified                                                           | FAIL |
-SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 87
-Current browser version is 89.0.4389.82 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+tc6Modified-To_verify_pagination_on_agent_finder                      GoingOnAgentFinder
+SearchingByZIP
+tc6 ran till end
+| PASS |
 ------------------------------------------------------------------------------
-tc8                                                                   | FAIL |
-SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 87
-Current browser version is 89.0.4389.82 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+tc8-Verify_lead's_profile                                             GoingOnAgentFinder
+SearchingByZIP
+tc8 ran till end
+| PASS |
 ------------------------------------------------------------------------------
-tc9                                                                   | FAIL |
-SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 87
-Current browser version is 89.0.4389.82 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+tc9-Verify_editing_an_agent_profile_and_validating_changes_reflect... 
+value: 10063828ScreenName/
+https://www.qa.zillow.net/profile/10063828ScreenName/
+10063828@tes.zillow.local
+| FAIL |
+Element with locator 'css:div[class='submit-div zsg-lg-1-1']' not found.
 ------------------------------------------------------------------------------
-tc14                                                                  | FAIL |
-SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 87
-Current browser version is 89.0.4389.82 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+tc14-To_verify_review_flow                                            
+======================================= 
+first_name: Nathan 
+last_name: Mclaughlin 
+address: 1993 Crystal Knolls Suite 883
+Carpentermouth, SC 77488 
+country: New Zealand 
+email: rebecca07@hotmail.com 
+phone_number: 390.623.1591 
+=======================================
+| FAIL |
+Element with locator 'xpath://body/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/form[1]/div[6]/div[1]/input[1]' not found.
 ------------------------------------------------------------------------------
-Pr1                                                                   | FAIL |
-7 critical tests, 0 passed, 7 failed
-7 tests total, 0 passed, 7 failed
+TC FinalCopy                                                          | FAIL |
+7 critical tests, 3 passed, 4 failed
+7 tests total, 3 passed, 4 failed
 ==============================================================================
 Output:  C:\Users\Shriraj.Joshi\PycharmProjects\Automationyt\ResultsStoredHere\pabot_results\0\output.xml
