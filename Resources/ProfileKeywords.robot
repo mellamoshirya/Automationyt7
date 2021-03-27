@@ -136,8 +136,8 @@ AddAgent
     press keys  ${ph_no}    206
     press keys  ${ph_no_2}      665
     press keys  ${ph_no_3}      6667
-#    click element   ${Submit_btn_agn}
-    press keys  ${zip_ref}       TAB     TAB     TAB     TAB     SPACE
+    click element   ${Submit_btn_agn2}
+    #press keys  ${zip_ref}       TAB     TAB     TAB     TAB     SPACE
     sleep   3sec
     input text  ${BrokerageName}        TestBrokerageName
     input text  ${BrokerageAddress}     7500 Roosevelt Way NE
@@ -187,8 +187,9 @@ Register
     set selenium speed  0sec
     input text  ${EmailPlaceholder}     ${F_email}
     input text  ${PwdPlaceholder}       ${pwdpr}
-    press keys  ${PwdPlaceholder}       TAB     TAB     TAB     SPACE
+#    press keys  ${PwdPlaceholder}       TAB     TAB     TAB     SPACE
 #    click element   ${submit_reg2}
+    click element   ${submit_btn_agn2}
     sleep   2sec
 
 Sign_in_Agent-Selected
@@ -198,8 +199,9 @@ Sign_in_Agent-Selected
     sleep   5sec
     input text  ${email_to_enter}     ${GeneratedLoginstring}
     input text  ${pwd_to_enter}       zillow
-    press keys  ${pwd_to_enter}     TAB     SPACE
+#    press keys  ${pwd_to_enter}     TAB     SPACE
     #click element   ${Sign_in_Btn_24}
+    click element   ${submit_btn_agn2}
 
 GoingToProfile
     sleep   3sec
