@@ -182,7 +182,7 @@ Register
     wait until page contains    Sign in
     set selenium speed  4sec
     click element   ${sign_in}
-    sleep   4sec
+    sleep   9sec
     click element   ${RegisterTab2}
     set selenium speed  0sec
     input text  ${EmailPlaceholder}     ${F_email}

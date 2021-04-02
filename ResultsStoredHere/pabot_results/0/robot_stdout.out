@@ -18,18 +18,26 @@ tc2-Verify_advance_search_on_agent_finder_is_working_as_expected      SearchingB
 tc2 ran till end
 | PASS |
 ------------------------------------------------------------------------------
-tc3-Verify_adding/registering_an_agent_and_if_it_is_searchable_on_... 
-======================================= 
-first_name: Jennifer 
-last_name: Oconnell 
-address: 76371 Chad Gardens Apt. 730
-Garnerberg, TX 32777 
-country: San Marino 
-email: kylemerritt@gmail.com 
-phone_number: +1-587-179-5517x33675 
+tc3-Verify_adding/registering_an_agent_and_if_it_is_searchable_on_... 
+
+======================================= 
+
+first_name: Crystal 
+
+last_name: Hall 
+
+address: 248 John Cliff Apt. 474
+Sharonhaven, AR 00524 
+
+country: Kyrgyz Republic 
+
+email: hunter93@gallagher-martinez.info 
+
+phone_number: 001-071-911-2343x917 
+
 =======================================
 | FAIL |
-Element with locator 'xpath://input[@id='companyName']' not found.
+Element with locator 'xpath://a[@id='register-tab']' not found.
 ------------------------------------------------------------------------------
 tc6Modified-To_verify_pagination_on_agent_finder                      GoingOnAgentFinder
 SearchingByZIP
@@ -42,28 +50,32 @@ tc8 ran till end
 | PASS |
 ------------------------------------------------------------------------------
 tc9-Verify_editing_an_agent_profile_and_validating_changes_reflect... 
-value: 100636365ScreenName/
-https://www.qa.zillow.net/profile/100636365ScreenName/
-100636365@tes.zillow.local
+value: 10062541ScreenName/
+https://www.qa.zillow.net/profile/10062541ScreenName/
+10062541@tes.zillow.local
 | FAIL |
-Text 'Manage your profile' did not appear in 30 seconds.
+Element with locator 'css:div[class='submit-div zsg-lg-1-1']' not found.
 ------------------------------------------------------------------------------
-tc14-To_verify_review_flow                                            
-======================================= 
-first_name: Emily 
-last_name: Young 
-address: 89822 Shawn Mill Suite 350
-East Kennethstad, OK 07096 
-country: Mayotte 
-email: cameronluis@gmail.com 
-phone_number: 144.437.9049x98999 
-=======================================
+tc14-To_verify_review_flow                                            
 
-value: 100636365ScreenName/
-https://www.qa.zillow.net/profile/100636365ScreenName/
-100636365@tes.zillow.local
+======================================= 
+
+first_name: Renee 
+
+last_name: Gutierrez 
+
+address: 36605 Shelton Islands
+Villaville, AR 71841 
+
+country: British Indian Ocean Territory (Chagos Archipelago) 
+
+email: denise51@hotmail.com 
+
+phone_number: 001-223-585-7923x865 
+
+=======================================
 | FAIL |
-Element with locator 'xpath:/html[1]/body[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/ul[1]/li[1]/div[1]/ul[1]/li[5]/span[2]' not found.
+Element with locator 'xpath://a[@id='register-tab']' not found.
 ------------------------------------------------------------------------------
 TC FinalCopy                                                          | FAIL |
 7 critical tests, 4 passed, 3 failed
