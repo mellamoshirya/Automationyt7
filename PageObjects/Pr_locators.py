@@ -114,4 +114,3 @@ Sign_in_Btn_24="css:div[class='StyledButtonGroup-c11n-8-28-1__sc-12tlbte-0 dYvwa
 YourPronoun="xpath://select[@id='edit-profile-pronoun']"
 YourPronounOnPrivateProfile="xpath://div[contains(text(),'They/Them/Theirs')]"
 
-/html[1]/body[1]/div[4]/div[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/form[1]/div[3]/div[1]/input[1]
