@@ -23,7 +23,8 @@ am="xpath://h2[contains(text(),'About me')]"
 
 sign_in="xpath://header/nav[1]/div[2]/ul[4]/li[1]/a[1]/span[1]"
 RegisterTab="id:register-tab"
-RegisterTab2="xpath://button[@id='register-tab']"
+RegisterTab2="css:a[id='register-tab']"
+
 EmailPlaceholder="id:inputs-newEmail"
 PwdPlaceholder="id:password"
 submit_reg="xpath://body/div[5]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/form[1]/div[6]/div[1]/input[1]"
@@ -42,7 +43,9 @@ ph_no_2="id:inputs-phonePrefix"
 ph_no_3="id:inputs-phoneSuffix"
 
 #Submit_btn_agn="xpath://body/div[5]/div[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/form[1]/div[8]/input[1]"
-submit_btn_agn2="xpath:/html[1]/body[1]/div[4]/div[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/form[1]/div[3]/div[1]/input[1]"
+submit_btn_agn2="css=input[value='Sign in']"
+ContinueBtn="css=input[value='Continue']"
+SubmitBtnNew="css=input[value='Submit']"
 
 BrokerageName="xpath://input[@id='companyName']"
 BrokerageAddress="xpath://input[@id='companyAddress']"

@@ -12,7 +12,7 @@ Library     AutoItLibrary
 *** Variables ***
 
 ${env}  https://www.qa.zillow.net
-${browser}  headlesschrome
+${browser}  chrome
 ${CityName}  'San Jose CA'
 ${AgentName}   Ines Han
 ${BusinessName}     Westbrook Realty
@@ -136,7 +136,7 @@ AddAgent
     press keys  ${ph_no}    206
     press keys  ${ph_no_2}      665
     press keys  ${ph_no_3}      6667
-    click element   ${Submit_btn_agn2}
+    click element   ${ContinueBtn}
     #press keys  ${zip_ref}       TAB     TAB     TAB     TAB     SPACE
     sleep   3sec
     input text  ${BrokerageName}        TestBrokerageName
@@ -189,7 +189,7 @@ Register
     input text  ${PwdPlaceholder}       ${pwdpr}
 #    press keys  ${PwdPlaceholder}       TAB     TAB     TAB     SPACE
 #    click element   ${submit_reg2}
-    click element   ${submit_btn_agn2}
+    click element   ${SubmitBtnNew}
     sleep   2sec
 
 Sign_in_Agent-Selected
