@@ -12,7 +12,7 @@ Library     AutoItLibrary
 *** Variables ***
 
 ${env}  https://www.qa.zillow.net
-${browser}  chrome
+${browser}  headlesschrome
 ${CityName}  'San Jose CA'
 ${AgentName}   Ines Han
 ${BusinessName}     Westbrook Realty

@@ -13,7 +13,7 @@ Library     AutoItLibrary
 *** Variables ***
 ${env}  https://www.qa.zillow.net
 ${env_tes600}  https://www.tes600.zillow.net
-${browser}  chrome
+${browser}  headlesschrome
 ${CityName}  San Jose CA
 ${usernamepr}   us1@15.com
 ${pwdpr}        Zillow@123
