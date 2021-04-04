@@ -46,6 +46,7 @@ ph_no_3="id:inputs-phoneSuffix"
 submit_btn_agn2="css=input[value='Sign in']"
 ContinueBtn="css=input[value='Continue']"
 SubmitBtnNew="css=input[value='Submit']"
+SuperAdminSignInBtn="css=input[value='Sign in']"
 
 BrokerageName="xpath://input[@id='companyName']"
 BrokerageAddress="xpath://input[@id='companyAddress']"

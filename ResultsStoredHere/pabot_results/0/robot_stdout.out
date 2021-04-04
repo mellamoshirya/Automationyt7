@@ -3,8 +3,12 @@ TC FinalCopy
 ==============================================================================
 tc1-Verify_Search_by_location,_name_is_working_as_expected            GoingOnAgentFinder
 SearchingByRegionName&AgentName
-| FAIL |
-Title should have been 'San Jose CA Realtor & Real Estate Agent Reviews | Zillow' but was 'Realtor & Real Estate Agent Reviews | Zillow'.
+SearchingByZIP
+SearchingByLN
+SearchingByState
+SearchingByFN
+tc1 ran till end
+| PASS |
 ------------------------------------------------------------------------------
 tc2-Verify_advance_search_on_agent_finder_is_working_as_expected      SearchingByAdvOption
 2
@@ -16,16 +20,18 @@ tc2 ran till end
 ------------------------------------------------------------------------------
 tc3-Verify_adding/registering_an_agent_and_if_it_is_searchable_on_... 
 ======================================= 
-first_name: Jose 
-last_name: Rowland 
-address: 3617 David Brook
-Grossland, NC 87655 
-country: Northern Mariana Islands 
-email: omcconnell@white-king.net 
-phone_number: (570)948-1922 
+first_name: Alexis 
+last_name: Wall 
+address: 2886 Smith Viaduct Suite 313
+South Billy, IL 43689 
+country: Holy See (Vatican City State) 
+email: clucero@buckley-pittman.com 
+phone_number: 968-060-0816x382 
 =======================================
-| FAIL |
-Element with locator 'xpath:/html[1]/body[1]/div[4]/div[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/form[1]/div[3]/div[1]/input[1]' not found.
+GoingOnAgentFinder
+SearchingByZIP
+tc3 ran till end
+| PASS |
 ------------------------------------------------------------------------------
 tc6Modified-To_verify_pagination_on_agent_finder                      GoingOnAgentFinder
 SearchingByZIP
@@ -38,27 +44,31 @@ tc8 ran till end
 | PASS |
 ------------------------------------------------------------------------------
 tc9-Verify_editing_an_agent_profile_and_validating_changes_reflect... 
-value: 10081381ScreenName/
-https://www.qa.zillow.net/profile/10081381ScreenName/
-10081381@tes.zillow.local
+value: 45897812ScreenName/
+https://www.qa.zillow.net/profile/45897812ScreenName/
+45897812@tes.zillow.local
 tc9 ran till end
 | PASS |
 ------------------------------------------------------------------------------
 tc14-To_verify_review_flow                                            
 ======================================= 
-first_name: Tiffany 
-last_name: King 
-address: 89024 Jeffrey Gateway
-New Timothy, MI 06357 
-country: Nicaragua 
-email: timothy17@gmail.com 
-phone_number: 001-636-187-0118 
+first_name: Ashley 
+last_name: Vargas 
+address: 924 Gregory Brook
+Smithstad, SD 09901 
+country: Saint Barthelemy 
+email: fergusonleslie@yahoo.com 
+phone_number: 358-427-6155x481 
 =======================================
+
+value: 10062541ScreenName/
+https://www.qa.zillow.net/profile/10062541ScreenName/
+10062541@tes.zillow.local
 | FAIL |
-Element with locator 'xpath:/html[1]/body[1]/div[4]/div[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/form[1]/div[3]/div[1]/input[1]' not found.
+Element with locator 'xpath://input[@id='emailAddr']' not found.
 ------------------------------------------------------------------------------
 TC FinalCopy                                                          | FAIL |
-7 critical tests, 4 passed, 3 failed
-7 tests total, 4 passed, 3 failed
+7 critical tests, 6 passed, 1 failed
+7 tests total, 6 passed, 1 failed
 ==============================================================================
 Output:  C:\Users\Shriraj.Joshi\PycharmProjects\Automationyt\ResultsStoredHere\pabot_results\0\output.xml

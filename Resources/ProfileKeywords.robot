@@ -268,8 +268,8 @@ ImpersonatingViaSuperadmin
     sleep   4sec
     input text  ${Signin_email_placeholder}     superadmin@tes.zillow.local
     input text  ${Signin_pwd_placeholder}       zillow01*
-    press keys  ${Signin_pwd_placeholder}     TAB     SPACE
-    #click element   ${si}
+    #press keys  ${Signin_pwd_placeholder}     TAB     SPACE
+    click element   ${SuperAdminSignInBtn}
     #press keys  ${Signin_pwd_placeholder}       TAB     SPACE
     sleep   3sec
     input text      ${admin_email_placeholder}      ${F_email}

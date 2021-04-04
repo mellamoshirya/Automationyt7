@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot rpa="false" generated="20210402 16:44:49.494" generator="Rebot 3.2.1 (Python 2.7.17 on win32)">
+<robot rpa="false" generated="20210404 21:26:36.822" generator="Rebot 3.2.1 (Python 2.7.17 on win32)">
 <suite source="C:\Users\Shriraj.Joshi\PycharmProjects\Automationyt\Testcases3_FinalCopy\TC_FinalCopy.robot" id="s1" name="TC FinalCopy">
 <test id="s1-t1" name="tc1-Verify_Search_by_location,_name_is_working_as_expected">
 <kw name="OpenMyBrowser" library="ProfileKeywords">
@@ -13,8 +13,8 @@
 <arg>${env}</arg>
 <arg>${browser}</arg>
 </arguments>
-<msg timestamp="20210402 16:31:20.609" level="INFO">Opening browser 'headlesschrome' to base url 'https://www.qa.zillow.net'.</msg>
-<status status="PASS" endtime="20210402 16:31:39.473" starttime="20210402 16:31:20.609"></status>
+<msg timestamp="20210404 21:09:08.507" level="INFO">Opening browser 'headlesschrome' to base url 'https://www.qa.zillow.net'.</msg>
+<status status="PASS" endtime="20210404 21:09:28.361" starttime="20210404 21:09:08.507"></status>
 </kw>
 <kw name="Set Window Size" library="SeleniumLibrary">
 <doc>Sets current windows size to given ``width`` and ``height``.</doc>
@@ -22,21 +22,21 @@
 <arg>1366</arg>
 <arg>625</arg>
 </arguments>
-<status status="PASS" endtime="20210402 16:31:39.629" starttime="20210402 16:31:39.473"></status>
+<status status="PASS" endtime="20210404 21:09:28.504" starttime="20210404 21:09:28.361"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20210402 16:31:39.744" starttime="20210402 16:31:39.629"></status>
+<status status="PASS" endtime="20210404 21:09:28.638" starttime="20210404 21:09:28.504"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3sec</arg>
 </arguments>
-<msg timestamp="20210402 16:31:42.747" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" endtime="20210402 16:31:42.748" starttime="20210402 16:31:39.744"></status>
+<msg timestamp="20210404 21:09:31.649" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20210404 21:09:31.649" starttime="20210404 21:09:28.638"></status>
 </kw>
-<status status="PASS" endtime="20210402 16:31:42.749" starttime="20210402 16:31:20.601"></status>
+<status status="PASS" endtime="20210404 21:09:31.650" starttime="20210404 21:09:08.507"></status>
 </kw>
 <kw name="GotoAgentFinder" library="ProfileKeywords">
 <kw name="Log To Console" library="BuiltIn">
@@ -44,33 +44,33 @@
 <arguments>
 <arg>GoingOnAgentFinder</arg>
 </arguments>
-<status status="PASS" endtime="20210402 16:31:42.749" starttime="20210402 16:31:42.749"></status>
+<status status="PASS" endtime="20210404 21:09:31.651" starttime="20210404 21:09:31.651"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5sec</arg>
 </arguments>
-<msg timestamp="20210402 16:31:47.756" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20210402 16:31:47.756" starttime="20210402 16:31:42.749"></status>
+<msg timestamp="20210404 21:09:36.662" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20210404 21:09:36.662" starttime="20210404 21:09:31.651"></status>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <doc>Navigates the active browser instance to the provided ``url``.</doc>
 <arguments>
 <arg>https://www.qa.zillow.net/agent-finder/real-estate-agent-reviews/</arg>
 </arguments>
-<msg timestamp="20210402 16:31:47.758" level="INFO">Opening url 'https://www.qa.zillow.net/agent-finder/real-estate-agent-reviews/'</msg>
-<status status="PASS" endtime="20210402 16:32:23.350" starttime="20210402 16:31:47.757"></status>
+<msg timestamp="20210404 21:09:36.662" level="INFO">Opening url 'https://www.qa.zillow.net/agent-finder/real-estate-agent-reviews/'</msg>
+<status status="PASS" endtime="20210404 21:09:40.758" starttime="20210404 21:09:36.662"></status>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
 <doc>Verifies that current page title equals ``title``.</doc>
 <arguments>
 <arg>Realtor &amp; Real Estate Agent Reviews | Zillow</arg>
 </arguments>
-<msg timestamp="20210402 16:32:23.466" level="INFO">Page title is 'Realtor &amp; Real Estate Agent Reviews | Zillow'.</msg>
-<status status="PASS" endtime="20210402 16:32:23.466" starttime="20210402 16:32:23.351"></status>
+<msg timestamp="20210404 21:09:40.776" level="INFO">Page title is 'Realtor &amp; Real Estate Agent Reviews | Zillow'.</msg>
+<status status="PASS" endtime="20210404 21:09:40.776" starttime="20210404 21:09:40.758"></status>
 </kw>
-<status status="PASS" endtime="20210402 16:32:23.467" starttime="20210402 16:31:42.749"></status>
+<status status="PASS" endtime="20210404 21:09:40.776" starttime="20210404 21:09:31.651"></status>
 </kw>
 <kw name="SearchByRegion&amp;Name" library="ProfileKeywords">
 <arguments>
@@ -82,7 +82,7 @@
 <arguments>
 <arg>SearchingByRegionName&amp;AgentName</arg>
 </arguments>
-<status status="PASS" endtime="20210402 16:32:23.468" starttime="20210402 16:32:23.468"></status>
+<status status="PASS" endtime="20210404 21:09:40.776" starttime="20210404 21:09:40.776"></status>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
@@ -91,27 +91,341 @@
 <arg>${CityName}</arg>
 <arg>ENTER</arg>
 </arguments>
-<msg timestamp="20210402 16:32:23.477" level="INFO">Sending key(s) (u'San Jose CA', u'ENTER') to name:locationText element.</msg>
-<msg timestamp="20210402 16:32:23.538" level="INFO">Sending keys San Jose CA</msg>
-<msg timestamp="20210402 16:32:24.017" level="INFO">Pressing special key ENTER to element.</msg>
-<status status="PASS" endtime="20210402 16:32:24.413" starttime="20210402 16:32:23.468"></status>
+<msg timestamp="20210404 21:09:40.785" level="INFO">Sending key(s) (u'San Jose CA', u'ENTER') to name:locationText element.</msg>
+<msg timestamp="20210404 21:09:40.868" level="INFO">Sending keys San Jose CA</msg>
+<msg timestamp="20210404 21:09:41.271" level="INFO">Pressing special key ENTER to element.</msg>
+<status status="PASS" endtime="20210404 21:09:45.660" starttime="20210404 21:09:40.776"></status>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
 <doc>Verifies that current page title equals ``title``.</doc>
 <arguments>
 <arg>San Jose CA Realtor &amp; Real Estate Agent Reviews | Zillow</arg>
 </arguments>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20210402 16:32:24.817" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="0-selenium-screenshot-1.png"&gt;&lt;img src="0-selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20210402 16:32:24.817" starttime="20210402 16:32:24.425"></status>
+<msg timestamp="20210404 21:09:45.692" level="INFO">Page title is 'San Jose CA Realtor &amp; Real Estate Agent Reviews | Zillow'.</msg>
+<status status="PASS" endtime="20210404 21:09:45.692" starttime="20210404 21:09:45.661"></status>
 </kw>
-<msg timestamp="20210402 16:32:24.831" level="FAIL">Title should have been 'San Jose CA Realtor &amp; Real Estate Agent Reviews | Zillow' but was 'Realtor &amp; Real Estate Agent Reviews | Zillow'.</msg>
-<status status="FAIL" endtime="20210402 16:32:24.831" starttime="20210402 16:32:24.414"></status>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2sec</arg>
+</arguments>
+<msg timestamp="20210404 21:09:47.698" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20210404 21:09:47.698" starttime="20210404 21:09:45.692"></status>
 </kw>
-<status status="FAIL" endtime="20210402 16:32:24.831" starttime="20210402 16:32:23.468"></status>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${NameBox}</arg>
+<arg>${AgentName}</arg>
+<arg>ENTER</arg>
+</arguments>
+<msg timestamp="20210404 21:09:47.703" level="INFO">Sending key(s) (u'Ines Han', u'ENTER') to name:name element.</msg>
+<msg timestamp="20210404 21:09:47.725" level="INFO">Sending keys Ines Han</msg>
+<msg timestamp="20210404 21:09:48.151" level="INFO">Pressing special key ENTER to element.</msg>
+<status status="PASS" endtime="20210404 21:09:48.577" starttime="20210404 21:09:47.699"></status>
 </kw>
-<status status="FAIL" endtime="20210402 16:32:24.831" critical="yes" starttime="20210402 16:31:20.601">Title should have been 'San Jose CA Realtor &amp; Real Estate Agent Reviews | Zillow' but was 'Realtor &amp; Real Estate Agent Reviews | Zillow'.</status>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>Ines Han</arg>
+</arguments>
+<status status="PASS" endtime="20210404 21:09:48.638" starttime="20210404 21:09:48.577"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>https://www.qa.zillow.net/agent-finder/real-estate-agent-reviews/</arg>
+</arguments>
+<msg timestamp="20210404 21:09:48.638" level="INFO">Opening url 'https://www.qa.zillow.net/agent-finder/real-estate-agent-reviews/'</msg>
+<status status="PASS" endtime="20210404 21:09:51.735" starttime="20210404 21:09:48.638"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${NameBox}</arg>
+<arg>${BusinessName}</arg>
+<arg>ENTER</arg>
+</arguments>
+<msg timestamp="20210404 21:09:51.738" level="INFO">Sending key(s) (u'Westbrook Realty', u'ENTER') to name:name element.</msg>
+<msg timestamp="20210404 21:09:51.787" level="INFO">Sending keys Westbrook Realty</msg>
+<msg timestamp="20210404 21:09:52.212" level="INFO">Pressing special key ENTER to element.</msg>
+<status status="PASS" endtime="20210404 21:09:55.299" starttime="20210404 21:09:51.736"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>Westbrook Realty</arg>
+</arguments>
+<status status="PASS" endtime="20210404 21:09:55.411" starttime="20210404 21:09:55.299"></status>
+</kw>
+<status status="PASS" endtime="20210404 21:09:55.411" starttime="20210404 21:09:40.776"></status>
+</kw>
+<kw name="SearchByzip" library="ProfileKeywords">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>SearchingByZIP</arg>
+</arguments>
+<status status="PASS" endtime="20210404 21:09:55.412" starttime="20210404 21:09:55.412"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>https://www.qa.zillow.net/agent-finder/real-estate-agent-reviews/</arg>
+</arguments>
+<msg timestamp="20210404 21:09:55.412" level="INFO">Opening url 'https://www.qa.zillow.net/agent-finder/real-estate-agent-reviews/'</msg>
+<status status="PASS" endtime="20210404 21:09:58.346" starttime="20210404 21:09:55.412"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3sec</arg>
+</arguments>
+<msg timestamp="20210404 21:10:01.351" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20210404 21:10:01.351" starttime="20210404 21:09:58.346"></status>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of text entry element identified by ``locator``.</doc>
+<arguments>
+<arg>${RegionBox}</arg>
+</arguments>
+<status status="PASS" endtime="20210404 21:10:01.488" starttime="20210404 21:10:01.352"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${RegionBox}</arg>
+<arg>${ServiceArea}</arg>
+<arg>ENTER</arg>
+</arguments>
+<msg timestamp="20210404 21:10:01.492" level="INFO">Sending key(s) (u'98116', u'ENTER') to name:locationText element.</msg>
+<msg timestamp="20210404 21:10:01.504" level="INFO">Sending keys 98116</msg>
+<msg timestamp="20210404 21:10:01.859" level="INFO">Pressing special key ENTER to element.</msg>
+<status status="PASS" endtime="20210404 21:10:02.253" starttime="20210404 21:10:01.489"></status>
+</kw>
+<status status="PASS" endtime="20210404 21:10:02.254" starttime="20210404 21:09:55.412"></status>
+</kw>
+<kw name="SearchByLastName" library="ProfileKeywords">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>SearchingByLN</arg>
+</arguments>
+<status status="PASS" endtime="20210404 21:10:02.255" starttime="20210404 21:10:02.255"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>https://www.qa.zillow.net/agent-finder/real-estate-agent-reviews/</arg>
+</arguments>
+<msg timestamp="20210404 21:10:02.255" level="INFO">Opening url 'https://www.qa.zillow.net/agent-finder/real-estate-agent-reviews/'</msg>
+<status status="PASS" endtime="20210404 21:10:04.790" starttime="20210404 21:10:02.255"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3sec</arg>
+</arguments>
+<msg timestamp="20210404 21:10:07.809" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20210404 21:10:07.809" starttime="20210404 21:10:04.795"></status>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of text entry element identified by ``locator``.</doc>
+<arguments>
+<arg>${NameBox}</arg>
+</arguments>
+<status status="PASS" endtime="20210404 21:10:07.926" starttime="20210404 21:10:07.809"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${NameBox}</arg>
+<arg>Shumbo</arg>
+<arg>ENTER</arg>
+</arguments>
+<msg timestamp="20210404 21:10:07.934" level="INFO">Sending key(s) (u'Shumbo', u'ENTER') to name:name element.</msg>
+<msg timestamp="20210404 21:10:07.951" level="INFO">Sending keys Shumbo</msg>
+<msg timestamp="20210404 21:10:08.296" level="INFO">Pressing special key ENTER to element.</msg>
+<status status="PASS" endtime="20210404 21:10:08.671" starttime="20210404 21:10:07.926"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4sec</arg>
+</arguments>
+<msg timestamp="20210404 21:10:12.691" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" endtime="20210404 21:10:12.691" starttime="20210404 21:10:08.671"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>Krista Shumbo</arg>
+</arguments>
+<status status="PASS" endtime="20210404 21:10:12.755" starttime="20210404 21:10:12.692"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>(408) 497-6528</arg>
+</arguments>
+<status status="PASS" endtime="20210404 21:10:12.799" starttime="20210404 21:10:12.756"></status>
+</kw>
+<status status="PASS" endtime="20210404 21:10:12.799" starttime="20210404 21:10:02.254"></status>
+</kw>
+<kw name="SearchByState" library="ProfileKeywords">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>SearchingByState</arg>
+</arguments>
+<status status="PASS" endtime="20210404 21:10:12.799" starttime="20210404 21:10:12.799"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>https://www.qa.zillow.net/agent-finder/real-estate-agent-reviews/</arg>
+</arguments>
+<msg timestamp="20210404 21:10:12.799" level="INFO">Opening url 'https://www.qa.zillow.net/agent-finder/real-estate-agent-reviews/'</msg>
+<status status="PASS" endtime="20210404 21:10:14.612" starttime="20210404 21:10:12.799"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3sec</arg>
+</arguments>
+<msg timestamp="20210404 21:10:17.621" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20210404 21:10:17.621" starttime="20210404 21:10:14.612"></status>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of text entry element identified by ``locator``.</doc>
+<arguments>
+<arg>${NameBox}</arg>
+</arguments>
+<status status="PASS" endtime="20210404 21:10:17.713" starttime="20210404 21:10:17.621"></status>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of text entry element identified by ``locator``.</doc>
+<arguments>
+<arg>${RegionBox}</arg>
+</arguments>
+<status status="PASS" endtime="20210404 21:10:17.821" starttime="20210404 21:10:17.713"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2sec</arg>
+</arguments>
+<msg timestamp="20210404 21:10:19.836" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20210404 21:10:19.837" starttime="20210404 21:10:17.821"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${RegionBox}</arg>
+<arg>WA</arg>
+<arg>ENTER</arg>
+</arguments>
+<msg timestamp="20210404 21:10:19.839" level="INFO">Sending key(s) (u'WA', u'ENTER') to name:locationText element.</msg>
+<msg timestamp="20210404 21:10:19.859" level="INFO">Sending keys WA</msg>
+<msg timestamp="20210404 21:10:20.196" level="INFO">Pressing special key ENTER to element.</msg>
+<status status="PASS" endtime="20210404 21:10:20.567" starttime="20210404 21:10:19.838"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>Sorry! The location you entered contains too many agents.</arg>
+</arguments>
+<status status="PASS" endtime="20210404 21:10:21.588" starttime="20210404 21:10:20.567"></status>
+</kw>
+<status status="PASS" endtime="20210404 21:10:21.589" starttime="20210404 21:10:12.799"></status>
+</kw>
+<kw name="SearchByFN" library="ProfileKeywords">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>SearchingByFN</arg>
+</arguments>
+<status status="PASS" endtime="20210404 21:10:21.589" starttime="20210404 21:10:21.589"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>https://www.qa.zillow.net/agent-finder/real-estate-agent-reviews/</arg>
+</arguments>
+<msg timestamp="20210404 21:10:21.589" level="INFO">Opening url 'https://www.qa.zillow.net/agent-finder/real-estate-agent-reviews/'</msg>
+<status status="PASS" endtime="20210404 21:10:23.258" starttime="20210404 21:10:21.589"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3sec</arg>
+</arguments>
+<msg timestamp="20210404 21:10:26.266" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20210404 21:10:26.266" starttime="20210404 21:10:23.258"></status>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of text entry element identified by ``locator``.</doc>
+<arguments>
+<arg>${NameBox}</arg>
+</arguments>
+<status status="PASS" endtime="20210404 21:10:26.387" starttime="20210404 21:10:26.266"></status>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of text entry element identified by ``locator``.</doc>
+<arguments>
+<arg>${RegionBox}</arg>
+</arguments>
+<status status="PASS" endtime="20210404 21:10:26.449" starttime="20210404 21:10:26.387"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2sec</arg>
+</arguments>
+<msg timestamp="20210404 21:10:28.454" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20210404 21:10:28.454" starttime="20210404 21:10:26.449"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${NameBox}</arg>
+<arg>Kammie</arg>
+<arg>ENTER</arg>
+</arguments>
+<msg timestamp="20210404 21:10:28.454" level="INFO">Sending key(s) (u'Kammie', u'ENTER') to name:name element.</msg>
+<msg timestamp="20210404 21:10:28.470" level="INFO">Sending keys Kammie</msg>
+<msg timestamp="20210404 21:10:28.858" level="INFO">Pressing special key ENTER to element.</msg>
+<status status="PASS" endtime="20210404 21:10:29.245" starttime="20210404 21:10:28.454"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3sec</arg>
+</arguments>
+<msg timestamp="20210404 21:10:32.263" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20210404 21:10:32.263" starttime="20210404 21:10:29.245"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>Kammie Ade</arg>
+</arguments>
+<status status="PASS" endtime="20210404 21:10:32.329" starttime="20210404 21:10:32.265"></status>
+</kw>
+<status status="PASS" endtime="20210404 21:10:32.329" starttime="20210404 21:10:21.589"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20210404 21:10:34.547" starttime="20210404 21:10:32.329"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>tc1 ran till end</arg>
+</arguments>
+<status status="PASS" endtime="20210404 21:10:34.548" starttime="20210404 21:10:34.548"></status>
+</kw>
+<status status="PASS" endtime="20210404 21:10:34.548" critical="yes" starttime="20210404 21:09:08.506"></status>
 </test>
 <test id="s1-t2" name="tc2-Verify_advance_search_on_agent_finder_is_working_as_expected">
 <kw name="OpenMyBrowser" library="ProfileKeywords">
@@ -125,8 +439,8 @@
 <arg>${env}</arg>
 <arg>${browser}</arg>
 </arguments>
-<msg timestamp="20210402 16:32:24.842" level="INFO">Opening browser 'headlesschrome' to base url 'https://www.qa.zillow.net'.</msg>
-<status status="PASS" endtime="20210402 16:32:32.849" starttime="20210402 16:32:24.841"></status>
+<msg timestamp="20210404 21:10:34.555" level="INFO">Opening browser 'headlesschrome' to base url 'https://www.qa.zillow.net'.</msg>
+<status status="PASS" endtime="20210404 21:10:40.950" starttime="20210404 21:10:34.555"></status>
 </kw>
 <kw name="Set Window Size" library="SeleniumLibrary">
 <doc>Sets current windows size to given ``width`` and ``height``.</doc>
@@ -134,29 +448,29 @@
 <arg>1366</arg>
 <arg>625</arg>
 </arguments>
-<status status="PASS" endtime="20210402 16:32:33.096" starttime="20210402 16:32:32.850"></status>
+<status status="PASS" endtime="20210404 21:10:41.076" starttime="20210404 21:10:40.951"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20210402 16:32:33.229" starttime="20210402 16:32:33.098"></status>
+<status status="PASS" endtime="20210404 21:10:41.200" starttime="20210404 21:10:41.077"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3sec</arg>
 </arguments>
-<msg timestamp="20210402 16:32:36.229" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" endtime="20210402 16:32:36.229" starttime="20210402 16:32:33.229"></status>
+<msg timestamp="20210404 21:10:44.208" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20210404 21:10:44.208" starttime="20210404 21:10:41.200"></status>
 </kw>
-<status status="PASS" endtime="20210402 16:32:36.230" starttime="20210402 16:32:24.831"></status>
+<status status="PASS" endtime="20210404 21:10:44.209" starttime="20210404 21:10:34.555"></status>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <doc>Navigates the active browser instance to the provided ``url``.</doc>
 <arguments>
 <arg>https://www.qa.zillow.net/agent-finder/real-estate-agent-reviews/</arg>
 </arguments>
-<msg timestamp="20210402 16:32:36.230" level="INFO">Opening url 'https://www.qa.zillow.net/agent-finder/real-estate-agent-reviews/'</msg>
-<status status="PASS" endtime="20210402 16:32:40.295" starttime="20210402 16:32:36.230"></status>
+<msg timestamp="20210404 21:10:44.211" level="INFO">Opening url 'https://www.qa.zillow.net/agent-finder/real-estate-agent-reviews/'</msg>
+<status status="PASS" endtime="20210404 21:10:48.757" starttime="20210404 21:10:44.209"></status>
 </kw>
 <kw name="AdvSearch" library="ProfileKeywords">
 <kw name="Log To Console" library="BuiltIn">
@@ -164,15 +478,15 @@
 <arguments>
 <arg>SearchingByAdvOption</arg>
 </arguments>
-<status status="PASS" endtime="20210402 16:32:40.299" starttime="20210402 16:32:40.297"></status>
+<status status="PASS" endtime="20210404 21:10:48.764" starttime="20210404 21:10:48.763"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3 sec</arg>
 </arguments>
-<msg timestamp="20210402 16:32:43.310" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" endtime="20210402 16:32:43.310" starttime="20210402 16:32:40.301"></status>
+<msg timestamp="20210404 21:10:51.767" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20210404 21:10:51.767" starttime="20210404 21:10:48.764"></status>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
@@ -181,42 +495,42 @@
 <arg>98117</arg>
 <arg>ENTER</arg>
 </arguments>
-<msg timestamp="20210402 16:32:43.311" level="INFO">Sending key(s) (u'98117', u'ENTER') to name:locationText element.</msg>
-<msg timestamp="20210402 16:32:43.342" level="INFO">Sending keys 98117</msg>
-<msg timestamp="20210402 16:32:43.715" level="INFO">Pressing special key ENTER to element.</msg>
-<status status="PASS" endtime="20210402 16:32:44.096" starttime="20210402 16:32:43.310"></status>
+<msg timestamp="20210404 21:10:51.771" level="INFO">Sending key(s) (u'98117', u'ENTER') to name:locationText element.</msg>
+<msg timestamp="20210404 21:10:51.820" level="INFO">Sending keys 98117</msg>
+<msg timestamp="20210404 21:10:52.192" level="INFO">Pressing special key ENTER to element.</msg>
+<status status="PASS" endtime="20210404 21:10:52.581" starttime="20210404 21:10:51.768"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>15 sec</arg>
 </arguments>
-<msg timestamp="20210402 16:32:59.106" level="INFO">Slept 15 seconds</msg>
-<status status="PASS" endtime="20210402 16:32:59.106" starttime="20210402 16:32:44.097"></status>
+<msg timestamp="20210404 21:11:07.596" level="INFO">Slept 15 seconds</msg>
+<status status="PASS" endtime="20210404 21:11:07.596" starttime="20210404 21:10:52.581"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>${AdvDD}</arg>
 </arguments>
-<msg timestamp="20210402 16:32:59.106" level="INFO">Clicking element 'xpath://span[contains(text(),'Advanced')]'.</msg>
-<status status="PASS" endtime="20210402 16:32:59.383" starttime="20210402 16:32:59.106"></status>
+<msg timestamp="20210404 21:11:07.598" level="INFO">Clicking element 'xpath://span[contains(text(),'Advanced')]'.</msg>
+<status status="PASS" endtime="20210404 21:11:07.825" starttime="20210404 21:11:07.596"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2 sec</arg>
 </arguments>
-<msg timestamp="20210402 16:33:01.395" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20210402 16:33:01.395" starttime="20210402 16:32:59.384"></status>
+<msg timestamp="20210404 21:11:09.828" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20210404 21:11:09.828" starttime="20210404 21:11:07.825"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>${Adv_lan_dd}</arg>
 </arguments>
-<msg timestamp="20210402 16:33:01.395" level="INFO">Clicking element 'name:languageMask'.</msg>
-<status status="PASS" endtime="20210402 16:33:01.591" starttime="20210402 16:33:01.395"></status>
+<msg timestamp="20210404 21:11:09.828" level="INFO">Clicking element 'name:languageMask'.</msg>
+<status status="PASS" endtime="20210404 21:11:09.961" starttime="20210404 21:11:09.828"></status>
 </kw>
 <kw name="Select From List By Value" library="SeleniumLibrary">
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
@@ -224,24 +538,24 @@
 <arg>${Adv_lan_dd}</arg>
 <arg>1024</arg>
 </arguments>
-<msg timestamp="20210402 16:33:01.593" level="INFO">Selecting options from selection list 'name:languageMask' by value 1024.</msg>
-<status status="PASS" endtime="20210402 16:33:02.023" starttime="20210402 16:33:01.592"></status>
+<msg timestamp="20210404 21:11:09.963" level="INFO">Selecting options from selection list 'name:languageMask' by value 1024.</msg>
+<status status="PASS" endtime="20210404 21:11:10.274" starttime="20210404 21:11:09.962"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5 sec</arg>
 </arguments>
-<msg timestamp="20210402 16:33:07.023" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20210402 16:33:07.023" starttime="20210402 16:33:02.023"></status>
+<msg timestamp="20210404 21:11:15.284" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20210404 21:11:15.284" starttime="20210404 21:11:10.274"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>${Adv_spe_dd}</arg>
 </arguments>
-<msg timestamp="20210402 16:33:07.023" level="INFO">Clicking element 'name:specialty'.</msg>
-<status status="PASS" endtime="20210402 16:33:07.225" starttime="20210402 16:33:07.023"></status>
+<msg timestamp="20210404 21:11:15.284" level="INFO">Clicking element 'name:specialty'.</msg>
+<status status="PASS" endtime="20210404 21:11:15.463" starttime="20210404 21:11:15.284"></status>
 </kw>
 <kw name="Select From List By Value" library="SeleniumLibrary">
 <doc>Selects options from selection list ``locator`` by ``values``.</doc>
@@ -249,25 +563,25 @@
 <arg>${Adv_spe_dd}</arg>
 <arg>ShortSale</arg>
 </arguments>
-<msg timestamp="20210402 16:33:07.226" level="INFO">Selecting options from selection list 'name:specialty' by value ShortSale.</msg>
-<status status="PASS" endtime="20210402 16:33:07.471" starttime="20210402 16:33:07.225"></status>
+<msg timestamp="20210404 21:11:15.463" level="INFO">Selecting options from selection list 'name:specialty' by value ShortSale.</msg>
+<status status="PASS" endtime="20210404 21:11:15.735" starttime="20210404 21:11:15.463"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3sec</arg>
 </arguments>
-<msg timestamp="20210402 16:33:10.475" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" endtime="20210402 16:33:10.475" starttime="20210402 16:33:07.472"></status>
+<msg timestamp="20210404 21:11:18.742" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20210404 21:11:18.742" starttime="20210404 21:11:15.735"></status>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <doc>Sets the delay that is waited after each Selenium command.</doc>
 <arguments>
 <arg>2sec</arg>
 </arguments>
-<status status="PASS" endtime="20210402 16:33:10.475" starttime="20210402 16:33:10.475"></status>
+<status status="PASS" endtime="20210404 21:11:18.742" starttime="20210404 21:11:18.742"></status>
 </kw>
-<status status="PASS" endtime="20210402 16:33:10.475" starttime="20210402 16:32:40.296"></status>
+<status status="PASS" endtime="20210404 21:11:18.742" starttime="20210404 21:10:48.757"></status>
 </kw>
 <kw name="ForLoopTovisitAll10Profilelinks" library="ProfileKeywords">
 <kw name="Sleep" library="BuiltIn">
@@ -275,8 +589,8 @@
 <arguments>
 <arg>4sec</arg>
 </arguments>
-<msg timestamp="20210402 16:33:14.476" level="INFO">Slept 4 seconds</msg>
-<status status="PASS" endtime="20210402 16:33:14.476" starttime="20210402 16:33:10.475"></status>
+<msg timestamp="20210404 21:11:22.742" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" endtime="20210404 21:11:22.742" starttime="20210404 21:11:18.742"></status>
 </kw>
 <kw name="Set Variable" library="BuiltIn">
 <doc>Returns the given values which can then be assigned to a variables.</doc>
@@ -286,8 +600,8 @@
 <assign>
 <var>${counter}</var>
 </assign>
-<msg timestamp="20210402 16:33:14.476" level="INFO">${counter} = 1</msg>
-<status status="PASS" endtime="20210402 16:33:14.476" starttime="20210402 16:33:14.476"></status>
+<msg timestamp="20210404 21:11:22.742" level="INFO">${counter} = 1</msg>
+<status status="PASS" endtime="20210404 21:11:22.742" starttime="20210404 21:11:22.742"></status>
 </kw>
 <kw name="Get WebElements" library="SeleniumLibrary">
 <doc>Returns list of WebElement objects matching the ``locator``.</doc>
@@ -297,18 +611,18 @@
 <assign>
 <var>@{elems}</var>
 </assign>
-<msg timestamp="20210402 16:33:16.542" level="INFO">@{elems} = [ &lt;selenium.webdriver.remote.webelement.WebElement (session="89dfff546b88ca690e0dec15e5974f60", element="dc4f5226-bceb-4fa6-8c4f-1ccfe49f4774")&gt; | &lt;selenium.webdriver.remote.webelement.WebElement (ses...</msg>
-<status status="PASS" endtime="20210402 16:33:16.542" starttime="20210402 16:33:14.476"></status>
+<msg timestamp="20210404 21:11:24.788" level="INFO">@{elems} = [ &lt;selenium.webdriver.remote.webelement.WebElement (session="f872055618e1ef1b3be95b15f0afd934", element="75368615-edc4-4bff-84b5-dcb646d9a4e1")&gt; | &lt;selenium.webdriver.remote.webelement.WebElement (ses...</msg>
+<status status="PASS" endtime="20210404 21:11:24.788" starttime="20210404 21:11:22.742"></status>
 </kw>
 <kw type="for" name="${i} IN [ @{elems} ]">
-<kw type="foritem" name="${i} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;89dfff546b88ca690e0dec15e5974f60&quot;, element=&quot;dc4f5226-bceb-4fa6-8c4f-1ccfe49f4774&quot;)&gt;">
+<kw type="foritem" name="${i} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;f872055618e1ef1b3be95b15f0afd934&quot;, element=&quot;75368615-edc4-4bff-84b5-dcb646d9a4e1&quot;)&gt;">
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3sec</arg>
 </arguments>
-<msg timestamp="20210402 16:33:19.549" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" endtime="20210402 16:33:19.549" starttime="20210402 16:33:16.542"></status>
+<msg timestamp="20210404 21:11:27.804" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20210404 21:11:27.804" starttime="20210404 21:11:24.790"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
@@ -316,44 +630,44 @@
 <arg>${i}</arg>
 <arg>SHIFT+CTRL</arg>
 </arguments>
-<msg timestamp="20210402 16:33:19.550" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="89dfff546b88ca690e0dec15e5974f60", element="dc4f5226-bceb-4fa6-8c4f-1ccfe49f4774")&gt;' with SHIFT+CTRL.</msg>
-<status status="PASS" endtime="20210402 16:33:21.925" starttime="20210402 16:33:19.549"></status>
+<msg timestamp="20210404 21:11:27.804" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="f872055618e1ef1b3be95b15f0afd934", element="75368615-edc4-4bff-84b5-dcb646d9a4e1")&gt;' with SHIFT+CTRL.</msg>
+<status status="PASS" endtime="20210404 21:11:30.158" starttime="20210404 21:11:27.804"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <doc>Waits until ``text`` appears on current page.</doc>
 <arguments>
 <arg>Short-Sale</arg>
 </arguments>
-<status status="PASS" endtime="20210402 16:33:23.999" starttime="20210402 16:33:21.926"></status>
+<status status="PASS" endtime="20210404 21:11:32.205" starttime="20210404 21:11:30.159"></status>
 </kw>
 <kw name="Get Window Titles" library="SeleniumLibrary">
 <doc>Returns and logs titles of all known browser windows.</doc>
 <assign>
 <var>${title_var}</var>
 </assign>
-<msg timestamp="20210402 16:33:50.341" level="INFO">Altogether 2 items.
+<msg timestamp="20210404 21:11:58.429" level="INFO">Altogether 2 items.
 1: 98117 Seattle - Realtor &amp; Real Estate Agent Reviews | Zillow
 2: 3302 Fudacz - Real Estate Agent in Bellevue, WA - Reviews | Zillow</msg>
-<msg timestamp="20210402 16:33:50.342" level="INFO">${title_var} = [u'98117 Seattle - Realtor &amp; Real Estate Agent Reviews | Zillow', u'3302 Fudacz - Real Estate Agent in Bellevue, WA - Reviews | Zillow']</msg>
-<status status="PASS" endtime="20210402 16:33:50.342" starttime="20210402 16:33:23.999"></status>
+<msg timestamp="20210404 21:11:58.429" level="INFO">${title_var} = [u'98117 Seattle - Realtor &amp; Real Estate Agent Reviews | Zillow', u'3302 Fudacz - Real Estate Agent in Bellevue, WA - Reviews | Zillow']</msg>
+<status status="PASS" endtime="20210404 21:11:58.429" starttime="20210404 21:11:32.206"></status>
 </kw>
 <kw name="Select Window" library="SeleniumLibrary">
 <doc>Selects browser window matching ``locator``.</doc>
 <arguments>
 <arg>title=${title_var}[1]</arg>
 </arguments>
-<status status="PASS" endtime="20210402 16:34:16.617" starttime="20210402 16:33:50.343"></status>
+<status status="PASS" endtime="20210404 21:12:24.623" starttime="20210404 21:11:58.429"></status>
 </kw>
 <kw name="Close Window" library="SeleniumLibrary">
 <doc>Closes currently opened pop-up window.</doc>
-<status status="PASS" endtime="20210402 16:34:18.665" starttime="20210402 16:34:16.617"></status>
+<status status="PASS" endtime="20210404 21:12:26.655" starttime="20210404 21:12:24.623"></status>
 </kw>
 <kw name="Select Window" library="SeleniumLibrary">
 <doc>Selects browser window matching ``locator``.</doc>
 <arguments>
 <arg>title=${title_var}[0]</arg>
 </arguments>
-<status status="PASS" endtime="20210402 16:34:30.788" starttime="20210402 16:34:18.665"></status>
+<status status="PASS" endtime="20210404 21:12:38.758" starttime="20210404 21:12:26.656"></status>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <doc>Evaluates the given expression in Python and returns the result.</doc>
@@ -363,33 +677,33 @@
 <assign>
 <var>${counter}</var>
 </assign>
-<msg timestamp="20210402 16:34:30.788" level="INFO">${counter} = 2</msg>
-<status status="PASS" endtime="20210402 16:34:30.788" starttime="20210402 16:34:30.788"></status>
+<msg timestamp="20210404 21:12:38.762" level="INFO">${counter} = 2</msg>
+<status status="PASS" endtime="20210404 21:12:38.762" starttime="20210404 21:12:38.759"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${counter}</arg>
 </arguments>
-<status status="PASS" endtime="20210402 16:34:30.788" starttime="20210402 16:34:30.788"></status>
+<status status="PASS" endtime="20210404 21:12:38.764" starttime="20210404 21:12:38.763"></status>
 </kw>
 <kw name="Exit For Loop If" library="BuiltIn">
 <doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
 <arguments>
 <arg>${counter} &gt; 4</arg>
 </arguments>
-<status status="PASS" endtime="20210402 16:34:30.788" starttime="20210402 16:34:30.788"></status>
+<status status="PASS" endtime="20210404 21:12:38.764" starttime="20210404 21:12:38.764"></status>
 </kw>
-<status status="PASS" endtime="20210402 16:34:30.796" starttime="20210402 16:33:16.542"></status>
+<status status="PASS" endtime="20210404 21:12:38.764" starttime="20210404 21:11:24.789"></status>
 </kw>
-<kw type="foritem" name="${i} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;89dfff546b88ca690e0dec15e5974f60&quot;, element=&quot;2c1651ba-1f7b-4ea1-9dbc-2ef94b87857c&quot;)&gt;">
+<kw type="foritem" name="${i} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;f872055618e1ef1b3be95b15f0afd934&quot;, element=&quot;b1732306-f3c5-42be-bec9-abe7e9339a33&quot;)&gt;">
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3sec</arg>
 </arguments>
-<msg timestamp="20210402 16:34:33.806" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" endtime="20210402 16:34:33.807" starttime="20210402 16:34:30.796"></status>
+<msg timestamp="20210404 21:12:41.778" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20210404 21:12:41.778" starttime="20210404 21:12:38.764"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
@@ -397,44 +711,44 @@
 <arg>${i}</arg>
 <arg>SHIFT+CTRL</arg>
 </arguments>
-<msg timestamp="20210402 16:34:33.810" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="89dfff546b88ca690e0dec15e5974f60", element="2c1651ba-1f7b-4ea1-9dbc-2ef94b87857c")&gt;' with SHIFT+CTRL.</msg>
-<status status="PASS" endtime="20210402 16:34:36.207" starttime="20210402 16:34:33.808"></status>
+<msg timestamp="20210404 21:12:41.781" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="f872055618e1ef1b3be95b15f0afd934", element="b1732306-f3c5-42be-bec9-abe7e9339a33")&gt;' with SHIFT+CTRL.</msg>
+<status status="PASS" endtime="20210404 21:12:44.159" starttime="20210404 21:12:41.779"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <doc>Waits until ``text`` appears on current page.</doc>
 <arguments>
 <arg>Short-Sale</arg>
 </arguments>
-<status status="PASS" endtime="20210402 16:34:38.226" starttime="20210402 16:34:36.207"></status>
+<status status="PASS" endtime="20210404 21:12:46.195" starttime="20210404 21:12:44.159"></status>
 </kw>
 <kw name="Get Window Titles" library="SeleniumLibrary">
 <doc>Returns and logs titles of all known browser windows.</doc>
 <assign>
 <var>${title_var}</var>
 </assign>
-<msg timestamp="20210402 16:35:04.486" level="INFO">Altogether 2 items.
+<msg timestamp="20210404 21:13:12.387" level="INFO">Altogether 2 items.
 1: 98117 Seattle - Realtor &amp; Real Estate Agent Reviews | Zillow
 2: Beautiful Escott - Real Estate Agent in Bellevue, WA - Reviews | Zillow</msg>
-<msg timestamp="20210402 16:35:04.488" level="INFO">${title_var} = [u'98117 Seattle - Realtor &amp; Real Estate Agent Reviews | Zillow', u'Beautiful Escott - Real Estate Agent in Bellevue, WA - Reviews | Zillow']</msg>
-<status status="PASS" endtime="20210402 16:35:04.489" starttime="20210402 16:34:38.227"></status>
+<msg timestamp="20210404 21:13:12.389" level="INFO">${title_var} = [u'98117 Seattle - Realtor &amp; Real Estate Agent Reviews | Zillow', u'Beautiful Escott - Real Estate Agent in Bellevue, WA - Reviews | Zillow']</msg>
+<status status="PASS" endtime="20210404 21:13:12.389" starttime="20210404 21:12:46.196"></status>
 </kw>
 <kw name="Select Window" library="SeleniumLibrary">
 <doc>Selects browser window matching ``locator``.</doc>
 <arguments>
 <arg>title=${title_var}[1]</arg>
 </arguments>
-<status status="PASS" endtime="20210402 16:35:30.726" starttime="20210402 16:35:04.489"></status>
+<status status="PASS" endtime="20210404 21:13:38.553" starttime="20210404 21:13:12.390"></status>
 </kw>
 <kw name="Close Window" library="SeleniumLibrary">
 <doc>Closes currently opened pop-up window.</doc>
-<status status="PASS" endtime="20210402 16:35:32.767" starttime="20210402 16:35:30.727"></status>
+<status status="PASS" endtime="20210404 21:13:40.568" starttime="20210404 21:13:38.553"></status>
 </kw>
 <kw name="Select Window" library="SeleniumLibrary">
 <doc>Selects browser window matching ``locator``.</doc>
 <arguments>
 <arg>title=${title_var}[0]</arg>
 </arguments>
-<status status="PASS" endtime="20210402 16:35:44.914" starttime="20210402 16:35:32.767"></status>
+<status status="PASS" endtime="20210404 21:13:52.657" starttime="20210404 21:13:40.569"></status>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <doc>Evaluates the given expression in Python and returns the result.</doc>
@@ -444,33 +758,33 @@
 <assign>
 <var>${counter}</var>
 </assign>
-<msg timestamp="20210402 16:35:44.915" level="INFO">${counter} = 3</msg>
-<status status="PASS" endtime="20210402 16:35:44.915" starttime="20210402 16:35:44.915"></status>
+<msg timestamp="20210404 21:13:52.660" level="INFO">${counter} = 3</msg>
+<status status="PASS" endtime="20210404 21:13:52.661" starttime="20210404 21:13:52.658"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${counter}</arg>
 </arguments>
-<status status="PASS" endtime="20210402 16:35:44.915" starttime="20210402 16:35:44.915"></status>
+<status status="PASS" endtime="20210404 21:13:52.661" starttime="20210404 21:13:52.661"></status>
 </kw>
 <kw name="Exit For Loop If" library="BuiltIn">
 <doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
 <arguments>
 <arg>${counter} &gt; 4</arg>
 </arguments>
-<status status="PASS" endtime="20210402 16:35:44.915" starttime="20210402 16:35:44.915"></status>
+<status status="PASS" endtime="20210404 21:13:52.665" starttime="20210404 21:13:52.664"></status>
 </kw>
-<status status="PASS" endtime="20210402 16:35:44.915" starttime="20210402 16:34:30.796"></status>
+<status status="PASS" endtime="20210404 21:13:52.665" starttime="20210404 21:12:38.764"></status>
 </kw>
-<kw type="foritem" name="${i} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;89dfff546b88ca690e0dec15e5974f60&quot;, element=&quot;58d54bbd-ca41-4d6e-a498-3acf92d746ad&quot;)&gt;">
+<kw type="foritem" name="${i} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;f872055618e1ef1b3be95b15f0afd934&quot;, element=&quot;f378e249-ec4b-4d30-9845-992672a93354&quot;)&gt;">
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3sec</arg>
 </arguments>
-<msg timestamp="20210402 16:35:47.922" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" endtime="20210402 16:35:47.923" starttime="20210402 16:35:44.915"></status>
+<msg timestamp="20210404 21:13:55.676" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20210404 21:13:55.676" starttime="20210404 21:13:52.665"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
@@ -478,44 +792,44 @@
 <arg>${i}</arg>
 <arg>SHIFT+CTRL</arg>
 </arguments>
-<msg timestamp="20210402 16:35:47.923" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="89dfff546b88ca690e0dec15e5974f60", element="58d54bbd-ca41-4d6e-a498-3acf92d746ad")&gt;' with SHIFT+CTRL.</msg>
-<status status="PASS" endtime="20210402 16:35:50.338" starttime="20210402 16:35:47.923"></status>
+<msg timestamp="20210404 21:13:55.680" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="f872055618e1ef1b3be95b15f0afd934", element="f378e249-ec4b-4d30-9845-992672a93354")&gt;' with SHIFT+CTRL.</msg>
+<status status="PASS" endtime="20210404 21:13:58.053" starttime="20210404 21:13:55.677"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <doc>Waits until ``text`` appears on current page.</doc>
 <arguments>
 <arg>Short-Sale</arg>
 </arguments>
-<status status="PASS" endtime="20210402 16:35:52.369" starttime="20210402 16:35:50.338"></status>
+<status status="PASS" endtime="20210404 21:14:00.095" starttime="20210404 21:13:58.053"></status>
 </kw>
 <kw name="Get Window Titles" library="SeleniumLibrary">
 <doc>Returns and logs titles of all known browser windows.</doc>
 <assign>
 <var>${title_var}</var>
 </assign>
-<msg timestamp="20210402 16:36:18.665" level="INFO">Altogether 2 items.
+<msg timestamp="20210404 21:14:26.345" level="INFO">Altogether 2 items.
 1: 98117 Seattle - Realtor &amp; Real Estate Agent Reviews | Zillow
 2: Bija Chikarberg - Real Estate Agent in Seattle, WA - Reviews | Zillow</msg>
-<msg timestamp="20210402 16:36:18.665" level="INFO">${title_var} = [u'98117 Seattle - Realtor &amp; Real Estate Agent Reviews | Zillow', u'Bija Chikarberg - Real Estate Agent in Seattle, WA - Reviews | Zillow']</msg>
-<status status="PASS" endtime="20210402 16:36:18.665" starttime="20210402 16:35:52.369"></status>
+<msg timestamp="20210404 21:14:26.345" level="INFO">${title_var} = [u'98117 Seattle - Realtor &amp; Real Estate Agent Reviews | Zillow', u'Bija Chikarberg - Real Estate Agent in Seattle, WA - Reviews | Zillow']</msg>
+<status status="PASS" endtime="20210404 21:14:26.345" starttime="20210404 21:14:00.095"></status>
 </kw>
 <kw name="Select Window" library="SeleniumLibrary">
 <doc>Selects browser window matching ``locator``.</doc>
 <arguments>
 <arg>title=${title_var}[1]</arg>
 </arguments>
-<status status="PASS" endtime="20210402 16:36:44.914" starttime="20210402 16:36:18.665"></status>
+<status status="PASS" endtime="20210404 21:14:52.538" starttime="20210404 21:14:26.345"></status>
 </kw>
 <kw name="Close Window" library="SeleniumLibrary">
 <doc>Closes currently opened pop-up window.</doc>
-<status status="PASS" endtime="20210402 16:36:46.950" starttime="20210402 16:36:44.915"></status>
+<status status="PASS" endtime="20210404 21:14:54.575" starttime="20210404 21:14:52.539"></status>
 </kw>
 <kw name="Select Window" library="SeleniumLibrary">
 <doc>Selects browser window matching ``locator``.</doc>
 <arguments>
 <arg>title=${title_var}[0]</arg>
 </arguments>
-<status status="PASS" endtime="20210402 16:36:59.084" starttime="20210402 16:36:46.951"></status>
+<status status="PASS" endtime="20210404 21:15:06.681" starttime="20210404 21:14:54.575"></status>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <doc>Evaluates the given expression in Python and returns the result.</doc>
@@ -525,33 +839,33 @@
 <assign>
 <var>${counter}</var>
 </assign>
-<msg timestamp="20210402 16:36:59.086" level="INFO">${counter} = 4</msg>
-<status status="PASS" endtime="20210402 16:36:59.086" starttime="20210402 16:36:59.086"></status>
+<msg timestamp="20210404 21:15:06.683" level="INFO">${counter} = 4</msg>
+<status status="PASS" endtime="20210404 21:15:06.683" starttime="20210404 21:15:06.682"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${counter}</arg>
 </arguments>
-<status status="PASS" endtime="20210402 16:36:59.091" starttime="20210402 16:36:59.086"></status>
+<status status="PASS" endtime="20210404 21:15:06.683" starttime="20210404 21:15:06.683"></status>
 </kw>
 <kw name="Exit For Loop If" library="BuiltIn">
 <doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
 <arguments>
 <arg>${counter} &gt; 4</arg>
 </arguments>
-<status status="PASS" endtime="20210402 16:36:59.094" starttime="20210402 16:36:59.091"></status>
+<status status="PASS" endtime="20210404 21:15:06.683" starttime="20210404 21:15:06.683"></status>
 </kw>
-<status status="PASS" endtime="20210402 16:36:59.094" starttime="20210402 16:35:44.915"></status>
+<status status="PASS" endtime="20210404 21:15:06.683" starttime="20210404 21:13:52.665"></status>
 </kw>
-<kw type="foritem" name="${i} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;89dfff546b88ca690e0dec15e5974f60&quot;, element=&quot;0c449def-cb23-4b64-9443-7d63f190dac6&quot;)&gt;">
+<kw type="foritem" name="${i} = &lt;selenium.webdriver.remote.webelement.WebElement (session=&quot;f872055618e1ef1b3be95b15f0afd934&quot;, element=&quot;a940144d-1142-4e1b-b46a-9e34b62d5246&quot;)&gt;">
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3sec</arg>
 </arguments>
-<msg timestamp="20210402 16:37:02.105" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" endtime="20210402 16:37:02.105" starttime="20210402 16:36:59.094"></status>
+<msg timestamp="20210404 21:15:09.699" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20210404 21:15:09.699" starttime="20210404 21:15:06.683"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
@@ -559,44 +873,44 @@
 <arg>${i}</arg>
 <arg>SHIFT+CTRL</arg>
 </arguments>
-<msg timestamp="20210402 16:37:02.105" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="89dfff546b88ca690e0dec15e5974f60", element="0c449def-cb23-4b64-9443-7d63f190dac6")&gt;' with SHIFT+CTRL.</msg>
-<status status="PASS" endtime="20210402 16:37:04.492" starttime="20210402 16:37:02.105"></status>
+<msg timestamp="20210404 21:15:09.701" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="f872055618e1ef1b3be95b15f0afd934", element="a940144d-1142-4e1b-b46a-9e34b62d5246")&gt;' with SHIFT+CTRL.</msg>
+<status status="PASS" endtime="20210404 21:15:12.100" starttime="20210404 21:15:09.700"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <doc>Waits until ``text`` appears on current page.</doc>
 <arguments>
 <arg>Short-Sale</arg>
 </arguments>
-<status status="PASS" endtime="20210402 16:37:06.539" starttime="20210402 16:37:04.493"></status>
+<status status="PASS" endtime="20210404 21:15:14.153" starttime="20210404 21:15:12.102"></status>
 </kw>
 <kw name="Get Window Titles" library="SeleniumLibrary">
 <doc>Returns and logs titles of all known browser windows.</doc>
 <assign>
 <var>${title_var}</var>
 </assign>
-<msg timestamp="20210402 16:37:32.831" level="INFO">Altogether 2 items.
+<msg timestamp="20210404 21:15:40.368" level="INFO">Altogether 2 items.
 1: 98117 Seattle - Realtor &amp; Real Estate Agent Reviews | Zillow
 2: Joyce E. Bettini - Real Estate Agent in Bellevue, WA - Reviews | Zillow</msg>
-<msg timestamp="20210402 16:37:32.833" level="INFO">${title_var} = [u'98117 Seattle - Realtor &amp; Real Estate Agent Reviews | Zillow', u'Joyce E. Bettini - Real Estate Agent in Bellevue, WA - Reviews | Zillow']</msg>
-<status status="PASS" endtime="20210402 16:37:32.833" starttime="20210402 16:37:06.539"></status>
+<msg timestamp="20210404 21:15:40.368" level="INFO">${title_var} = [u'98117 Seattle - Realtor &amp; Real Estate Agent Reviews | Zillow', u'Joyce E. Bettini - Real Estate Agent in Bellevue, WA - Reviews | Zillow']</msg>
+<status status="PASS" endtime="20210404 21:15:40.368" starttime="20210404 21:15:14.153"></status>
 </kw>
 <kw name="Select Window" library="SeleniumLibrary">
 <doc>Selects browser window matching ``locator``.</doc>
 <arguments>
 <arg>title=${title_var}[1]</arg>
 </arguments>
-<status status="PASS" endtime="20210402 16:37:59.086" starttime="20210402 16:37:32.833"></status>
+<status status="PASS" endtime="20210404 21:16:06.529" starttime="20210404 21:15:40.368"></status>
 </kw>
 <kw name="Close Window" library="SeleniumLibrary">
 <doc>Closes currently opened pop-up window.</doc>
-<status status="PASS" endtime="20210402 16:38:01.127" starttime="20210402 16:37:59.087"></status>
+<status status="PASS" endtime="20210404 21:16:08.563" starttime="20210404 21:16:06.530"></status>
 </kw>
 <kw name="Select Window" library="SeleniumLibrary">
 <doc>Selects browser window matching ``locator``.</doc>
 <arguments>
 <arg>title=${title_var}[0]</arg>
 </arguments>
-<status status="PASS" endtime="20210402 16:38:13.247" starttime="20210402 16:38:01.128"></status>
+<status status="PASS" endtime="20210404 21:16:20.652" starttime="20210404 21:16:08.564"></status>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <doc>Evaluates the given expression in Python and returns the result.</doc>
@@ -606,42 +920,42 @@
 <assign>
 <var>${counter}</var>
 </assign>
-<msg timestamp="20210402 16:38:13.247" level="INFO">${counter} = 5</msg>
-<status status="PASS" endtime="20210402 16:38:13.247" starttime="20210402 16:38:13.247"></status>
+<msg timestamp="20210404 21:16:20.652" level="INFO">${counter} = 5</msg>
+<status status="PASS" endtime="20210404 21:16:20.652" starttime="20210404 21:16:20.652"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${counter}</arg>
 </arguments>
-<status status="PASS" endtime="20210402 16:38:13.247" starttime="20210402 16:38:13.247"></status>
+<status status="PASS" endtime="20210404 21:16:20.652" starttime="20210404 21:16:20.652"></status>
 </kw>
 <kw name="Exit For Loop If" library="BuiltIn">
 <doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
 <arguments>
 <arg>${counter} &gt; 4</arg>
 </arguments>
-<msg timestamp="20210402 16:38:13.247" level="INFO">Exiting for loop altogether.</msg>
-<status status="PASS" endtime="20210402 16:38:13.247" starttime="20210402 16:38:13.247"></status>
+<msg timestamp="20210404 21:16:20.652" level="INFO">Exiting for loop altogether.</msg>
+<status status="PASS" endtime="20210404 21:16:20.652" starttime="20210404 21:16:20.652"></status>
 </kw>
-<status status="PASS" endtime="20210402 16:38:13.247" starttime="20210402 16:36:59.094"></status>
+<status status="PASS" endtime="20210404 21:16:20.652" starttime="20210404 21:15:06.683"></status>
 </kw>
-<status status="PASS" endtime="20210402 16:38:13.247" starttime="20210402 16:33:16.542"></status>
+<status status="PASS" endtime="20210404 21:16:20.652" starttime="20210404 21:11:24.788"></status>
 </kw>
-<status status="PASS" endtime="20210402 16:38:13.255" starttime="20210402 16:33:10.475"></status>
+<status status="PASS" endtime="20210404 21:16:20.652" starttime="20210404 21:11:18.742"></status>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20210402 16:38:17.395" starttime="20210402 16:38:13.255"></status>
+<status status="PASS" endtime="20210404 21:16:24.737" starttime="20210404 21:16:20.652"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>tc2 ran till end</arg>
 </arguments>
-<status status="PASS" endtime="20210402 16:38:17.397" starttime="20210402 16:38:17.395"></status>
+<status status="PASS" endtime="20210404 21:16:24.738" starttime="20210404 21:16:24.738"></status>
 </kw>
-<status status="PASS" endtime="20210402 16:38:17.398" critical="yes" starttime="20210402 16:32:24.831"></status>
+<status status="PASS" endtime="20210404 21:16:24.738" critical="yes" starttime="20210404 21:10:34.548"></status>
 </test>
 <test id="s1-t3" name="tc3-Verify_adding/registering_an_agent_and_if_it_is_searchable_on_agent_finder">
 <kw name="OpenMyBrowser" library="ProfileKeywords">
@@ -655,8 +969,8 @@
 <arg>${env}</arg>
 <arg>${browser}</arg>
 </arguments>
-<msg timestamp="20210402 16:38:17.409" level="INFO">Opening browser 'headlesschrome' to base url 'https://www.qa.zillow.net'.</msg>
-<status status="PASS" endtime="20210402 16:38:28.488" starttime="20210402 16:38:17.407"></status>
+<msg timestamp="20210404 21:16:24.744" level="INFO">Opening browser 'headlesschrome' to base url 'https://www.qa.zillow.net'.</msg>
+<status status="PASS" endtime="20210404 21:16:35.211" starttime="20210404 21:16:24.744"></status>
 </kw>
 <kw name="Set Window Size" library="SeleniumLibrary">
 <doc>Sets current windows size to given ``width`` and ``height``.</doc>
@@ -664,21 +978,21 @@
 <arg>1366</arg>
 <arg>625</arg>
 </arguments>
-<status status="PASS" endtime="20210402 16:38:30.617" starttime="20210402 16:38:28.489"></status>
+<status status="PASS" endtime="20210404 21:16:37.344" starttime="20210404 21:16:35.212"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20210402 16:38:32.752" starttime="20210402 16:38:30.618"></status>
+<status status="PASS" endtime="20210404 21:16:39.480" starttime="20210404 21:16:37.344"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3sec</arg>
 </arguments>
-<msg timestamp="20210402 16:38:35.763" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" endtime="20210402 16:38:35.763" starttime="20210402 16:38:32.753"></status>
+<msg timestamp="20210404 21:16:42.490" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20210404 21:16:42.490" starttime="20210404 21:16:39.481"></status>
 </kw>
-<status status="PASS" endtime="20210402 16:38:35.764" starttime="20210402 16:38:17.404"></status>
+<status status="PASS" endtime="20210404 21:16:42.490" starttime="20210404 21:16:24.744"></status>
 </kw>
 <kw name="Faker_profile" library="ProfileKeywords">
 <kw name="Address" library="FakerLibrary">
@@ -686,44 +1000,44 @@
 <assign>
 <var>${F_address}</var>
 </assign>
-<msg timestamp="20210402 16:38:35.774" level="INFO">${F_address} = 3617 David Brook
-Grossland, NC 87655</msg>
-<status status="PASS" endtime="20210402 16:38:35.774" starttime="20210402 16:38:35.764"></status>
+<msg timestamp="20210404 21:16:42.497" level="INFO">${F_address} = 2886 Smith Viaduct Suite 313
+South Billy, IL 43689</msg>
+<status status="PASS" endtime="20210404 21:16:42.497" starttime="20210404 21:16:42.490"></status>
 </kw>
 <kw name="Country" library="FakerLibrary">
 <assign>
 <var>${F_country}</var>
 </assign>
-<msg timestamp="20210402 16:38:35.774" level="INFO">${F_country} = Northern Mariana Islands</msg>
-<status status="PASS" endtime="20210402 16:38:35.774" starttime="20210402 16:38:35.774"></status>
+<msg timestamp="20210404 21:16:42.497" level="INFO">${F_country} = Holy See (Vatican City State)</msg>
+<status status="PASS" endtime="20210404 21:16:42.497" starttime="20210404 21:16:42.497"></status>
 </kw>
 <kw name="Email" library="FakerLibrary">
 <assign>
 <var>${F_email}</var>
 </assign>
-<msg timestamp="20210402 16:38:35.782" level="INFO">${F_email} = omcconnell@white-king.net</msg>
-<status status="PASS" endtime="20210402 16:38:35.790" starttime="20210402 16:38:35.774"></status>
+<msg timestamp="20210404 21:16:42.510" level="INFO">${F_email} = clucero@buckley-pittman.com</msg>
+<status status="PASS" endtime="20210404 21:16:42.510" starttime="20210404 21:16:42.497"></status>
 </kw>
 <kw name="First Name" library="FakerLibrary">
 <assign>
 <var>${F_first_name}</var>
 </assign>
-<msg timestamp="20210402 16:38:35.790" level="INFO">${F_first_name} = Jose</msg>
-<status status="PASS" endtime="20210402 16:38:35.790" starttime="20210402 16:38:35.790"></status>
+<msg timestamp="20210404 21:16:42.510" level="INFO">${F_first_name} = Alexis</msg>
+<status status="PASS" endtime="20210404 21:16:42.510" starttime="20210404 21:16:42.510"></status>
 </kw>
 <kw name="Last Name" library="FakerLibrary">
 <assign>
 <var>${F_last_name}</var>
 </assign>
-<msg timestamp="20210402 16:38:35.790" level="INFO">${F_last_name} = Rowland</msg>
-<status status="PASS" endtime="20210402 16:38:35.790" starttime="20210402 16:38:35.790"></status>
+<msg timestamp="20210404 21:16:42.510" level="INFO">${F_last_name} = Wall</msg>
+<status status="PASS" endtime="20210404 21:16:42.510" starttime="20210404 21:16:42.510"></status>
 </kw>
 <kw name="Phone Number" library="FakerLibrary">
 <assign>
 <var>${F_phone_number}</var>
 </assign>
-<msg timestamp="20210402 16:38:35.798" level="INFO">${F_phone_number} = (570)948-1922</msg>
-<status status="PASS" endtime="20210402 16:38:35.798" starttime="20210402 16:38:35.790"></status>
+<msg timestamp="20210404 21:16:42.510" level="INFO">${F_phone_number} = 968-060-0816x382</msg>
+<status status="PASS" endtime="20210404 21:16:42.518" starttime="20210404 21:16:42.510"></status>
 </kw>
 <kw name="Catenate" library="BuiltIn">
 <doc>Catenates the given items together and returns the resulted string.</doc>
@@ -740,57 +1054,57 @@ Grossland, NC 87655</msg>
 <assign>
 <var>${F_profile}</var>
 </assign>
-<msg timestamp="20210402 16:38:35.798" level="INFO">${F_profile} = 
+<msg timestamp="20210404 21:16:42.522" level="INFO">${F_profile} = 
 ======================================= 
-first_name: Jose 
-last_name: Rowland 
-address: 3617 David Brook
-Grossland, NC 87655 
-country: Northern Mariana Islands 
-email: omcconnell@white-king.net...</msg>
-<status status="PASS" endtime="20210402 16:38:35.798" starttime="20210402 16:38:35.798"></status>
+first_name: Alexis 
+last_name: Wall 
+address: 2886 Smith Viaduct Suite 313
+South Billy, IL 43689 
+country: Holy See (Vatican City State) 
+email: clucero...</msg>
+<status status="PASS" endtime="20210404 21:16:42.522" starttime="20210404 21:16:42.518"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${F_profile}</arg>
 </arguments>
-<status status="PASS" endtime="20210402 16:38:35.806" starttime="20210402 16:38:35.798"></status>
+<status status="PASS" endtime="20210404 21:16:42.522" starttime="20210404 21:16:42.522"></status>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
 <arguments>
 <arg>${F_email}</arg>
 </arguments>
-<msg timestamp="20210402 16:38:35.806" level="INFO">${F_email} = omcconnell@white-king.net</msg>
-<status status="PASS" endtime="20210402 16:38:35.806" starttime="20210402 16:38:35.806"></status>
+<msg timestamp="20210404 21:16:42.524" level="INFO">${F_email} = clucero@buckley-pittman.com</msg>
+<status status="PASS" endtime="20210404 21:16:42.524" starttime="20210404 21:16:42.523"></status>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
 <arguments>
 <arg>${F_address}</arg>
 </arguments>
-<msg timestamp="20210402 16:38:35.806" level="INFO">${F_address} = 3617 David Brook
-Grossland, NC 87655</msg>
-<status status="PASS" endtime="20210402 16:38:35.806" starttime="20210402 16:38:35.806"></status>
+<msg timestamp="20210404 21:16:42.524" level="INFO">${F_address} = 2886 Smith Viaduct Suite 313
+South Billy, IL 43689</msg>
+<status status="PASS" endtime="20210404 21:16:42.524" starttime="20210404 21:16:42.524"></status>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
 <arguments>
 <arg>${F_first_name}</arg>
 </arguments>
-<msg timestamp="20210402 16:38:35.806" level="INFO">${F_first_name} = Jose</msg>
-<status status="PASS" endtime="20210402 16:38:35.806" starttime="20210402 16:38:35.806"></status>
+<msg timestamp="20210404 21:16:42.524" level="INFO">${F_first_name} = Alexis</msg>
+<status status="PASS" endtime="20210404 21:16:42.524" starttime="20210404 21:16:42.524"></status>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
 <arguments>
 <arg>${F_last_name}</arg>
 </arguments>
-<msg timestamp="20210402 16:38:35.806" level="INFO">${F_last_name} = Rowland</msg>
-<status status="PASS" endtime="20210402 16:38:35.806" starttime="20210402 16:38:35.806"></status>
+<msg timestamp="20210404 21:16:42.524" level="INFO">${F_last_name} = Wall</msg>
+<status status="PASS" endtime="20210404 21:16:42.524" starttime="20210404 21:16:42.524"></status>
 </kw>
-<status status="PASS" endtime="20210402 16:38:35.806" starttime="20210402 16:38:35.764"></status>
+<status status="PASS" endtime="20210404 21:16:42.524" starttime="20210404 21:16:42.490"></status>
 </kw>
 <kw name="AddAgent" library="ProfileKeywords">
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
@@ -798,45 +1112,45 @@ Grossland, NC 87655</msg>
 <arguments>
 <arg>Sign in</arg>
 </arguments>
-<status status="PASS" endtime="20210402 16:38:37.854" starttime="20210402 16:38:35.806"></status>
+<status status="PASS" endtime="20210404 21:16:44.554" starttime="20210404 21:16:42.524"></status>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <doc>Sets the delay that is waited after each Selenium command.</doc>
 <arguments>
 <arg>2sec</arg>
 </arguments>
-<status status="PASS" endtime="20210402 16:38:37.856" starttime="20210402 16:38:37.855"></status>
+<status status="PASS" endtime="20210404 21:16:44.554" starttime="20210404 21:16:44.554"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>${sign_in}</arg>
 </arguments>
-<msg timestamp="20210402 16:38:37.856" level="INFO">Clicking element 'xpath://header/nav[1]/div[2]/ul[4]/li[1]/a[1]/span[1]'.</msg>
-<status status="PASS" endtime="20210402 16:38:41.966" starttime="20210402 16:38:37.856"></status>
+<msg timestamp="20210404 21:16:44.554" level="INFO">Clicking element 'xpath://header/nav[1]/div[2]/ul[4]/li[1]/a[1]/span[1]'.</msg>
+<status status="PASS" endtime="20210404 21:16:48.699" starttime="20210404 21:16:44.554"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5sec</arg>
 </arguments>
-<msg timestamp="20210402 16:38:46.967" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20210402 16:38:46.967" starttime="20210402 16:38:41.966"></status>
+<msg timestamp="20210404 21:16:53.714" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20210404 21:16:53.714" starttime="20210404 21:16:48.699"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>${RegisterTab2}</arg>
 </arguments>
-<msg timestamp="20210402 16:38:46.968" level="INFO">Clicking element 'xpath://button[@id='register-tab']'.</msg>
-<status status="PASS" endtime="20210402 16:38:51.250" starttime="20210402 16:38:46.968"></status>
+<msg timestamp="20210404 21:16:53.716" level="INFO">Clicking element 'css:a[id='register-tab']'.</msg>
+<status status="PASS" endtime="20210404 21:16:58.014" starttime="20210404 21:16:53.715"></status>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <doc>Sets the delay that is waited after each Selenium command.</doc>
 <arguments>
 <arg>1sec</arg>
 </arguments>
-<status status="PASS" endtime="20210402 16:38:51.251" starttime="20210402 16:38:51.251"></status>
+<status status="PASS" endtime="20210404 21:16:58.014" starttime="20210404 21:16:58.014"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -844,8 +1158,8 @@ Grossland, NC 87655</msg>
 <arg>${EmailPlaceholder}</arg>
 <arg>${F_email}</arg>
 </arguments>
-<msg timestamp="20210402 16:38:51.251" level="INFO">Typing text 'omcconnell@white-king.net' into text field 'id:inputs-newEmail'.</msg>
-<status status="PASS" endtime="20210402 16:38:54.956" starttime="20210402 16:38:51.251"></status>
+<msg timestamp="20210404 21:16:58.014" level="INFO">Typing text 'clucero@buckley-pittman.com' into text field 'id:inputs-newEmail'.</msg>
+<status status="PASS" endtime="20210404 21:17:01.351" starttime="20210404 21:16:58.014"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -853,24 +1167,24 @@ Grossland, NC 87655</msg>
 <arg>${PwdPlaceholder}</arg>
 <arg>${pwdpr}</arg>
 </arguments>
-<msg timestamp="20210402 16:38:54.959" level="INFO">Typing text 'Zillow@123' into text field 'id:password'.</msg>
-<status status="PASS" endtime="20210402 16:39:00.075" starttime="20210402 16:38:54.957"></status>
+<msg timestamp="20210404 21:17:01.351" level="INFO">Typing text 'Zillow@123' into text field 'id:password'.</msg>
+<status status="PASS" endtime="20210404 21:17:04.984" starttime="20210404 21:17:01.351"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>${Pro_chkboxx2}</arg>
 </arguments>
-<msg timestamp="20210402 16:39:00.076" level="INFO">Clicking element 'xpath://label[contains(text(),'I am a landlord or industry professional')]'.</msg>
-<status status="PASS" endtime="20210402 16:39:02.581" starttime="20210402 16:39:00.076"></status>
+<msg timestamp="20210404 21:17:04.986" level="INFO">Clicking element 'xpath://label[contains(text(),'I am a landlord or industry professional')]'.</msg>
+<status status="PASS" endtime="20210404 21:17:07.188" starttime="20210404 21:17:04.985"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2sec</arg>
 </arguments>
-<msg timestamp="20210402 16:39:04.589" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20210402 16:39:04.589" starttime="20210402 16:39:02.581"></status>
+<msg timestamp="20210404 21:17:09.200" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20210404 21:17:09.200" starttime="20210404 21:17:07.189"></status>
 </kw>
 <kw name="Select From List By Index" library="SeleniumLibrary">
 <doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
@@ -878,8 +1192,8 @@ Grossland, NC 87655</msg>
 <arg>${protype}</arg>
 <arg>1</arg>
 </arguments>
-<msg timestamp="20210402 16:39:04.592" level="INFO">Selecting options from selection list 'id:proSelect' by index 1.</msg>
-<status status="PASS" endtime="20210402 16:39:14.133" starttime="20210402 16:39:04.591"></status>
+<msg timestamp="20210404 21:17:09.200" level="INFO">Selecting options from selection list 'id:proSelect' by index 1.</msg>
+<status status="PASS" endtime="20210404 21:17:18.513" starttime="20210404 21:17:09.200"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -887,8 +1201,8 @@ Grossland, NC 87655</msg>
 <arg>${fn_Reg}</arg>
 <arg>${F_first_name}</arg>
 </arguments>
-<msg timestamp="20210402 16:39:14.134" level="INFO">Typing text 'Jose' into text field 'id:inputs-firstName'.</msg>
-<status status="PASS" endtime="20210402 16:39:17.466" starttime="20210402 16:39:14.133"></status>
+<msg timestamp="20210404 21:17:18.513" level="INFO">Typing text 'Alexis' into text field 'id:inputs-firstName'.</msg>
+<status status="PASS" endtime="20210404 21:17:21.805" starttime="20210404 21:17:18.513"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -896,8 +1210,8 @@ Grossland, NC 87655</msg>
 <arg>${ln_Reg}</arg>
 <arg>${F_last_name}</arg>
 </arguments>
-<msg timestamp="20210402 16:39:17.469" level="INFO">Typing text 'Rowland' into text field 'id:inputs-lastName'.</msg>
-<status status="PASS" endtime="20210402 16:39:21.111" starttime="20210402 16:39:17.467"></status>
+<msg timestamp="20210404 21:17:21.808" level="INFO">Typing text 'Wall' into text field 'id:inputs-lastName'.</msg>
+<status status="PASS" endtime="20210404 21:17:25.115" starttime="20210404 21:17:21.806"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -905,8 +1219,8 @@ Grossland, NC 87655</msg>
 <arg>${zip_ref}</arg>
 <arg>${zip}</arg>
 </arguments>
-<msg timestamp="20210402 16:39:21.114" level="INFO">Typing text '98115' into text field 'id:inputs-zipCode'.</msg>
-<status status="PASS" endtime="20210402 16:39:24.625" starttime="20210402 16:39:21.112"></status>
+<msg timestamp="20210404 21:17:25.115" level="INFO">Typing text '98115' into text field 'id:inputs-zipCode'.</msg>
+<status status="PASS" endtime="20210404 21:17:28.408" starttime="20210404 21:17:25.115"></status>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
@@ -914,9 +1228,9 @@ Grossland, NC 87655</msg>
 <arg>${ph_no}</arg>
 <arg>206</arg>
 </arguments>
-<msg timestamp="20210402 16:39:24.630" level="INFO">Sending key(s) (u'206',) to id:inputs-areaCode element.</msg>
-<msg timestamp="20210402 16:39:25.683" level="INFO">Sending keys 206</msg>
-<status status="PASS" endtime="20210402 16:39:27.343" starttime="20210402 16:39:24.626"></status>
+<msg timestamp="20210404 21:17:28.410" level="INFO">Sending key(s) (u'206',) to id:inputs-areaCode element.</msg>
+<msg timestamp="20210404 21:17:29.454" level="INFO">Sending keys 206</msg>
+<status status="PASS" endtime="20210404 21:17:30.808" starttime="20210404 21:17:28.409"></status>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
@@ -924,9 +1238,9 @@ Grossland, NC 87655</msg>
 <arg>${ph_no_2}</arg>
 <arg>665</arg>
 </arguments>
-<msg timestamp="20210402 16:39:27.345" level="INFO">Sending key(s) (u'665',) to id:inputs-phonePrefix element.</msg>
-<msg timestamp="20210402 16:39:28.369" level="INFO">Sending keys 665</msg>
-<status status="PASS" endtime="20210402 16:39:30.066" starttime="20210402 16:39:27.343"></status>
+<msg timestamp="20210404 21:17:30.811" level="INFO">Sending key(s) (u'665',) to id:inputs-phonePrefix element.</msg>
+<msg timestamp="20210404 21:17:31.850" level="INFO">Sending keys 665</msg>
+<status status="PASS" endtime="20210404 21:17:33.219" starttime="20210404 21:17:30.809"></status>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
@@ -934,27 +1248,223 @@ Grossland, NC 87655</msg>
 <arg>${ph_no_3}</arg>
 <arg>6667</arg>
 </arguments>
-<msg timestamp="20210402 16:39:30.069" level="INFO">Sending key(s) (u'6667',) to id:inputs-phoneSuffix element.</msg>
-<msg timestamp="20210402 16:39:31.116" level="INFO">Sending keys 6667</msg>
-<status status="PASS" endtime="20210402 16:39:32.784" starttime="20210402 16:39:30.066"></status>
+<msg timestamp="20210404 21:17:33.219" level="INFO">Sending key(s) (u'6667',) to id:inputs-phoneSuffix element.</msg>
+<msg timestamp="20210404 21:17:34.264" level="INFO">Sending keys 6667</msg>
+<status status="PASS" endtime="20210404 21:17:35.677" starttime="20210404 21:17:33.219"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
-<arg>${Submit_btn_agn2}</arg>
+<arg>${ContinueBtn}</arg>
 </arguments>
-<msg timestamp="20210402 16:39:32.787" level="INFO">Clicking element 'xpath:/html[1]/body[1]/div[4]/div[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/form[1]/div[3]/div[1]/input[1]'.</msg>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20210402 16:39:35.318" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="0-selenium-screenshot-2.png"&gt;&lt;img src="0-selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20210402 16:39:35.318" starttime="20210402 16:39:33.832"></status>
+<msg timestamp="20210404 21:17:35.677" level="INFO">Clicking element 'css=input[value='Continue']'.</msg>
+<status status="PASS" endtime="20210404 21:17:37.906" starttime="20210404 21:17:35.677"></status>
 </kw>
-<msg timestamp="20210402 16:39:35.323" level="FAIL">Element with locator 'xpath:/html[1]/body[1]/div[4]/div[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/form[1]/div[3]/div[1]/input[1]' not found.</msg>
-<status status="FAIL" endtime="20210402 16:39:35.323" starttime="20210402 16:39:32.785"></status>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3sec</arg>
+</arguments>
+<msg timestamp="20210404 21:17:40.913" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20210404 21:17:40.913" starttime="20210404 21:17:37.906"></status>
 </kw>
-<status status="FAIL" endtime="20210402 16:39:35.323" starttime="20210402 16:38:35.806"></status>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${BrokerageName}</arg>
+<arg>TestBrokerageName</arg>
+</arguments>
+<msg timestamp="20210404 21:17:40.916" level="INFO">Typing text 'TestBrokerageName' into text field 'xpath://input[@id='companyName']'.</msg>
+<status status="PASS" endtime="20210404 21:17:49.035" starttime="20210404 21:17:40.915"></status>
 </kw>
-<status status="FAIL" endtime="20210402 16:39:35.324" critical="yes" starttime="20210402 16:38:17.398">Element with locator 'xpath:/html[1]/body[1]/div[4]/div[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/form[1]/div[3]/div[1]/input[1]' not found.</status>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${BrokerageAddress}</arg>
+<arg>7500 Roosevelt Way NE</arg>
+</arguments>
+<msg timestamp="20210404 21:17:49.037" level="INFO">Typing text '7500 Roosevelt Way NE' into text field 'xpath://input[@id='companyAddress']'.</msg>
+<status status="PASS" endtime="20210404 21:17:52.402" starttime="20210404 21:17:49.036"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${city}</arg>
+<arg>Seattle</arg>
+</arguments>
+<msg timestamp="20210404 21:17:52.407" level="INFO">Sending key(s) (u'Seattle',) to xpath://input[@id='companyCity'] element.</msg>
+<msg timestamp="20210404 21:17:53.439" level="INFO">Sending keys Seattle</msg>
+<status status="PASS" endtime="20210404 21:17:54.848" starttime="20210404 21:17:52.403"></status>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<arguments>
+<arg>${State}</arg>
+<arg>56</arg>
+</arguments>
+<msg timestamp="20210404 21:17:54.848" level="INFO">Selecting options from selection list 'name:companyState' by index 56.</msg>
+<status status="PASS" endtime="20210404 21:19:00.248" starttime="20210404 21:17:54.848"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${ZIP1}</arg>
+<arg>98116</arg>
+</arguments>
+<msg timestamp="20210404 21:19:00.251" level="INFO">Typing text '98116' into text field 'name:companyZipcode'.</msg>
+<status status="PASS" endtime="20210404 21:19:03.517" starttime="20210404 21:19:00.248"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${ServiceAreas}</arg>
+<arg>${ServiceArea}</arg>
+<arg>ENTER</arg>
+</arguments>
+<msg timestamp="20210404 21:19:03.523" level="INFO">Sending key(s) (u'98116', u'ENTER') to id:serviceAreasInput element.</msg>
+<msg timestamp="20210404 21:19:04.573" level="INFO">Sending keys 98116</msg>
+<msg timestamp="20210404 21:19:06.034" level="INFO">Pressing special key ENTER to element.</msg>
+<status status="PASS" endtime="20210404 21:19:07.367" starttime="20210404 21:19:03.517"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${SubmitButton}</arg>
+</arguments>
+<msg timestamp="20210404 21:19:07.367" level="INFO">Clicking element 'xpath:/html[1]/body[1]/div[1]/div[3]/main[1]/form[1]/div[2]/ul[1]/li[1]/button[1]'.</msg>
+<status status="PASS" endtime="20210404 21:19:09.568" starttime="20210404 21:19:07.367"></status>
+</kw>
+<status status="PASS" endtime="20210404 21:19:09.569" starttime="20210404 21:16:42.524"></status>
+</kw>
+<kw name="GotoAgentFinder" library="ProfileKeywords">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>GoingOnAgentFinder</arg>
+</arguments>
+<status status="PASS" endtime="20210404 21:19:09.572" starttime="20210404 21:19:09.571"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5sec</arg>
+</arguments>
+<msg timestamp="20210404 21:19:14.574" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20210404 21:19:14.575" starttime="20210404 21:19:09.572"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>https://www.qa.zillow.net/agent-finder/real-estate-agent-reviews/</arg>
+</arguments>
+<msg timestamp="20210404 21:19:14.575" level="INFO">Opening url 'https://www.qa.zillow.net/agent-finder/real-estate-agent-reviews/'</msg>
+<status status="PASS" endtime="20210404 21:19:18.220" starttime="20210404 21:19:14.575"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>Realtor &amp; Real Estate Agent Reviews | Zillow</arg>
+</arguments>
+<msg timestamp="20210404 21:19:19.388" level="INFO">Page title is 'Realtor &amp; Real Estate Agent Reviews | Zillow'.</msg>
+<status status="PASS" endtime="20210404 21:19:19.388" starttime="20210404 21:19:18.220"></status>
+</kw>
+<status status="PASS" endtime="20210404 21:19:19.390" starttime="20210404 21:19:09.569"></status>
+</kw>
+<kw name="SearchByzipAndName" library="ProfileKeywords">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>1sec</arg>
+</arguments>
+<status status="PASS" endtime="20210404 21:19:19.390" starttime="20210404 21:19:19.390"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>SearchingByZIP</arg>
+</arguments>
+<status status="PASS" endtime="20210404 21:19:19.390" starttime="20210404 21:19:19.390"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>https://www.qa.zillow.net/agent-finder/real-estate-agent-reviews/</arg>
+</arguments>
+<msg timestamp="20210404 21:19:19.390" level="INFO">Opening url 'https://www.qa.zillow.net/agent-finder/real-estate-agent-reviews/'</msg>
+<status status="PASS" endtime="20210404 21:19:22.427" starttime="20210404 21:19:19.390"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3sec</arg>
+</arguments>
+<msg timestamp="20210404 21:19:25.430" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20210404 21:19:25.430" starttime="20210404 21:19:22.427"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${RegionBox}</arg>
+<arg>${ServiceArea}</arg>
+</arguments>
+<msg timestamp="20210404 21:19:25.430" level="INFO">Typing text '98116' into text field 'name:locationText'.</msg>
+<status status="PASS" endtime="20210404 21:19:28.677" starttime="20210404 21:19:25.430"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${fnln}</arg>
+<arg>${F_last_name}</arg>
+</arguments>
+<msg timestamp="20210404 21:19:28.677" level="INFO">Typing text 'Wall' into text field 'xpath://input[@placeholder='Agent name']'.</msg>
+<status status="PASS" endtime="20210404 21:19:31.948" starttime="20210404 21:19:28.677"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2sec</arg>
+</arguments>
+<msg timestamp="20210404 21:19:33.953" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20210404 21:19:33.954" starttime="20210404 21:19:31.948"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${SearchMG2}</arg>
+</arguments>
+<msg timestamp="20210404 21:19:33.957" level="INFO">Clicking element 'xpath:/html[1]/body[1]/div[1]/div[8]/main[1]/div[1]/form[1]/section[1]/ul[1]/li[1]/fieldset[1]/div[2]/button'.</msg>
+<status status="PASS" endtime="20210404 21:19:36.137" starttime="20210404 21:19:33.956"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4sec</arg>
+</arguments>
+<msg timestamp="20210404 21:19:40.157" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" endtime="20210404 21:19:40.157" starttime="20210404 21:19:36.137"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>${F_first_name}${SPACE}${F_last_name}</arg>
+</arguments>
+<msg timestamp="20210404 21:19:42.227" level="INFO">Current page contains text 'Alexis Wall'.</msg>
+<status status="PASS" endtime="20210404 21:19:42.227" starttime="20210404 21:19:40.157"></status>
+</kw>
+<status status="PASS" endtime="20210404 21:19:42.227" starttime="20210404 21:19:19.390"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20210404 21:19:45.353" starttime="20210404 21:19:42.229"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>tc3 ran till end</arg>
+</arguments>
+<status status="PASS" endtime="20210404 21:19:45.355" starttime="20210404 21:19:45.354"></status>
+</kw>
+<status status="PASS" endtime="20210404 21:19:45.355" critical="yes" starttime="20210404 21:16:24.738"></status>
 </test>
 <test id="s1-t4" name="tc6Modified-To_verify_pagination_on_agent_finder">
 <kw name="OpenMyBrowser" library="ProfileKeywords">
@@ -968,8 +1478,8 @@ Grossland, NC 87655</msg>
 <arg>${env}</arg>
 <arg>${browser}</arg>
 </arguments>
-<msg timestamp="20210402 16:39:35.327" level="INFO">Opening browser 'headlesschrome' to base url 'https://www.qa.zillow.net'.</msg>
-<status status="PASS" endtime="20210402 16:39:44.317" starttime="20210402 16:39:35.326"></status>
+<msg timestamp="20210404 21:19:45.363" level="INFO">Opening browser 'headlesschrome' to base url 'https://www.qa.zillow.net'.</msg>
+<status status="PASS" endtime="20210404 21:19:52.306" starttime="20210404 21:19:45.355"></status>
 </kw>
 <kw name="Set Window Size" library="SeleniumLibrary">
 <doc>Sets current windows size to given ``width`` and ``height``.</doc>
@@ -977,21 +1487,21 @@ Grossland, NC 87655</msg>
 <arg>1366</arg>
 <arg>625</arg>
 </arguments>
-<status status="PASS" endtime="20210402 16:39:45.452" starttime="20210402 16:39:44.318"></status>
+<status status="PASS" endtime="20210404 21:19:53.453" starttime="20210404 21:19:52.307"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20210402 16:39:46.573" starttime="20210402 16:39:45.453"></status>
+<status status="PASS" endtime="20210404 21:19:54.580" starttime="20210404 21:19:53.453"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3sec</arg>
 </arguments>
-<msg timestamp="20210402 16:39:49.576" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" endtime="20210402 16:39:49.576" starttime="20210402 16:39:46.574"></status>
+<msg timestamp="20210404 21:19:57.589" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20210404 21:19:57.589" starttime="20210404 21:19:54.580"></status>
 </kw>
-<status status="PASS" endtime="20210402 16:39:49.576" starttime="20210402 16:39:35.326"></status>
+<status status="PASS" endtime="20210404 21:19:57.590" starttime="20210404 21:19:45.355"></status>
 </kw>
 <kw name="GotoAgentFinder" library="ProfileKeywords">
 <kw name="Log To Console" library="BuiltIn">
@@ -999,33 +1509,33 @@ Grossland, NC 87655</msg>
 <arguments>
 <arg>GoingOnAgentFinder</arg>
 </arguments>
-<status status="PASS" endtime="20210402 16:39:49.576" starttime="20210402 16:39:49.576"></status>
+<status status="PASS" endtime="20210404 21:19:57.591" starttime="20210404 21:19:57.591"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5sec</arg>
 </arguments>
-<msg timestamp="20210402 16:39:54.581" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20210402 16:39:54.583" starttime="20210402 16:39:49.576"></status>
+<msg timestamp="20210404 21:20:02.597" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20210404 21:20:02.597" starttime="20210404 21:19:57.591"></status>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <doc>Navigates the active browser instance to the provided ``url``.</doc>
 <arguments>
 <arg>https://www.qa.zillow.net/agent-finder/real-estate-agent-reviews/</arg>
 </arguments>
-<msg timestamp="20210402 16:39:54.585" level="INFO">Opening url 'https://www.qa.zillow.net/agent-finder/real-estate-agent-reviews/'</msg>
-<status status="PASS" endtime="20210402 16:39:59.740" starttime="20210402 16:39:54.584"></status>
+<msg timestamp="20210404 21:20:02.597" level="INFO">Opening url 'https://www.qa.zillow.net/agent-finder/real-estate-agent-reviews/'</msg>
+<status status="PASS" endtime="20210404 21:20:07.556" starttime="20210404 21:20:02.597"></status>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
 <doc>Verifies that current page title equals ``title``.</doc>
 <arguments>
 <arg>Realtor &amp; Real Estate Agent Reviews | Zillow</arg>
 </arguments>
-<msg timestamp="20210402 16:40:00.838" level="INFO">Page title is 'Realtor &amp; Real Estate Agent Reviews | Zillow'.</msg>
-<status status="PASS" endtime="20210402 16:40:00.839" starttime="20210402 16:39:59.740"></status>
+<msg timestamp="20210404 21:20:08.580" level="INFO">Page title is 'Realtor &amp; Real Estate Agent Reviews | Zillow'.</msg>
+<status status="PASS" endtime="20210404 21:20:08.580" starttime="20210404 21:20:07.556"></status>
 </kw>
-<status status="PASS" endtime="20210402 16:40:00.840" starttime="20210402 16:39:49.576"></status>
+<status status="PASS" endtime="20210404 21:20:08.581" starttime="20210404 21:19:57.590"></status>
 </kw>
 <kw name="SearchByzip" library="ProfileKeywords">
 <kw name="Log To Console" library="BuiltIn">
@@ -1033,30 +1543,30 @@ Grossland, NC 87655</msg>
 <arguments>
 <arg>SearchingByZIP</arg>
 </arguments>
-<status status="PASS" endtime="20210402 16:40:00.841" starttime="20210402 16:40:00.841"></status>
+<status status="PASS" endtime="20210404 21:20:08.584" starttime="20210404 21:20:08.583"></status>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <doc>Navigates the active browser instance to the provided ``url``.</doc>
 <arguments>
 <arg>https://www.qa.zillow.net/agent-finder/real-estate-agent-reviews/</arg>
 </arguments>
-<msg timestamp="20210402 16:40:00.845" level="INFO">Opening url 'https://www.qa.zillow.net/agent-finder/real-estate-agent-reviews/'</msg>
-<status status="PASS" endtime="20210402 16:40:03.808" starttime="20210402 16:40:00.845"></status>
+<msg timestamp="20210404 21:20:08.585" level="INFO">Opening url 'https://www.qa.zillow.net/agent-finder/real-estate-agent-reviews/'</msg>
+<status status="PASS" endtime="20210404 21:20:11.512" starttime="20210404 21:20:08.584"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3sec</arg>
 </arguments>
-<msg timestamp="20210402 16:40:06.814" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" endtime="20210402 16:40:06.815" starttime="20210402 16:40:03.809"></status>
+<msg timestamp="20210404 21:20:14.512" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20210404 21:20:14.512" starttime="20210404 21:20:11.512"></status>
 </kw>
 <kw name="Clear Element Text" library="SeleniumLibrary">
 <doc>Clears the value of text entry element identified by ``locator``.</doc>
 <arguments>
 <arg>${RegionBox}</arg>
 </arguments>
-<status status="PASS" endtime="20210402 16:40:08.971" starttime="20210402 16:40:06.815"></status>
+<status status="PASS" endtime="20210404 21:20:16.667" starttime="20210404 21:20:14.512"></status>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
@@ -1065,12 +1575,12 @@ Grossland, NC 87655</msg>
 <arg>${ServiceArea}</arg>
 <arg>ENTER</arg>
 </arguments>
-<msg timestamp="20210402 16:40:08.980" level="INFO">Sending key(s) (u'98116', u'ENTER') to name:locationText element.</msg>
-<msg timestamp="20210402 16:40:10.021" level="INFO">Sending keys 98116</msg>
-<msg timestamp="20210402 16:40:11.440" level="INFO">Pressing special key ENTER to element.</msg>
-<status status="PASS" endtime="20210402 16:40:12.856" starttime="20210402 16:40:08.972"></status>
+<msg timestamp="20210404 21:20:16.669" level="INFO">Sending key(s) (u'98116', u'ENTER') to name:locationText element.</msg>
+<msg timestamp="20210404 21:20:17.693" level="INFO">Sending keys 98116</msg>
+<msg timestamp="20210404 21:20:19.052" level="INFO">Pressing special key ENTER to element.</msg>
+<status status="PASS" endtime="20210404 21:20:20.428" starttime="20210404 21:20:16.668"></status>
 </kw>
-<status status="PASS" endtime="20210402 16:40:12.857" starttime="20210402 16:40:00.841"></status>
+<status status="PASS" endtime="20210404 21:20:20.429" starttime="20210404 21:20:08.581"></status>
 </kw>
 <kw name="Paginate" library="ProfileKeywords">
 <kw name="Sleep" library="BuiltIn">
@@ -1078,32 +1588,32 @@ Grossland, NC 87655</msg>
 <arguments>
 <arg>6sec</arg>
 </arguments>
-<msg timestamp="20210402 16:40:18.865" level="INFO">Slept 6 seconds</msg>
-<status status="PASS" endtime="20210402 16:40:18.866" starttime="20210402 16:40:12.858"></status>
+<msg timestamp="20210404 21:20:26.444" level="INFO">Slept 6 seconds</msg>
+<status status="PASS" endtime="20210404 21:20:26.444" starttime="20210404 21:20:20.430"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>${NEXT_PG}</arg>
 </arguments>
-<msg timestamp="20210402 16:40:18.867" level="INFO">Clicking element 'xpath://a[contains(text(),'Next')]'.</msg>
-<status status="PASS" endtime="20210402 16:40:21.059" starttime="20210402 16:40:18.866"></status>
+<msg timestamp="20210404 21:20:26.446" level="INFO">Clicking element 'xpath://a[contains(text(),'Next')]'.</msg>
+<status status="PASS" endtime="20210404 21:20:28.663" starttime="20210404 21:20:26.445"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>6sec</arg>
 </arguments>
-<msg timestamp="20210402 16:40:27.061" level="INFO">Slept 6 seconds</msg>
-<status status="PASS" endtime="20210402 16:40:27.062" starttime="20210402 16:40:21.060"></status>
+<msg timestamp="20210404 21:20:34.663" level="INFO">Slept 6 seconds</msg>
+<status status="PASS" endtime="20210404 21:20:34.663" starttime="20210404 21:20:28.663"></status>
 </kw>
 <kw name="Get Location" library="SeleniumLibrary">
 <doc>Returns the current browser URL.</doc>
 <assign>
 <var>${cur_url}</var>
 </assign>
-<msg timestamp="20210402 16:40:28.096" level="INFO">${cur_url} = https://www.qa.zillow.net/seattle-wa-98116/real-estate-agent-reviews/?page=2&amp;showAdvancedItems=false&amp;regionID=99576&amp;locationText=Seattle%20WA%2098116</msg>
-<status status="PASS" endtime="20210402 16:40:28.097" starttime="20210402 16:40:27.063"></status>
+<msg timestamp="20210404 21:20:35.681" level="INFO">${cur_url} = https://www.qa.zillow.net/seattle-wa-98116/real-estate-agent-reviews/?page=2&amp;showAdvancedItems=false&amp;regionID=99576&amp;locationText=Seattle%20WA%2098116</msg>
+<status status="PASS" endtime="20210404 21:20:35.682" starttime="20210404 21:20:34.663"></status>
 </kw>
 <kw name="Should Contain" library="BuiltIn">
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
@@ -1111,22 +1621,22 @@ Grossland, NC 87655</msg>
 <arg>${cur_url}</arg>
 <arg>page=2</arg>
 </arguments>
-<status status="PASS" endtime="20210402 16:40:28.098" starttime="20210402 16:40:28.097"></status>
+<status status="PASS" endtime="20210404 21:20:35.683" starttime="20210404 21:20:35.682"></status>
 </kw>
-<status status="PASS" endtime="20210402 16:40:28.099" starttime="20210402 16:40:12.857"></status>
+<status status="PASS" endtime="20210404 21:20:35.683" starttime="20210404 21:20:20.429"></status>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20210402 16:40:31.228" starttime="20210402 16:40:28.099"></status>
+<status status="PASS" endtime="20210404 21:20:38.782" starttime="20210404 21:20:35.683"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>tc6 ran till end</arg>
 </arguments>
-<status status="PASS" endtime="20210402 16:40:31.232" starttime="20210402 16:40:31.229"></status>
+<status status="PASS" endtime="20210404 21:20:38.783" starttime="20210404 21:20:38.783"></status>
 </kw>
-<status status="PASS" endtime="20210402 16:40:31.232" critical="yes" starttime="20210402 16:39:35.325"></status>
+<status status="PASS" endtime="20210404 21:20:38.783" critical="yes" starttime="20210404 21:19:45.355"></status>
 </test>
 <test id="s1-t5" name="tc8-Verify_lead's_profile">
 <kw name="OpenMyBrowser" library="ProfileKeywords">
@@ -1140,8 +1650,8 @@ Grossland, NC 87655</msg>
 <arg>${env}</arg>
 <arg>${browser}</arg>
 </arguments>
-<msg timestamp="20210402 16:40:31.240" level="INFO">Opening browser 'headlesschrome' to base url 'https://www.qa.zillow.net'.</msg>
-<status status="PASS" endtime="20210402 16:40:40.158" starttime="20210402 16:40:31.239"></status>
+<msg timestamp="20210404 21:20:38.791" level="INFO">Opening browser 'headlesschrome' to base url 'https://www.qa.zillow.net'.</msg>
+<status status="PASS" endtime="20210404 21:20:46.980" starttime="20210404 21:20:38.783"></status>
 </kw>
 <kw name="Set Window Size" library="SeleniumLibrary">
 <doc>Sets current windows size to given ``width`` and ``height``.</doc>
@@ -1149,21 +1659,21 @@ Grossland, NC 87655</msg>
 <arg>1366</arg>
 <arg>625</arg>
 </arguments>
-<status status="PASS" endtime="20210402 16:40:41.289" starttime="20210402 16:40:40.159"></status>
+<status status="PASS" endtime="20210404 21:20:48.135" starttime="20210404 21:20:46.980"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20210402 16:40:42.424" starttime="20210402 16:40:41.290"></status>
+<status status="PASS" endtime="20210404 21:20:49.264" starttime="20210404 21:20:48.135"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3sec</arg>
 </arguments>
-<msg timestamp="20210402 16:40:45.426" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" endtime="20210402 16:40:45.427" starttime="20210402 16:40:42.425"></status>
+<msg timestamp="20210404 21:20:52.280" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20210404 21:20:52.280" starttime="20210404 21:20:49.265"></status>
 </kw>
-<status status="PASS" endtime="20210402 16:40:45.428" starttime="20210402 16:40:31.237"></status>
+<status status="PASS" endtime="20210404 21:20:52.280" starttime="20210404 21:20:38.783"></status>
 </kw>
 <kw name="GotoAgentFinder" library="ProfileKeywords">
 <kw name="Log To Console" library="BuiltIn">
@@ -1171,33 +1681,33 @@ Grossland, NC 87655</msg>
 <arguments>
 <arg>GoingOnAgentFinder</arg>
 </arguments>
-<status status="PASS" endtime="20210402 16:40:45.428" starttime="20210402 16:40:45.428"></status>
+<status status="PASS" endtime="20210404 21:20:52.280" starttime="20210404 21:20:52.280"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5sec</arg>
 </arguments>
-<msg timestamp="20210402 16:40:50.434" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20210402 16:40:50.435" starttime="20210402 16:40:45.428"></status>
+<msg timestamp="20210404 21:20:57.281" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20210404 21:20:57.281" starttime="20210404 21:20:52.280"></status>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <doc>Navigates the active browser instance to the provided ``url``.</doc>
 <arguments>
 <arg>https://www.qa.zillow.net/agent-finder/real-estate-agent-reviews/</arg>
 </arguments>
-<msg timestamp="20210402 16:40:50.436" level="INFO">Opening url 'https://www.qa.zillow.net/agent-finder/real-estate-agent-reviews/'</msg>
-<status status="PASS" endtime="20210402 16:40:56.813" starttime="20210402 16:40:50.435"></status>
+<msg timestamp="20210404 21:20:57.281" level="INFO">Opening url 'https://www.qa.zillow.net/agent-finder/real-estate-agent-reviews/'</msg>
+<status status="PASS" endtime="20210404 21:21:02.469" starttime="20210404 21:20:57.281"></status>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
 <doc>Verifies that current page title equals ``title``.</doc>
 <arguments>
 <arg>Realtor &amp; Real Estate Agent Reviews | Zillow</arg>
 </arguments>
-<msg timestamp="20210402 16:40:57.850" level="INFO">Page title is 'Realtor &amp; Real Estate Agent Reviews | Zillow'.</msg>
-<status status="PASS" endtime="20210402 16:40:57.851" starttime="20210402 16:40:56.813"></status>
+<msg timestamp="20210404 21:21:03.489" level="INFO">Page title is 'Realtor &amp; Real Estate Agent Reviews | Zillow'.</msg>
+<status status="PASS" endtime="20210404 21:21:03.489" starttime="20210404 21:21:02.470"></status>
 </kw>
-<status status="PASS" endtime="20210402 16:40:57.852" starttime="20210402 16:40:45.428"></status>
+<status status="PASS" endtime="20210404 21:21:03.489" starttime="20210404 21:20:52.280"></status>
 </kw>
 <kw name="SearchByzip" library="ProfileKeywords">
 <kw name="Log To Console" library="BuiltIn">
@@ -1205,30 +1715,30 @@ Grossland, NC 87655</msg>
 <arguments>
 <arg>SearchingByZIP</arg>
 </arguments>
-<status status="PASS" endtime="20210402 16:40:57.852" starttime="20210402 16:40:57.852"></status>
+<status status="PASS" endtime="20210404 21:21:03.489" starttime="20210404 21:21:03.489"></status>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <doc>Navigates the active browser instance to the provided ``url``.</doc>
 <arguments>
 <arg>https://www.qa.zillow.net/agent-finder/real-estate-agent-reviews/</arg>
 </arguments>
-<msg timestamp="20210402 16:40:57.852" level="INFO">Opening url 'https://www.qa.zillow.net/agent-finder/real-estate-agent-reviews/'</msg>
-<status status="PASS" endtime="20210402 16:41:00.864" starttime="20210402 16:40:57.852"></status>
+<msg timestamp="20210404 21:21:03.489" level="INFO">Opening url 'https://www.qa.zillow.net/agent-finder/real-estate-agent-reviews/'</msg>
+<status status="PASS" endtime="20210404 21:21:06.323" starttime="20210404 21:21:03.489"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3sec</arg>
 </arguments>
-<msg timestamp="20210402 16:41:03.865" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" endtime="20210402 16:41:03.865" starttime="20210402 16:41:00.865"></status>
+<msg timestamp="20210404 21:21:09.323" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20210404 21:21:09.323" starttime="20210404 21:21:06.323"></status>
 </kw>
 <kw name="Clear Element Text" library="SeleniumLibrary">
 <doc>Clears the value of text entry element identified by ``locator``.</doc>
 <arguments>
 <arg>${RegionBox}</arg>
 </arguments>
-<status status="PASS" endtime="20210402 16:41:06.014" starttime="20210402 16:41:03.865"></status>
+<status status="PASS" endtime="20210404 21:21:11.489" starttime="20210404 21:21:09.323"></status>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
@@ -1237,50 +1747,50 @@ Grossland, NC 87655</msg>
 <arg>${ServiceArea}</arg>
 <arg>ENTER</arg>
 </arguments>
-<msg timestamp="20210402 16:41:06.016" level="INFO">Sending key(s) (u'98116', u'ENTER') to name:locationText element.</msg>
-<msg timestamp="20210402 16:41:07.025" level="INFO">Sending keys 98116</msg>
-<msg timestamp="20210402 16:41:08.379" level="INFO">Pressing special key ENTER to element.</msg>
-<status status="PASS" endtime="20210402 16:41:09.783" starttime="20210402 16:41:06.014"></status>
+<msg timestamp="20210404 21:21:11.489" level="INFO">Sending key(s) (u'98116', u'ENTER') to name:locationText element.</msg>
+<msg timestamp="20210404 21:21:12.514" level="INFO">Sending keys 98116</msg>
+<msg timestamp="20210404 21:21:13.906" level="INFO">Pressing special key ENTER to element.</msg>
+<status status="PASS" endtime="20210404 21:21:15.297" starttime="20210404 21:21:11.489"></status>
 </kw>
-<status status="PASS" endtime="20210402 16:41:09.785" starttime="20210402 16:40:57.852"></status>
+<status status="PASS" endtime="20210404 21:21:15.298" starttime="20210404 21:21:03.489"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <doc>Waits until ``text`` appears on current page.</doc>
 <arguments>
 <arg>Abrahamson</arg>
 </arguments>
-<status status="PASS" endtime="20210402 16:41:12.132" starttime="20210402 16:41:09.785"></status>
+<status status="PASS" endtime="20210404 21:21:17.618" starttime="20210404 21:21:15.299"></status>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <doc>Sets the delay that is waited after each Selenium command.</doc>
 <arguments>
 <arg>2sec</arg>
 </arguments>
-<status status="PASS" endtime="20210402 16:41:12.132" starttime="20210402 16:41:12.132"></status>
+<status status="PASS" endtime="20210404 21:21:17.620" starttime="20210404 21:21:17.619"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>${lead}</arg>
 </arguments>
-<msg timestamp="20210402 16:41:12.132" level="INFO">Clicking element 'partial link:Talia Abrahamson'.</msg>
-<status status="PASS" endtime="20210402 16:41:28.028" starttime="20210402 16:41:12.132"></status>
+<msg timestamp="20210404 21:21:17.620" level="INFO">Clicking element 'partial link:Talia Abrahamson'.</msg>
+<status status="PASS" endtime="20210404 21:21:31.094" starttime="20210404 21:21:17.620"></status>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <doc>Verifies that current page contains ``text``.</doc>
 <arguments>
 <arg>Contact us</arg>
 </arguments>
-<msg timestamp="20210402 16:41:32.115" level="INFO">Current page contains text 'Contact us'.</msg>
-<status status="PASS" endtime="20210402 16:41:32.115" starttime="20210402 16:41:28.029"></status>
+<msg timestamp="20210404 21:21:35.179" level="INFO">Current page contains text 'Contact us'.</msg>
+<status status="PASS" endtime="20210404 21:21:35.180" starttime="20210404 21:21:31.094"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>${badge}</arg>
 </arguments>
-<msg timestamp="20210402 16:41:32.118" level="INFO">Clicking element 'xpath://a[contains(text(),'reviews')]'.</msg>
-<status status="PASS" endtime="20210402 16:41:36.343" starttime="20210402 16:41:32.115"></status>
+<msg timestamp="20210404 21:21:35.181" level="INFO">Clicking element 'xpath://a[contains(text(),'reviews')]'.</msg>
+<status status="PASS" endtime="20210404 21:21:39.323" starttime="20210404 21:21:35.181"></status>
 </kw>
 <kw name="Chk_URL_CONTAINS" library="ProfileKeywords">
 <kw name="Get Location" library="SeleniumLibrary">
@@ -1288,8 +1798,8 @@ Grossland, NC 87655</msg>
 <assign>
 <var>${cur_url2}</var>
 </assign>
-<msg timestamp="20210402 16:41:39.741" level="INFO">${cur_url2} = https://www.qa.zillow.net/profile/105305403ScreenName/#reviews</msg>
-<status status="PASS" endtime="20210402 16:41:39.741" starttime="20210402 16:41:36.343"></status>
+<msg timestamp="20210404 21:21:43.791" level="INFO">${cur_url2} = https://www.qa.zillow.net/profile/105305403ScreenName/#reviews</msg>
+<status status="PASS" endtime="20210404 21:21:43.791" starttime="20210404 21:21:39.323"></status>
 </kw>
 <kw name="Should Contain" library="BuiltIn">
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
@@ -1297,26 +1807,26 @@ Grossland, NC 87655</msg>
 <arg>${cur_url2}</arg>
 <arg>/#reviews</arg>
 </arguments>
-<status status="PASS" endtime="20210402 16:41:39.743" starttime="20210402 16:41:39.742"></status>
+<status status="PASS" endtime="20210404 21:21:43.792" starttime="20210404 21:21:43.792"></status>
 </kw>
-<status status="PASS" endtime="20210402 16:41:39.744" starttime="20210402 16:41:36.343"></status>
+<status status="PASS" endtime="20210404 21:21:43.792" starttime="20210404 21:21:39.323"></status>
 </kw>
 <kw name="Go Back" library="SeleniumLibrary">
 <doc>Simulates the user clicking the back button on their browser.</doc>
-<status status="PASS" endtime="20210402 16:41:44.484" starttime="20210402 16:41:39.744"></status>
+<status status="PASS" endtime="20210404 21:21:48.583" starttime="20210404 21:21:43.792"></status>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20210402 16:41:48.657" starttime="20210402 16:41:44.484"></status>
+<status status="PASS" endtime="20210404 21:21:52.718" starttime="20210404 21:21:48.584"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>tc8 ran till end</arg>
 </arguments>
-<status status="PASS" endtime="20210402 16:41:48.659" starttime="20210402 16:41:48.658"></status>
+<status status="PASS" endtime="20210404 21:21:52.719" starttime="20210404 21:21:52.719"></status>
 </kw>
-<status status="PASS" endtime="20210402 16:41:48.659" critical="yes" starttime="20210402 16:40:31.235"></status>
+<status status="PASS" endtime="20210404 21:21:52.719" critical="yes" starttime="20210404 21:20:38.783"></status>
 </test>
 <test id="s1-t6" name="tc9-Verify_editing_an_agent_profile_and_validating_changes_reflected_on_profile">
 <kw name="OpenMyBrowser" library="ProfileKeywords">
@@ -1330,8 +1840,8 @@ Grossland, NC 87655</msg>
 <arg>${env}</arg>
 <arg>${browser}</arg>
 </arguments>
-<msg timestamp="20210402 16:41:48.668" level="INFO">Opening browser 'headlesschrome' to base url 'https://www.qa.zillow.net'.</msg>
-<status status="PASS" endtime="20210402 16:42:01.542" starttime="20210402 16:41:48.662"></status>
+<msg timestamp="20210404 21:21:52.729" level="INFO">Opening browser 'headlesschrome' to base url 'https://www.qa.zillow.net'.</msg>
+<status status="PASS" endtime="20210404 21:22:03.540" starttime="20210404 21:21:52.727"></status>
 </kw>
 <kw name="Set Window Size" library="SeleniumLibrary">
 <doc>Sets current windows size to given ``width`` and ``height``.</doc>
@@ -1339,28 +1849,28 @@ Grossland, NC 87655</msg>
 <arg>1366</arg>
 <arg>625</arg>
 </arguments>
-<status status="PASS" endtime="20210402 16:42:03.667" starttime="20210402 16:42:01.543"></status>
+<status status="PASS" endtime="20210404 21:22:05.676" starttime="20210404 21:22:03.541"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20210402 16:42:05.813" starttime="20210402 16:42:03.668"></status>
+<status status="PASS" endtime="20210404 21:22:07.794" starttime="20210404 21:22:05.676"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3sec</arg>
 </arguments>
-<msg timestamp="20210402 16:42:08.818" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" endtime="20210402 16:42:08.818" starttime="20210402 16:42:05.814"></status>
+<msg timestamp="20210404 21:22:10.802" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20210404 21:22:10.802" starttime="20210404 21:22:07.794"></status>
 </kw>
-<status status="PASS" endtime="20210402 16:42:08.820" starttime="20210402 16:41:48.662"></status>
+<status status="PASS" endtime="20210404 21:22:10.802" starttime="20210404 21:21:52.719"></status>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <doc>Sets the delay that is waited after each Selenium command.</doc>
 <arguments>
 <arg>1sec</arg>
 </arguments>
-<status status="PASS" endtime="20210402 16:42:08.821" starttime="20210402 16:42:08.820"></status>
+<status status="PASS" endtime="20210404 21:22:10.802" starttime="20210404 21:22:10.802"></status>
 </kw>
 <kw name="ConcatinatingScreenNameURL" library="ProfileKeywords">
 <kw name="Evaluate" library="BuiltIn">
@@ -1372,23 +1882,23 @@ Grossland, NC 87655</msg>
 <assign>
 <var>${screenName}</var>
 </assign>
-<msg timestamp="20210402 16:42:08.822" level="INFO">${screenName} = 10081381ScreenName/</msg>
-<status status="PASS" endtime="20210402 16:42:08.822" starttime="20210402 16:42:08.822"></status>
+<msg timestamp="20210404 21:22:10.802" level="INFO">${screenName} = 45897812ScreenName/</msg>
+<status status="PASS" endtime="20210404 21:22:10.802" starttime="20210404 21:22:10.802"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>\nvalue: ${screenName}</arg>
 </arguments>
-<status status="PASS" endtime="20210402 16:42:08.822" starttime="20210402 16:42:08.822"></status>
+<status status="PASS" endtime="20210404 21:22:10.809" starttime="20210404 21:22:10.802"></status>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <doc>Makes a variable available globally in all tests and suites.</doc>
 <arguments>
 <arg>${screenName}</arg>
 </arguments>
-<msg timestamp="20210402 16:42:08.830" level="INFO">${screenName} = 10081381ScreenName/</msg>
-<status status="PASS" endtime="20210402 16:42:08.830" starttime="20210402 16:42:08.822"></status>
+<msg timestamp="20210404 21:22:10.809" level="INFO">${screenName} = 45897812ScreenName/</msg>
+<status status="PASS" endtime="20210404 21:22:10.809" starttime="20210404 21:22:10.809"></status>
 </kw>
 <kw name="Catenate" library="BuiltIn">
 <doc>Catenates the given items together and returns the resulted string.</doc>
@@ -1400,31 +1910,31 @@ Grossland, NC 87655</msg>
 <assign>
 <var>${ResultantURL}</var>
 </assign>
-<msg timestamp="20210402 16:42:08.833" level="INFO">${ResultantURL} = https://www.qa.zillow.net/profile/10081381ScreenName/</msg>
-<status status="PASS" endtime="20210402 16:42:08.833" starttime="20210402 16:42:08.831"></status>
+<msg timestamp="20210404 21:22:10.813" level="INFO">${ResultantURL} = https://www.qa.zillow.net/profile/45897812ScreenName/</msg>
+<status status="PASS" endtime="20210404 21:22:10.814" starttime="20210404 21:22:10.812"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${ResultantURL}</arg>
 </arguments>
-<status status="PASS" endtime="20210402 16:42:08.834" starttime="20210402 16:42:08.833"></status>
+<status status="PASS" endtime="20210404 21:22:10.815" starttime="20210404 21:22:10.814"></status>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <doc>Navigates the active browser instance to the provided ``url``.</doc>
 <arguments>
 <arg>${ResultantURL}</arg>
 </arguments>
-<msg timestamp="20210402 16:42:08.835" level="INFO">Opening url 'https://www.qa.zillow.net/profile/10081381ScreenName/'</msg>
-<status status="PASS" endtime="20210402 16:42:21.949" starttime="20210402 16:42:08.835"></status>
+<msg timestamp="20210404 21:22:10.816" level="INFO">Opening url 'https://www.qa.zillow.net/profile/45897812ScreenName/'</msg>
+<status status="PASS" endtime="20210404 21:22:21.027" starttime="20210404 21:22:10.815"></status>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <doc>Makes a variable available globally in all tests and suites.</doc>
 <arguments>
 <arg>${ResultantURL}</arg>
 </arguments>
-<msg timestamp="20210402 16:42:21.950" level="INFO">${ResultantURL} = https://www.qa.zillow.net/profile/10081381ScreenName/</msg>
-<status status="PASS" endtime="20210402 16:42:21.950" starttime="20210402 16:42:21.950"></status>
+<msg timestamp="20210404 21:22:21.029" level="INFO">${ResultantURL} = https://www.qa.zillow.net/profile/45897812ScreenName/</msg>
+<status status="PASS" endtime="20210404 21:22:21.029" starttime="20210404 21:22:21.028"></status>
 </kw>
 <kw name="Replace String" library="String">
 <doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
@@ -1436,25 +1946,25 @@ Grossland, NC 87655</msg>
 <assign>
 <var>${GeneratedLoginstring}</var>
 </assign>
-<msg timestamp="20210402 16:42:21.950" level="INFO">${GeneratedLoginstring} = 10081381@tes.zillow.local</msg>
-<status status="PASS" endtime="20210402 16:42:21.950" starttime="20210402 16:42:21.950"></status>
+<msg timestamp="20210404 21:22:21.029" level="INFO">${GeneratedLoginstring} = 45897812@tes.zillow.local</msg>
+<status status="PASS" endtime="20210404 21:22:21.029" starttime="20210404 21:22:21.029"></status>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <doc>Makes a variable available globally in all tests and suites.</doc>
 <arguments>
 <arg>${GeneratedLoginstring}</arg>
 </arguments>
-<msg timestamp="20210402 16:42:21.950" level="INFO">${GeneratedLoginstring} = 10081381@tes.zillow.local</msg>
-<status status="PASS" endtime="20210402 16:42:21.959" starttime="20210402 16:42:21.950"></status>
+<msg timestamp="20210404 21:22:21.029" level="INFO">${GeneratedLoginstring} = 45897812@tes.zillow.local</msg>
+<status status="PASS" endtime="20210404 21:22:21.029" starttime="20210404 21:22:21.029"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${GeneratedLoginstring}</arg>
 </arguments>
-<status status="PASS" endtime="20210402 16:42:21.959" starttime="20210402 16:42:21.959"></status>
+<status status="PASS" endtime="20210404 21:22:21.029" starttime="20210404 21:22:21.029"></status>
 </kw>
-<status status="PASS" endtime="20210402 16:42:21.959" starttime="20210402 16:42:08.822"></status>
+<status status="PASS" endtime="20210404 21:22:21.029" starttime="20210404 21:22:10.802"></status>
 </kw>
 <kw name="Sign_in_Agent-Selected" library="ProfileKeywords">
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
@@ -1462,30 +1972,30 @@ Grossland, NC 87655</msg>
 <arguments>
 <arg>Sign in</arg>
 </arguments>
-<status status="PASS" endtime="20210402 16:42:23.018" starttime="20210402 16:42:21.959"></status>
+<status status="PASS" endtime="20210404 21:22:22.093" starttime="20210404 21:22:21.037"></status>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <doc>Sets the delay that is waited after each Selenium command.</doc>
 <arguments>
 <arg>2sec</arg>
 </arguments>
-<status status="PASS" endtime="20210402 16:42:23.019" starttime="20210402 16:42:23.018"></status>
+<status status="PASS" endtime="20210404 21:22:22.095" starttime="20210404 21:22:22.094"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>${sign_in}</arg>
 </arguments>
-<msg timestamp="20210402 16:42:23.019" level="INFO">Clicking element 'xpath://header/nav[1]/div[2]/ul[4]/li[1]/a[1]/span[1]'.</msg>
-<status status="PASS" endtime="20210402 16:42:27.473" starttime="20210402 16:42:23.019"></status>
+<msg timestamp="20210404 21:22:22.095" level="INFO">Clicking element 'xpath://header/nav[1]/div[2]/ul[4]/li[1]/a[1]/span[1]'.</msg>
+<status status="PASS" endtime="20210404 21:22:26.385" starttime="20210404 21:22:22.095"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>5sec</arg>
 </arguments>
-<msg timestamp="20210402 16:42:32.477" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" endtime="20210402 16:42:32.477" starttime="20210402 16:42:27.474"></status>
+<msg timestamp="20210404 21:22:31.396" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20210404 21:22:31.397" starttime="20210404 21:22:26.385"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -1493,8 +2003,8 @@ Grossland, NC 87655</msg>
 <arg>${email_to_enter}</arg>
 <arg>${GeneratedLoginstring}</arg>
 </arguments>
-<msg timestamp="20210402 16:42:32.477" level="INFO">Typing text '10081381@tes.zillow.local' into text field 'id:reg-login-email'.</msg>
-<status status="PASS" endtime="20210402 16:42:39.243" starttime="20210402 16:42:32.477"></status>
+<msg timestamp="20210404 21:22:31.399" level="INFO">Typing text '45897812@tes.zillow.local' into text field 'id:reg-login-email'.</msg>
+<status status="PASS" endtime="20210404 21:22:37.739" starttime="20210404 21:22:31.398"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -1502,18 +2012,18 @@ Grossland, NC 87655</msg>
 <arg>${pwd_to_enter}</arg>
 <arg>zillow</arg>
 </arguments>
-<msg timestamp="20210402 16:42:39.246" level="INFO">Typing text 'zillow' into text field 'inputs-password'.</msg>
-<status status="PASS" endtime="20210402 16:42:45.643" starttime="20210402 16:42:39.244"></status>
+<msg timestamp="20210404 21:22:37.739" level="INFO">Typing text 'zillow' into text field 'inputs-password'.</msg>
+<status status="PASS" endtime="20210404 21:22:44.014" starttime="20210404 21:22:37.739"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>${submit_btn_agn2}</arg>
 </arguments>
-<msg timestamp="20210402 16:42:45.645" level="INFO">Clicking element 'xpath:/html[1]/body[1]/div[4]/div[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/form[1]/div[3]/div[1]/input[1]'.</msg>
-<status status="PASS" endtime="20210402 16:42:50.057" starttime="20210402 16:42:45.644"></status>
+<msg timestamp="20210404 21:22:44.017" level="INFO">Clicking element 'css=input[value='Sign in']'.</msg>
+<status status="PASS" endtime="20210404 21:22:48.190" starttime="20210404 21:22:44.016"></status>
 </kw>
-<status status="PASS" endtime="20210402 16:42:50.058" starttime="20210402 16:42:21.959"></status>
+<status status="PASS" endtime="20210404 21:22:48.191" starttime="20210404 21:22:21.029"></status>
 </kw>
 <kw name="GoingToProfile" library="ProfileKeywords">
 <kw name="Sleep" library="BuiltIn">
@@ -1521,27 +2031,27 @@ Grossland, NC 87655</msg>
 <arguments>
 <arg>3sec</arg>
 </arguments>
-<msg timestamp="20210402 16:42:53.075" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" endtime="20210402 16:42:53.076" starttime="20210402 16:42:50.060"></status>
+<msg timestamp="20210404 21:22:51.203" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20210404 21:22:51.203" starttime="20210404 21:22:48.192"></status>
 </kw>
 <kw name="Reload Page" library="SeleniumLibrary">
 <doc>Simulates user reloading page.</doc>
-<status status="PASS" endtime="20210402 16:42:55.097" starttime="20210402 16:42:53.077"></status>
+<status status="PASS" endtime="20210404 21:22:54.232" starttime="20210404 21:22:51.203"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>7sec</arg>
 </arguments>
-<msg timestamp="20210402 16:43:02.100" level="INFO">Slept 7 seconds</msg>
-<status status="PASS" endtime="20210402 16:43:02.100" starttime="20210402 16:42:55.098"></status>
+<msg timestamp="20210404 21:23:01.237" level="INFO">Slept 7 seconds</msg>
+<status status="PASS" endtime="20210404 21:23:01.237" starttime="20210404 21:22:54.232"></status>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <doc>Sets the delay that is waited after each Selenium command.</doc>
 <arguments>
 <arg>1sec</arg>
 </arguments>
-<status status="PASS" endtime="20210402 16:43:02.103" starttime="20210402 16:43:02.102"></status>
+<status status="PASS" endtime="20210404 21:23:01.237" starttime="20210404 21:23:01.237"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <doc>Waits until ``text`` appears on current page.</doc>
@@ -1549,17 +2059,17 @@ Grossland, NC 87655</msg>
 <arg>Manage your profile</arg>
 <arg>30sec</arg>
 </arguments>
-<status status="PASS" endtime="20210402 16:43:03.182" starttime="20210402 16:43:02.104"></status>
+<status status="PASS" endtime="20210404 21:23:02.291" starttime="20210404 21:23:01.237"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>${ManageYourProfile}</arg>
 </arguments>
-<msg timestamp="20210402 16:43:03.184" level="INFO">Clicking element 'partial link:Manage your profile'.</msg>
-<status status="PASS" endtime="20210402 16:43:11.894" starttime="20210402 16:43:03.183"></status>
+<msg timestamp="20210404 21:23:02.291" level="INFO">Clicking element 'partial link:Manage your profile'.</msg>
+<status status="PASS" endtime="20210404 21:23:14.881" starttime="20210404 21:23:02.291"></status>
 </kw>
-<status status="PASS" endtime="20210402 16:43:11.894" starttime="20210402 16:42:50.059"></status>
+<status status="PASS" endtime="20210404 21:23:14.881" starttime="20210404 21:22:48.191"></status>
 </kw>
 <kw name="Going to edit profile" library="ProfileKeywords">
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
@@ -1567,25 +2077,25 @@ Grossland, NC 87655</msg>
 <arguments>
 <arg>2sec</arg>
 </arguments>
-<status status="PASS" endtime="20210402 16:43:11.894" starttime="20210402 16:43:11.894"></status>
+<status status="PASS" endtime="20210404 21:23:14.881" starttime="20210404 21:23:14.881"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>${Edit_dd}</arg>
 </arguments>
-<msg timestamp="20210402 16:43:11.894" level="INFO">Clicking element 'xpath:/html[1]/body[1]/div[2]/div[1]/div[2]/aside[1]/div[1]/div[2]/div[1]/button[1]'.</msg>
-<status status="PASS" endtime="20210402 16:43:16.172" starttime="20210402 16:43:11.894"></status>
+<msg timestamp="20210404 21:23:14.881" level="INFO">Clicking element 'xpath:/html[1]/body[1]/div[2]/div[1]/div[2]/aside[1]/div[1]/div[2]/div[1]/button[1]'.</msg>
+<status status="PASS" endtime="20210404 21:23:19.044" starttime="20210404 21:23:14.881"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>${profileOpn}</arg>
 </arguments>
-<msg timestamp="20210402 16:43:16.172" level="INFO">Clicking element 'xpath://a[contains(text(),'Profile')]'.</msg>
-<status status="PASS" endtime="20210402 16:43:20.343" starttime="20210402 16:43:16.172"></status>
+<msg timestamp="20210404 21:23:19.044" level="INFO">Clicking element 'xpath://a[contains(text(),'Profile')]'.</msg>
+<status status="PASS" endtime="20210404 21:23:23.244" starttime="20210404 21:23:19.044"></status>
 </kw>
-<status status="PASS" endtime="20210402 16:43:20.344" starttime="20210402 16:43:11.894"></status>
+<status status="PASS" endtime="20210404 21:23:23.245" starttime="20210404 21:23:14.881"></status>
 </kw>
 <kw name="Select From List By Index" library="SeleniumLibrary">
 <doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
@@ -1593,32 +2103,32 @@ Grossland, NC 87655</msg>
 <arg>${YourPronoun}</arg>
 <arg>1</arg>
 </arguments>
-<msg timestamp="20210402 16:43:20.348" level="INFO">Selecting options from selection list 'xpath://select[@id='edit-profile-pronoun']' by index 1.</msg>
-<status status="PASS" endtime="20210402 16:43:40.929" starttime="20210402 16:43:20.345"></status>
+<msg timestamp="20210404 21:23:23.246" level="INFO">Selecting options from selection list 'xpath://select[@id='edit-profile-pronoun']' by index 1.</msg>
+<status status="PASS" endtime="20210404 21:23:46.422" starttime="20210404 21:23:23.245"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>${SubmitButton}</arg>
 </arguments>
-<msg timestamp="20210402 16:43:40.930" level="INFO">Clicking element 'xpath:/html[1]/body[1]/div[1]/div[3]/main[1]/form[1]/div[2]/ul[1]/li[1]/button[1]'.</msg>
-<status status="PASS" endtime="20210402 16:43:45.214" starttime="20210402 16:43:40.929"></status>
+<msg timestamp="20210404 21:23:46.422" level="INFO">Clicking element 'xpath:/html[1]/body[1]/div[1]/div[3]/main[1]/form[1]/div[2]/ul[1]/li[1]/button[1]'.</msg>
+<status status="PASS" endtime="20210404 21:23:50.593" starttime="20210404 21:23:46.422"></status>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <doc>Navigates the active browser instance to the provided ``url``.</doc>
 <arguments>
 <arg>https://www.qa.zillow.net/myzillow/Profile.htm</arg>
 </arguments>
-<msg timestamp="20210402 16:43:45.215" level="INFO">Opening url 'https://www.qa.zillow.net/myzillow/Profile.htm'</msg>
-<status status="PASS" endtime="20210402 16:43:52.254" starttime="20210402 16:43:45.215"></status>
+<msg timestamp="20210404 21:23:50.593" level="INFO">Opening url 'https://www.qa.zillow.net/myzillow/Profile.htm'</msg>
+<status status="PASS" endtime="20210404 21:24:03.170" starttime="20210404 21:23:50.593"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3sec</arg>
 </arguments>
-<msg timestamp="20210402 16:43:55.263" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" endtime="20210402 16:43:55.264" starttime="20210402 16:43:52.255"></status>
+<msg timestamp="20210404 21:24:06.181" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20210404 21:24:06.181" starttime="20210404 21:24:03.170"></status>
 </kw>
 <kw name="Should Contain" library="BuiltIn">
 <doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
@@ -1626,20 +2136,20 @@ Grossland, NC 87655</msg>
 <arg>${YourPronounOnPrivateProfile}</arg>
 <arg>They/Them/Theirs</arg>
 </arguments>
-<status status="PASS" endtime="20210402 16:43:55.266" starttime="20210402 16:43:55.264"></status>
+<status status="PASS" endtime="20210404 21:24:06.181" starttime="20210404 21:24:06.181"></status>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20210402 16:43:59.375" starttime="20210402 16:43:55.267"></status>
+<status status="PASS" endtime="20210404 21:24:10.476" starttime="20210404 21:24:06.181"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>tc9 ran till end</arg>
 </arguments>
-<status status="PASS" endtime="20210402 16:43:59.376" starttime="20210402 16:43:59.376"></status>
+<status status="PASS" endtime="20210404 21:24:10.477" starttime="20210404 21:24:10.477"></status>
 </kw>
-<status status="PASS" endtime="20210402 16:43:59.377" critical="yes" starttime="20210402 16:41:48.662"></status>
+<status status="PASS" endtime="20210404 21:24:10.477" critical="yes" starttime="20210404 21:21:52.719"></status>
 </test>
 <test id="s1-t7" name="tc14-To_verify_review_flow">
 <kw name="OpenMyBrowser" library="ProfileKeywords">
@@ -1653,8 +2163,8 @@ Grossland, NC 87655</msg>
 <arg>${env}</arg>
 <arg>${browser}</arg>
 </arguments>
-<msg timestamp="20210402 16:43:59.377" level="INFO">Opening browser 'headlesschrome' to base url 'https://www.qa.zillow.net'.</msg>
-<status status="PASS" endtime="20210402 16:44:10.188" starttime="20210402 16:43:59.377"></status>
+<msg timestamp="20210404 21:24:10.486" level="INFO">Opening browser 'headlesschrome' to base url 'https://www.qa.zillow.net'.</msg>
+<status status="PASS" endtime="20210404 21:24:22.540" starttime="20210404 21:24:10.486"></status>
 </kw>
 <kw name="Set Window Size" library="SeleniumLibrary">
 <doc>Sets current windows size to given ``width`` and ``height``.</doc>
@@ -1662,21 +2172,21 @@ Grossland, NC 87655</msg>
 <arg>1366</arg>
 <arg>625</arg>
 </arguments>
-<status status="PASS" endtime="20210402 16:44:12.345" starttime="20210402 16:44:10.189"></status>
+<status status="PASS" endtime="20210404 21:24:24.671" starttime="20210404 21:24:22.540"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20210402 16:44:14.469" starttime="20210402 16:44:12.345"></status>
+<status status="PASS" endtime="20210404 21:24:26.795" starttime="20210404 21:24:24.671"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>3sec</arg>
 </arguments>
-<msg timestamp="20210402 16:44:17.477" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" endtime="20210402 16:44:17.477" starttime="20210402 16:44:14.470"></status>
+<msg timestamp="20210404 21:24:29.807" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20210404 21:24:29.808" starttime="20210404 21:24:26.795"></status>
 </kw>
-<status status="PASS" endtime="20210402 16:44:17.477" starttime="20210402 16:43:59.377"></status>
+<status status="PASS" endtime="20210404 21:24:29.809" starttime="20210404 21:24:10.477"></status>
 </kw>
 <kw name="Faker_profile" library="ProfileKeywords">
 <kw name="Address" library="FakerLibrary">
@@ -1684,44 +2194,44 @@ Grossland, NC 87655</msg>
 <assign>
 <var>${F_address}</var>
 </assign>
-<msg timestamp="20210402 16:44:17.479" level="INFO">${F_address} = 89024 Jeffrey Gateway
-New Timothy, MI 06357</msg>
-<status status="PASS" endtime="20210402 16:44:17.479" starttime="20210402 16:44:17.477"></status>
+<msg timestamp="20210404 21:24:29.811" level="INFO">${F_address} = 924 Gregory Brook
+Smithstad, SD 09901</msg>
+<status status="PASS" endtime="20210404 21:24:29.811" starttime="20210404 21:24:29.810"></status>
 </kw>
 <kw name="Country" library="FakerLibrary">
 <assign>
 <var>${F_country}</var>
 </assign>
-<msg timestamp="20210402 16:44:17.479" level="INFO">${F_country} = Nicaragua</msg>
-<status status="PASS" endtime="20210402 16:44:17.480" starttime="20210402 16:44:17.479"></status>
+<msg timestamp="20210404 21:24:29.820" level="INFO">${F_country} = Saint Barthelemy</msg>
+<status status="PASS" endtime="20210404 21:24:29.820" starttime="20210404 21:24:29.811"></status>
 </kw>
 <kw name="Email" library="FakerLibrary">
 <assign>
 <var>${F_email}</var>
 </assign>
-<msg timestamp="20210402 16:44:17.480" level="INFO">${F_email} = timothy17@gmail.com</msg>
-<status status="PASS" endtime="20210402 16:44:17.480" starttime="20210402 16:44:17.480"></status>
+<msg timestamp="20210404 21:24:29.820" level="INFO">${F_email} = fergusonleslie@yahoo.com</msg>
+<status status="PASS" endtime="20210404 21:24:29.820" starttime="20210404 21:24:29.820"></status>
 </kw>
 <kw name="First Name" library="FakerLibrary">
 <assign>
 <var>${F_first_name}</var>
 </assign>
-<msg timestamp="20210402 16:44:17.480" level="INFO">${F_first_name} = Tiffany</msg>
-<status status="PASS" endtime="20210402 16:44:17.482" starttime="20210402 16:44:17.480"></status>
+<msg timestamp="20210404 21:24:29.828" level="INFO">${F_first_name} = Ashley</msg>
+<status status="PASS" endtime="20210404 21:24:29.828" starttime="20210404 21:24:29.820"></status>
 </kw>
 <kw name="Last Name" library="FakerLibrary">
 <assign>
 <var>${F_last_name}</var>
 </assign>
-<msg timestamp="20210402 16:44:17.482" level="INFO">${F_last_name} = King</msg>
-<status status="PASS" endtime="20210402 16:44:17.483" starttime="20210402 16:44:17.482"></status>
+<msg timestamp="20210404 21:24:29.828" level="INFO">${F_last_name} = Vargas</msg>
+<status status="PASS" endtime="20210404 21:24:29.828" starttime="20210404 21:24:29.828"></status>
 </kw>
 <kw name="Phone Number" library="FakerLibrary">
 <assign>
 <var>${F_phone_number}</var>
 </assign>
-<msg timestamp="20210402 16:44:17.483" level="INFO">${F_phone_number} = 001-636-187-0118</msg>
-<status status="PASS" endtime="20210402 16:44:17.483" starttime="20210402 16:44:17.483"></status>
+<msg timestamp="20210404 21:24:29.828" level="INFO">${F_phone_number} = 358-427-6155x481</msg>
+<status status="PASS" endtime="20210404 21:24:29.828" starttime="20210404 21:24:29.828"></status>
 </kw>
 <kw name="Catenate" library="BuiltIn">
 <doc>Catenates the given items together and returns the resulted string.</doc>
@@ -1738,65 +2248,65 @@ New Timothy, MI 06357</msg>
 <assign>
 <var>${F_profile}</var>
 </assign>
-<msg timestamp="20210402 16:44:17.484" level="INFO">${F_profile} = 
+<msg timestamp="20210404 21:24:29.836" level="INFO">${F_profile} = 
 ======================================= 
-first_name: Tiffany 
-last_name: King 
-address: 89024 Jeffrey Gateway
-New Timothy, MI 06357 
-country: Nicaragua 
-email: timothy17@gmail.com 
-phone_numbe...</msg>
-<status status="PASS" endtime="20210402 16:44:17.484" starttime="20210402 16:44:17.483"></status>
+first_name: Ashley 
+last_name: Vargas 
+address: 924 Gregory Brook
+Smithstad, SD 09901 
+country: Saint Barthelemy 
+email: fergusonleslie@yahoo.com 
+phon...</msg>
+<status status="PASS" endtime="20210404 21:24:29.836" starttime="20210404 21:24:29.828"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${F_profile}</arg>
 </arguments>
-<status status="PASS" endtime="20210402 16:44:17.484" starttime="20210402 16:44:17.484"></status>
+<status status="PASS" endtime="20210404 21:24:29.836" starttime="20210404 21:24:29.836"></status>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
 <arguments>
 <arg>${F_email}</arg>
 </arguments>
-<msg timestamp="20210402 16:44:17.485" level="INFO">${F_email} = timothy17@gmail.com</msg>
-<status status="PASS" endtime="20210402 16:44:17.485" starttime="20210402 16:44:17.485"></status>
+<msg timestamp="20210404 21:24:29.836" level="INFO">${F_email} = fergusonleslie@yahoo.com</msg>
+<status status="PASS" endtime="20210404 21:24:29.836" starttime="20210404 21:24:29.836"></status>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
 <arguments>
 <arg>${F_address}</arg>
 </arguments>
-<msg timestamp="20210402 16:44:17.485" level="INFO">${F_address} = 89024 Jeffrey Gateway
-New Timothy, MI 06357</msg>
-<status status="PASS" endtime="20210402 16:44:17.485" starttime="20210402 16:44:17.485"></status>
+<msg timestamp="20210404 21:24:29.844" level="INFO">${F_address} = 924 Gregory Brook
+Smithstad, SD 09901</msg>
+<status status="PASS" endtime="20210404 21:24:29.844" starttime="20210404 21:24:29.836"></status>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
 <arguments>
 <arg>${F_first_name}</arg>
 </arguments>
-<msg timestamp="20210402 16:44:17.486" level="INFO">${F_first_name} = Tiffany</msg>
-<status status="PASS" endtime="20210402 16:44:17.486" starttime="20210402 16:44:17.486"></status>
+<msg timestamp="20210404 21:24:29.844" level="INFO">${F_first_name} = Ashley</msg>
+<status status="PASS" endtime="20210404 21:24:29.844" starttime="20210404 21:24:29.844"></status>
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
 <arguments>
 <arg>${F_last_name}</arg>
 </arguments>
-<msg timestamp="20210402 16:44:17.487" level="INFO">${F_last_name} = King</msg>
-<status status="PASS" endtime="20210402 16:44:17.487" starttime="20210402 16:44:17.486"></status>
+<msg timestamp="20210404 21:24:29.844" level="INFO">${F_last_name} = Vargas</msg>
+<status status="PASS" endtime="20210404 21:24:29.844" starttime="20210404 21:24:29.844"></status>
 </kw>
-<status status="PASS" endtime="20210402 16:44:17.487" starttime="20210402 16:44:17.477"></status>
+<status status="PASS" endtime="20210404 21:24:29.844" starttime="20210404 21:24:29.809"></status>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <doc>Sets the delay that is waited after each Selenium command.</doc>
 <arguments>
 <arg>2sec</arg>
 </arguments>
-<status status="PASS" endtime="20210402 16:44:17.487" starttime="20210402 16:44:17.487"></status>
+<status status="PASS" endtime="20210404 21:24:29.844" starttime="20210404 21:24:29.844"></status>
 </kw>
 <kw name="Register" library="ProfileKeywords">
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
@@ -1804,45 +2314,45 @@ New Timothy, MI 06357</msg>
 <arguments>
 <arg>Sign in</arg>
 </arguments>
-<status status="PASS" endtime="20210402 16:44:19.514" starttime="20210402 16:44:17.488"></status>
+<status status="PASS" endtime="20210404 21:24:31.880" starttime="20210404 21:24:29.844"></status>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <doc>Sets the delay that is waited after each Selenium command.</doc>
 <arguments>
 <arg>4sec</arg>
 </arguments>
-<status status="PASS" endtime="20210402 16:44:19.518" starttime="20210402 16:44:19.516"></status>
+<status status="PASS" endtime="20210404 21:24:31.882" starttime="20210404 21:24:31.881"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>${sign_in}</arg>
 </arguments>
-<msg timestamp="20210402 16:44:19.520" level="INFO">Clicking element 'xpath://header/nav[1]/div[2]/ul[4]/li[1]/a[1]/span[1]'.</msg>
-<status status="PASS" endtime="20210402 16:44:27.884" starttime="20210402 16:44:19.518"></status>
+<msg timestamp="20210404 21:24:31.884" level="INFO">Clicking element 'xpath://header/nav[1]/div[2]/ul[4]/li[1]/a[1]/span[1]'.</msg>
+<status status="PASS" endtime="20210404 21:24:40.035" starttime="20210404 21:24:31.882"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>9sec</arg>
 </arguments>
-<msg timestamp="20210402 16:44:36.891" level="INFO">Slept 9 seconds</msg>
-<status status="PASS" endtime="20210402 16:44:36.892" starttime="20210402 16:44:27.885"></status>
+<msg timestamp="20210404 21:24:49.038" level="INFO">Slept 9 seconds</msg>
+<status status="PASS" endtime="20210404 21:24:49.038" starttime="20210404 21:24:40.035"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>${RegisterTab2}</arg>
 </arguments>
-<msg timestamp="20210402 16:44:36.895" level="INFO">Clicking element 'xpath://button[@id='register-tab']'.</msg>
-<status status="PASS" endtime="20210402 16:44:45.425" starttime="20210402 16:44:36.894"></status>
+<msg timestamp="20210404 21:24:49.038" level="INFO">Clicking element 'css:a[id='register-tab']'.</msg>
+<status status="PASS" endtime="20210404 21:24:57.359" starttime="20210404 21:24:49.038"></status>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <doc>Sets the delay that is waited after each Selenium command.</doc>
 <arguments>
 <arg>0sec</arg>
 </arguments>
-<status status="PASS" endtime="20210402 16:44:45.427" starttime="20210402 16:44:45.426"></status>
+<status status="PASS" endtime="20210404 21:24:57.359" starttime="20210404 21:24:57.359"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -1850,8 +2360,8 @@ New Timothy, MI 06357</msg>
 <arg>${EmailPlaceholder}</arg>
 <arg>${F_email}</arg>
 </arguments>
-<msg timestamp="20210402 16:44:45.430" level="INFO">Typing text 'timothy17@gmail.com' into text field 'id:inputs-newEmail'.</msg>
-<status status="PASS" endtime="20210402 16:44:45.934" starttime="20210402 16:44:45.427"></status>
+<msg timestamp="20210404 21:24:57.359" level="INFO">Typing text 'fergusonleslie@yahoo.com' into text field 'id:inputs-newEmail'.</msg>
+<status status="PASS" endtime="20210404 21:24:57.597" starttime="20210404 21:24:57.359"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -1859,39 +2369,373 @@ New Timothy, MI 06357</msg>
 <arg>${PwdPlaceholder}</arg>
 <arg>${pwdpr}</arg>
 </arguments>
-<msg timestamp="20210402 16:44:45.935" level="INFO">Typing text 'Zillow@123' into text field 'id:password'.</msg>
-<status status="PASS" endtime="20210402 16:44:48.070" starttime="20210402 16:44:45.934"></status>
+<msg timestamp="20210404 21:24:57.597" level="INFO">Typing text 'Zillow@123' into text field 'id:password'.</msg>
+<status status="PASS" endtime="20210404 21:24:58.086" starttime="20210404 21:24:57.597"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
-<arg>${submit_btn_agn2}</arg>
+<arg>${SubmitBtnNew}</arg>
 </arguments>
-<msg timestamp="20210402 16:44:48.071" level="INFO">Clicking element 'xpath:/html[1]/body[1]/div[4]/div[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/form[1]/div[3]/div[1]/input[1]'.</msg>
+<msg timestamp="20210404 21:24:58.094" level="INFO">Clicking element 'css=input[value='Submit']'.</msg>
+<status status="PASS" endtime="20210404 21:24:58.236" starttime="20210404 21:24:58.086"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2sec</arg>
+</arguments>
+<msg timestamp="20210404 21:25:00.246" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20210404 21:25:00.246" starttime="20210404 21:24:58.237"></status>
+</kw>
+<status status="PASS" endtime="20210404 21:25:00.246" starttime="20210404 21:24:29.844"></status>
+</kw>
+<kw name="ConcatinatingScreenNameURL" library="ProfileKeywords">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<arguments>
+<arg>random.choice($Example11)</arg>
+<arg>random</arg>
+</arguments>
+<assign>
+<var>${screenName}</var>
+</assign>
+<msg timestamp="20210404 21:25:00.246" level="INFO">${screenName} = 10062541ScreenName/</msg>
+<status status="PASS" endtime="20210404 21:25:00.246" starttime="20210404 21:25:00.246"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>\nvalue: ${screenName}</arg>
+</arguments>
+<status status="PASS" endtime="20210404 21:25:00.246" starttime="20210404 21:25:00.246"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${screenName}</arg>
+</arguments>
+<msg timestamp="20210404 21:25:00.253" level="INFO">${screenName} = 10062541ScreenName/</msg>
+<status status="PASS" endtime="20210404 21:25:00.253" starttime="20210404 21:25:00.253"></status>
+</kw>
+<kw name="Catenate" library="BuiltIn">
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<arguments>
+<arg>SEPARATOR=</arg>
+<arg>${ProPredefinedBreadcrumbs}</arg>
+<arg>${screenName}</arg>
+</arguments>
+<assign>
+<var>${ResultantURL}</var>
+</assign>
+<msg timestamp="20210404 21:25:00.253" level="INFO">${ResultantURL} = https://www.qa.zillow.net/profile/10062541ScreenName/</msg>
+<status status="PASS" endtime="20210404 21:25:00.253" starttime="20210404 21:25:00.253"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${ResultantURL}</arg>
+</arguments>
+<status status="PASS" endtime="20210404 21:25:00.253" starttime="20210404 21:25:00.253"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>${ResultantURL}</arg>
+</arguments>
+<msg timestamp="20210404 21:25:00.253" level="INFO">Opening url 'https://www.qa.zillow.net/profile/10062541ScreenName/'</msg>
+<status status="PASS" endtime="20210404 21:25:08.030" starttime="20210404 21:25:00.253"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${ResultantURL}</arg>
+</arguments>
+<msg timestamp="20210404 21:25:08.030" level="INFO">${ResultantURL} = https://www.qa.zillow.net/profile/10062541ScreenName/</msg>
+<status status="PASS" endtime="20210404 21:25:08.030" starttime="20210404 21:25:08.030"></status>
+</kw>
+<kw name="Replace String" library="String">
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<arguments>
+<arg>${screenName}</arg>
+<arg>ScreenName/</arg>
+<arg>@tes.zillow.local</arg>
+</arguments>
+<assign>
+<var>${GeneratedLoginstring}</var>
+</assign>
+<msg timestamp="20210404 21:25:08.038" level="INFO">${GeneratedLoginstring} = 10062541@tes.zillow.local</msg>
+<status status="PASS" endtime="20210404 21:25:08.038" starttime="20210404 21:25:08.030"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${GeneratedLoginstring}</arg>
+</arguments>
+<msg timestamp="20210404 21:25:08.040" level="INFO">${GeneratedLoginstring} = 10062541@tes.zillow.local</msg>
+<status status="PASS" endtime="20210404 21:25:08.040" starttime="20210404 21:25:08.039"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${GeneratedLoginstring}</arg>
+</arguments>
+<status status="PASS" endtime="20210404 21:25:08.040" starttime="20210404 21:25:08.040"></status>
+</kw>
+<status status="PASS" endtime="20210404 21:25:08.040" starttime="20210404 21:25:00.246"></status>
+</kw>
+<kw name="WrittingAReview" library="ProfileKeywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${WaReviewBtn}</arg>
+</arguments>
+<msg timestamp="20210404 21:25:08.040" level="INFO">Clicking element 'xpath://a[contains(text(),'Write a review')]'.</msg>
+<status status="PASS" endtime="20210404 21:25:14.487" starttime="20210404 21:25:08.040"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>8sec</arg>
+</arguments>
+<msg timestamp="20210404 21:25:22.488" level="INFO">Slept 8 seconds</msg>
+<status status="PASS" endtime="20210404 21:25:22.488" starttime="20210404 21:25:14.487"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${stars}</arg>
+</arguments>
+<msg timestamp="20210404 21:25:22.488" level="INFO">Clicking element 'xpath:/html[1]/body[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/ul[1]/li[1]/div[1]/ul[1]/li[5]/span[2]'.</msg>
+<status status="PASS" endtime="20210404 21:25:22.600" starttime="20210404 21:25:22.488"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${ReviewMsgBox}</arg>
+<arg>test 11_03 test 236..and GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX Groso</arg>
+</arguments>
+<msg timestamp="20210404 21:25:22.600" level="INFO">Typing text 'test 11_03 test 236..and GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX Groso' into text field 'xpath://textarea[@id='review_message']'.</msg>
+<status status="PASS" endtime="20210404 21:25:23.443" starttime="20210404 21:25:22.600"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${Review_Terms}</arg>
+</arguments>
+<msg timestamp="20210404 21:25:23.443" level="INFO">Clicking element 'xpath://input[@id='review_honesty']'.</msg>
+<status status="PASS" endtime="20210404 21:25:23.579" starttime="20210404 21:25:23.443"></status>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>${Review_ServiceProvided}</arg>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20210404 21:25:23.579" level="INFO">Selecting options from selection list 'Xpath://select[@id='review_service_provided']' by value 3.</msg>
+<status status="PASS" endtime="20210404 21:25:23.743" starttime="20210404 21:25:23.579"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Rev_Address}</arg>
+<arg>${my_address}</arg>
+</arguments>
+<msg timestamp="20210404 21:25:23.743" level="INFO">Typing text '2951 Villa Loop Show Low AZ 85901' into text field 'xpath://input[@id='review_street_address']'.</msg>
+<status status="PASS" endtime="20210404 21:25:23.932" starttime="20210404 21:25:23.743"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${war_poc}</arg>
+</arguments>
+<msg timestamp="20210404 21:25:23.940" level="INFO">Clicking element 'xpath://label[contains(text(),'An associate of')]'.</msg>
+<status status="PASS" endtime="20210404 21:25:24.028" starttime="20210404 21:25:23.932"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${war_poc_name}</arg>
+<arg>AssociateIam</arg>
+</arguments>
+<msg timestamp="20210404 21:25:24.028" level="INFO">Typing text 'AssociateIam' into text field 'xpath://input[@id='associate-name']'.</msg>
+<status status="PASS" endtime="20210404 21:25:24.188" starttime="20210404 21:25:24.028"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Rev_YoS}</arg>
+<arg>2010</arg>
+</arguments>
+<msg timestamp="20210404 21:25:24.188" level="INFO">Typing text '2010' into text field 'xpath://input[@id='review_year']'.</msg>
+<status status="PASS" endtime="20210404 21:25:24.358" starttime="20210404 21:25:24.188"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4sec</arg>
+</arguments>
+<msg timestamp="20210404 21:25:28.370" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" endtime="20210404 21:25:28.370" starttime="20210404 21:25:24.358"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${sub_review_btn}</arg>
+</arguments>
+<msg timestamp="20210404 21:25:28.370" level="INFO">Clicking element 'xpath://button[@id='agent-review-submit']'.</msg>
+<status status="PASS" endtime="20210404 21:25:28.481" starttime="20210404 21:25:28.370"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2sec</arg>
+</arguments>
+<msg timestamp="20210404 21:25:30.489" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20210404 21:25:30.489" starttime="20210404 21:25:28.481"></status>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<arguments>
+<arg>Click Element</arg>
+<arg>${sub_review_btn}</arg>
+</arguments>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${sub_review_btn}</arg>
+</arguments>
+<msg timestamp="20210404 21:25:30.489" level="INFO">Clicking element 'xpath://button[@id='agent-review-submit']'.</msg>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20210402 16:44:48.703" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="0-selenium-screenshot-3.png"&gt;&lt;img src="0-selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20210402 16:44:48.704" starttime="20210402 16:44:48.090"></status>
+<msg timestamp="20210404 21:25:33.204" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="0-selenium-screenshot-1.png"&gt;&lt;img src="0-selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20210404 21:25:33.204" starttime="20210404 21:25:30.528"></status>
 </kw>
-<msg timestamp="20210402 16:44:48.704" level="FAIL">Element with locator 'xpath:/html[1]/body[1]/div[4]/div[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/form[1]/div[3]/div[1]/input[1]' not found.</msg>
-<status status="FAIL" endtime="20210402 16:44:48.704" starttime="20210402 16:44:48.070"></status>
+<msg timestamp="20210404 21:25:33.298" level="FAIL">ElementNotInteractableException: Message: element not interactable
+  (Session info: headless chrome=89.0.4389.114)
+</msg>
+<status status="FAIL" endtime="20210404 21:25:33.298" starttime="20210404 21:25:30.489"></status>
 </kw>
-<status status="FAIL" endtime="20210402 16:44:48.704" starttime="20210402 16:44:17.487"></status>
+<status status="PASS" endtime="20210404 21:25:33.298" starttime="20210404 21:25:30.489"></status>
 </kw>
-<status status="FAIL" endtime="20210402 16:44:48.704" critical="yes" starttime="20210402 16:43:59.377">Element with locator 'xpath:/html[1]/body[1]/div[4]/div[1]/div[1]/div[1]/section[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/form[1]/div[3]/div[1]/input[1]' not found.</status>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2sec</arg>
+</arguments>
+<msg timestamp="20210404 21:25:35.313" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20210404 21:25:35.313" starttime="20210404 21:25:33.298"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>Review submitted</arg>
+</arguments>
+<status status="PASS" endtime="20210404 21:25:35.353" starttime="20210404 21:25:35.313"></status>
+</kw>
+<status status="PASS" endtime="20210404 21:25:35.353" starttime="20210404 21:25:08.040"></status>
+</kw>
+<kw name="ImpersonatingViaSuperadmin" library="ProfileKeywords">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>3sec</arg>
+</arguments>
+<status status="PASS" endtime="20210404 21:25:35.353" starttime="20210404 21:25:35.353"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>https://www.qa.zillow.net/Logout.htm</arg>
+</arguments>
+<msg timestamp="20210404 21:25:35.353" level="INFO">Opening url 'https://www.qa.zillow.net/Logout.htm'</msg>
+<status status="PASS" endtime="20210404 21:25:40.974" starttime="20210404 21:25:35.353"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>https://www.qa.zillow.net/user/Impersonate.htm</arg>
+</arguments>
+<msg timestamp="20210404 21:25:40.974" level="INFO">Opening url 'https://www.qa.zillow.net/user/Impersonate.htm'</msg>
+<status status="PASS" endtime="20210404 21:25:53.934" starttime="20210404 21:25:40.974"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4sec</arg>
+</arguments>
+<msg timestamp="20210404 21:25:57.946" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" endtime="20210404 21:25:57.946" starttime="20210404 21:25:53.934"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Signin_email_placeholder}</arg>
+<arg>superadmin@tes.zillow.local</arg>
+</arguments>
+<msg timestamp="20210404 21:25:57.946" level="INFO">Typing text 'superadmin@tes.zillow.local' into text field 'xpath://input[@id='reg-login-email']'.</msg>
+<status status="PASS" endtime="20210404 21:26:07.494" starttime="20210404 21:25:57.946"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Signin_pwd_placeholder}</arg>
+<arg>zillow01*</arg>
+</arguments>
+<msg timestamp="20210404 21:26:07.494" level="INFO">Typing text 'zillow01*' into text field 'xpath://input[@id='inputs-password']'.</msg>
+<status status="PASS" endtime="20210404 21:26:17.010" starttime="20210404 21:26:07.494"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${Signin_pwd_placeholder}</arg>
+<arg>TAB</arg>
+<arg>SPACE</arg>
+</arguments>
+<msg timestamp="20210404 21:26:17.010" level="INFO">Sending key(s) (u'TAB', u'SPACE') to xpath://input[@id='inputs-password'] element.</msg>
+<msg timestamp="20210404 21:26:20.045" level="INFO">Pressing special key TAB to element.</msg>
+<msg timestamp="20210404 21:26:23.498" level="INFO">Pressing special key SPACE to element.</msg>
+<status status="PASS" endtime="20210404 21:26:26.791" starttime="20210404 21:26:17.010"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3sec</arg>
+</arguments>
+<msg timestamp="20210404 21:26:29.799" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20210404 21:26:29.799" starttime="20210404 21:26:26.792"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${admin_email_placeholder}</arg>
+<arg>${F_email}</arg>
+</arguments>
+<msg timestamp="20210404 21:26:29.799" level="INFO">Typing text 'fergusonleslie@yahoo.com' into text field 'xpath://input[@id='emailAddr']'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20210404 21:26:36.170" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="0-selenium-screenshot-2.png"&gt;&lt;img src="0-selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20210404 21:26:36.170" starttime="20210404 21:26:32.834"></status>
+</kw>
+<msg timestamp="20210404 21:26:36.201" level="FAIL">Element with locator 'xpath://input[@id='emailAddr']' not found.</msg>
+<status status="FAIL" endtime="20210404 21:26:36.201" starttime="20210404 21:26:29.799"></status>
+</kw>
+<status status="FAIL" endtime="20210404 21:26:36.202" starttime="20210404 21:25:35.353"></status>
+</kw>
+<status status="FAIL" endtime="20210404 21:26:36.202" critical="yes" starttime="20210404 21:24:10.477">Element with locator 'xpath://input[@id='emailAddr']' not found.</status>
 </test>
 <doc>[https://pabot.org/?ref=log|Pabot] result from 1 executions.</doc>
-<status status="FAIL" endtime="20210402 16:44:48.710" starttime="20210402 16:31:19.422"></status>
+<status status="FAIL" endtime="20210404 21:26:36.202" starttime="20210404 21:09:03.027"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="3" pass="4">Critical Tests</stat>
-<stat fail="3" pass="4">All Tests</stat>
+<stat fail="1" pass="6">Critical Tests</stat>
+<stat fail="1" pass="6">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat fail="3" id="s1" name="TC FinalCopy" pass="4">TC FinalCopy</stat>
+<stat fail="1" id="s1" name="TC FinalCopy" pass="6">TC FinalCopy</stat>
 </suite>
 </statistics>
 <errors>
