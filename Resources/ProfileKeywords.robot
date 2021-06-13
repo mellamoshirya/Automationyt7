@@ -9,6 +9,7 @@ Resource  ..//Resources/ProfileKeywords.robot
 #Library     DataDriver      ../TestData/LoginDataPr.xlsx    sheet_name=Sheet1
 Library    FakerLibrary
 Library     AutoItLibrary
+Library           DateTime
 *** Variables ***
 
 ${env}  https://www.qa.zillow.net
@@ -226,6 +227,7 @@ Faker_profile
         ${F_first_name} =  FakerLibrary.first_name
         ${F_last_name} =  FakerLibrary.last_name
         ${F_phone_number} =  FakerLibrary.phone_number
+        ${F_TestReview} =   FakerLibrary.Sentences  5
         ${F_profile} =  catenate
         ...             ${\n}=======================================
         ...             ${\n}first_name: ${F_first_name}
@@ -234,19 +236,35 @@ Faker_profile
         ...             ${\n}country: ${F_country}
         ...             ${\n}email: ${F_email}
         ...             ${\n}phone_number: ${F_phone_number}
+        ...             ${\n}Test_review: ${F_TestReview}
         ...             ${\n}=======================================
         log to console  ${F_profile}
         set suite variable  ${F_email}
         set suite variable  ${F_address}
         set suite variable  ${F_first_name}
         set suite variable  ${F_last_name}
+        set suite variable  ${F_TestReview}
+
+        #Getting current Time and mizing it up in review
+        ${CurrentTime}     get time
+        log     ${CurrentTime}
+
+        #Concatination the items from list with a unique saperator~runtime
+        ${F_TestReviewToWrite}=    Evaluate  "${CurrentTime}".join(${F_TestReview})
+        set suite variable  ${F_TestReviewToWrite}
+
+
+
+
+
+
 
 WrittingAReview
 
     click element   ${WaReviewBtn}
     sleep   8sec
     click element   ${stars}
-    input text  ${ReviewMsgBox}     test 11_03 test 236..and GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX GrosoHow likely are you to recommend REMAX Groso
+    input text  ${ReviewMsgBox}     ${F_TestReviewToWrite}
     click element   ${Review_Terms}
     select from list by value   ${Review_ServiceProvided}      3
     input text      ${Rev_Address}      ${my_address}
@@ -305,5 +323,8 @@ ModifyingExcerpt&PublishingReview
     go to   ${ResultantURL}
     reload page
     sleep   5sec
-    page should contain         test 11_03 test 236..and GrosoHow likely
+    reload page
+    sleep   2sec
+    page should contain         ${F_TestReviewToWrite}
+
 
