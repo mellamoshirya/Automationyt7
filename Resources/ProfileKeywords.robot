@@ -10,6 +10,8 @@ Resource  ..//Resources/ProfileKeywords.robot
 Library    FakerLibrary
 Library     AutoItLibrary
 Library           DateTime
+
+
 *** Variables ***
 
 ${env}  https://www.qa.zillow.net
@@ -21,7 +23,7 @@ ${PATTERN1}      ^<a href="/profile/
 ${EXPECTED1}     <a href="/profile/68467184ScreenName/
 ${lang}
 ${my_address}       2951 Villa Loop Show Low AZ 85901
-
+${base_url}     http://eqs.qa.zillow.net/
 *** Keywords ***
 OpenMyBrowser
     [Arguments]  ${env}     ${browser}
@@ -147,6 +149,9 @@ AddAgent
     input text      ${ZIP1}      98116
     press keys  ${ServiceAreas}     ${ServiceArea}       ENTER
     click element   ${SubmitButton}
+    sleep   2sec
+    API_Initialzation
+    APIExecution
 
 SearchByzipAndName
     set selenium speed  1sec
@@ -191,6 +196,9 @@ Register
 #    press keys  ${PwdPlaceholder}       TAB     TAB     TAB     SPACE
 #    click element   ${submit_reg2}
     click element   ${SubmitBtnNew}
+    sleep   2sec
+    API_Initialzation
+    APIExecution
     sleep   2sec
 
 Sign_in_Agent-Selected
@@ -254,11 +262,6 @@ Faker_profile
         set suite variable  ${F_TestReviewToWrite}
 
 
-
-
-
-
-
 WrittingAReview
 
     click element   ${WaReviewBtn}
@@ -277,6 +280,9 @@ WrittingAReview
     Run Keyword And Ignore Error    Click Element    ${sub_review_btn}
     sleep   2sec
     wait until page contains       Review submitted
+    sleep   2sec
+    API_Initialzation
+    APIExecution_105ReviewSubmitSuccessful
 
 
 ImpersonatingViaSuperadmin
@@ -326,5 +332,31 @@ ModifyingExcerpt&PublishingReview
     reload page
     sleep   2sec
     page should contain         ${F_TestReviewToWrite}
+    API_Initialzation
+    APIExecution_106ReviewPublishSuccessful
 
+
+API_Initialzation
+    create session  mysession   ${base_url}
+
+APIExecution
+    ${response}=    get request   mysession   /api/v1/email/send/results?emailAddress=${F_email}
+    log to console  ${response.status_code}
+    ${s_code}=   convert to string    ${response.status_code}
+    should be equal      ${s_code}      200
+    request should be successful        ${response}
+
+APIExecution_105ReviewSubmitSuccessful
+    ${response}=    get request   mysession   /api/v1/email/send/results?emailAddress=${F_email}&operationalEmailId=105
+    log to console  ${response.status_code}
+    ${s_code}=   convert to string    ${response.status_code}
+    should be equal      ${s_code}      200
+    request should be successful        ${response}
+
+APIExecution_106ReviewPublishSuccessful
+    ${response}=    get request   mysession   /api/v1/email/send/results?emailAddress=${F_email}&operationalEmailId=106
+    log to console  ${response.status_code}
+    ${s_code}=   convert to string    ${response.status_code}
+    should be equal      ${s_code}      200
+    request should be successful        ${response}
 

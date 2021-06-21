@@ -9,6 +9,8 @@ Library           OperatingSystem
 #Library     DataDriver  ../TestData/LoginDataPr.xlsx    sheet_name=Sheet1
 Library    FakerLibrary
 Library     AutoItLibrary
+Library     RequestsLibrary
+
 
 *** Variables ***
 ${env}  https://www.qa.zillow.net
@@ -24,6 +26,7 @@ ${ServiceArea}     98116
 ${ProPredefinedBreadcrumbs}       https://www.qa.zillow.net/profile/
 ${y}=       45897812ScreenName/
 @{Example11}    45897812ScreenName/          10062541ScreenName/     100636365ScreenName/     10063828ScreenName/   100550441ScreenName/    10081381ScreenName/
+
 *** Test Cases ***
 tc1-Verify_Search_by_location,_name_is_working_as_expected
 #Testcase to verify Search by location,name is working as expected
@@ -55,6 +58,7 @@ tc3-Verify_adding/registering_an_agent_and_if_it_is_searchable_on_agent_finder
     SearchByzipAndName
     close browser
     log to console  tc3 ran till end
+
 
 tc6Modified-To_verify_pagination_on_agent_finder
 #Testcase to verify pagination on agent finder.
@@ -110,13 +114,3 @@ tc14-To_verify_review_flow
     ModifyingExcerpt&PublishingReview
     close browser
     log to console  tc14 ran till end
-
-
-
-
-
-
-
-
-
-
